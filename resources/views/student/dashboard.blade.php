@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="{{ asset('student_assets/css/dashlite.css?ver=2.8.0') }}">
     <link id="skin-default" rel="stylesheet" href="{{ asset('student_assets/css/theme.css?ver=2.8.0') }}">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@460&display=swap" rel="stylesheet">
+
 
     <style>
         .nk-header.is-theme:not([class*=bg-]) {
@@ -209,6 +213,16 @@
         .table th, .table td{
             vertical-align: inherit;
         }
+        .dataTables_filter{
+            text-align: right;
+        }
+        .invest-data-history{
+            margin-right:  0px !important;
+        }
+        .arab{
+            font-family: 'Cairo', sans-serif !important;
+
+        }
     </style>
 </head>
 <body class="nk-body npc-invest bg-lighter ">
@@ -249,13 +263,13 @@
                         <ul class="nk-menu nk-menu-main ui-s2">
                             <li class="nk-menu-item has-sub">
                                 <a href="#" class="nk-menu-link">
-                                    <span class="nk-menu-text" style="font-weight: bolder; font-size: 19px;">دروس</span>
+                                    <span class="nk-menu-text arab" style="font-weight: bolder; font-size: 19px;">دروس</span>
                                 </a>
 
                             </li><!-- .nk-menu-item -->
                             <li class="nk-menu-item has-sub">
                                 <a href="#" class="nk-menu-link">
-                                    <span class="nk-menu-text" style="font-weight: bolder; font-size: 19px;">عروض العمل</span>
+                                    <span class="nk-menu-text arab" style="font-weight: bolder; font-size: 19px;">عروض العمل</span>
                                 </a>
 
                             </li><!-- .nk-menu-item -->
@@ -271,7 +285,7 @@
                                             <div class="nk-activity-media user-avatar bg-success"><img src="{{asset("images/avatar/a-sm.jpg")}}" alt=""></div>
                                         </div>
                                         <div class="user-info d-none d-xl-block" style="margin-right: 1rem">
-                                            <div class="user-status" style="color: white; font-weight: bold ; font-size: 14px">الاسم و نسب</div>
+                                            <div class="user-status arab" style="color: white; font-weight: bold ; font-size: 14px">الاسم و نسب</div>
 {{--                                            @if($name !== null)--}}
 {{--                                                <div class="user-name dropdown-indicator">{{ $name }}</div>--}}
 {{--                                            @endif--}}
@@ -328,7 +342,7 @@
                         <div class="nk-block-head nk-block-head-sm" style="direction : rtl">
                             <div class="nk-block-between">
                                 <div class="nk-block-head-content">
-                                    <h3 class="nk-block-title page-title">لوحة التحكم</h3>
+                                    <h3 class="nk-block-title page-title arab">لوحة التحكم</h3>
                                     <div class="nk-block-des text-soft">
 
                                     </div>
@@ -340,47 +354,30 @@
                         <div class="nk-block">
                             <div class="row g-gs">
                                 <div class="col-md-4">
-                                    <div class="card card-bordered card-full border-gradient border-gradient-red">
+                                    <div style="background-color: antiquewhite;" class="card card-bordered card-full border-gradient border-gradient-red">
                                         <div class="card-inner">
-                                            <div class="card-title-group align-start mb-0">
+                                            <div style="text-align: right;" class="card-title-group align-start mb-0">
                                                 <div class="card-title">
-                                                    <h6 class="subtitle">عدد الدروس المتوفرة</h6>
+                                                    <h6 class="subtitle arab">عدد الدروس المتوفرة</h6>
+                                                    <span style="font-size: 18px;font-weight: bold;color:#364a63;" class="amount arab">36</span>
                                                 </div>
-                                                <div class="card-tools">
-                                                    <em class="card-hint icon ni ni-help-fill" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Total Deposited" aria-label="Total Deposited"></em>
-                                                </div>
-                                            </div>
-                                            <div class="card-amount">
-                                                    <span class="amount"> 49,595.34 <span class="currency currency-usd">USD</span>
-                                                    </span>
-                                                <span class="change up text-danger"><em class="icon ni ni-arrow-long-up"></em>1.93%</span>
-                                            </div>
-                                            <div class="invest-data">
-                                                <div class="invest-data-amount g-2">
-                                                    <div class="invest-data-history">
-                                                        <div class="title">This Month</div>
-                                                        <div class="amount">2,940.59 <span class="currency currency-usd">USD</span></div>
-                                                    </div>
-                                                    <div class="invest-data-history">
-                                                        <div class="title">This Week</div>
-                                                        <div class="amount">1,259.28 <span class="currency currency-usd">USD</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="invest-data-ck"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
-                                                    <canvas class="iv-data-chart chartjs-render-monitor" id="totalDeposit" style="display: block; width: 92px; height: 48px;" width="92" height="48"></canvas>
+                                                <div style="width:30%;" class="card-tools">
+                                                    <img style="width: 100%;" src="{{ asset('student_assets/images/online_learning.png') }}" />
                                                 </div>
                                             </div>
+
+
                                         </div>
                                     </div><!-- .card -->
                                 </div><!-- .col -->
                                 <div class="col-md-4">
                                     <div class="card card-bordered card-full border-gradient border-gradient-blue">
                                         <div class="card-inner">
-                                            <div class="card-title-group align-start mb-0">
+                                            <div style="text-align: right;" class="card-title-group align-start mb-0">
                                                 <div class="card-title">
-                                                    <h6 class="subtitle">Total Withdraw</h6>
+                                                    <h6 class="subtitle arab">عدد عروض العمل</h6>
                                                 </div>
-                                                <div class="card-tools">
+                                                <div style="width:30%;" class="card-tools">
                                                     <em class="card-hint icon ni ni-help-fill" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Total Withdraw" aria-label="Total Withdraw"></em>
                                                 </div>
                                             </div>
@@ -412,7 +409,7 @@
                                         <div class="card-inner">
                                             <div class="card-title-group align-start mb-0">
                                                 <div class="card-title">
-                                                    <h6 class="subtitle">Balance in Account</h6>
+                                                    <h6 class="subtitle">الدروس التي تمت مشاهدتها</h6>
                                                 </div>
                                                 <div class="card-tools">
                                                     <em class="card-hint icon ni ni-help-fill" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Total Balance in Account" aria-label="Total Balance in Account"></em>
@@ -426,12 +423,9 @@
                                                 <div class="invest-data-amount g-2">
                                                     <div class="invest-data-history">
                                                         <div class="title">This Month</div>
-                                                        <div class="amount">2,940.59 <span class="currency currency-usd">USD</span></div>
+                                                        <div class="amount">44</div>
                                                     </div>
-                                                    <div class="invest-data-history">
-                                                        <div class="title">This Week</div>
-                                                        <div class="amount">1,259.28 <span class="currency currency-usd">USD</span></div>
-                                                    </div>
+
                                                 </div>
                                                 <div class="invest-data-ck"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
                                                     <canvas class="iv-data-chart chartjs-render-monitor" id="totalBalance" width="92" height="48" style="display: block; width: 92px; height: 48px;"></canvas>
