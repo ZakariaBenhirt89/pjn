@@ -23,7 +23,7 @@
                                     <div class="card-head">
                                         <h5 class="card-title">Video Info</h5>
                                     </div>
-                                    <form action="#" class="gy-3">
+                                    <form action="{{ route("videos.stock") }}" class="gy-3" method="post">
                                         <div class="row g-3 align-center">
                                             <div class="col-lg-5">
                                                 <div class="form-group">
@@ -34,7 +34,7 @@
                                             <div class="col-lg-7">
                                                 <div class="form-group">
                                                     <div class="form-control-wrap">
-                                                        <input type="text" class="form-control" id="site-name" name="video_name" value="" />
+                                                        <input  type="text" class="form-control" id="input1" name="video_name" value="" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -42,101 +42,22 @@
                                         <div class="row g-3 align-center">
                                             <div class="col-lg-5">
                                                 <div class="form-group">
-                                                    <label class="form-label" for="site-name">Choisir une catégorie</label>
-                                                    <span class="form-note">Spécifiez la catégorie de votre vidéo.</span>
+                                                    <label class="form-label" for="site-name">Choisir Module</label>
+                                                    <span class="form-note">Spécifiez le module de votre vidéo.</span>
                                                 </div>
                                             </div>
                                             <div class="col-lg-7">
                                                 <div class="form-group">
 
                                                     <div class="form-control-wrap">
-                                                        <select class="form-select" data-search="on">
-                                                            <option value="default_option">Choisir une catégorie</option>
-                                                            <option value="option_select_name">catégorie 1</option>
-                                                            <option value="option_select_name">catégorie 2</option>
-                                                            <option value="option_select_name">catégorie 3</option>
-                                                            <option value="option_select_name">catégorie 4</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row g-3 align-center">
-                                            <div class="col-lg-5">
-                                                <div class="form-group">
-                                                    <label class="form-label" for="site-name">Choisir cours</label>
-                                                    <span class="form-note">Spécifiez la cours de votre vidéo.</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-7">
-                                                <div class="form-group">
-
-                                                    <div class="form-control-wrap">
-                                                        <select class="form-select" data-search="on">
+                                                        <select class="form-select" name="course_name" id="input2" data-search="on">
                                                             <option value="default_option">Choisir Cours</option>
-                                                            <option value="option_select_name">Cours 1</option>
-                                                            <option value="option_select_name">Cours 2</option>
-                                                            <option value="option_select_name">Cours 3</option>
-                                                            <option value="option_select_name">Cours 4</option>
+                                                            @foreach(\App\Models\Section::all() as $sec)
+                                                                <option value="{{ $sec->id }}">{{ $sec->title }}</option>
+                                                            @endforeach
                                                         </select>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="row g-3 align-center">
-                                            <div class="col-lg-5">
-                                                <div class="form-group">
-                                                    <label class="form-label">Brève Description</label>
-                                                    <span class="form-note">Spécifiez votre courte description.</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-7">
-                                                <div class="form-group">
-                                                    <div class="form-control-wrap">
-                                                        <textarea cols="9" class="form-control"></textarea>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row g-3 align-center">
-                                            <div class="col-lg-5">
-                                                <div class="form-group">
-                                                    <label class="form-label"> Description</label>
-                                                    <span class="form-note">Spécifiez votre  Description.</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-7">
-                                                <div class="form-group">
-                                                    <div class="form-control-wrap">
-                                                        <textarea cols="9" class="form-control"></textarea>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row g-3 align-center">
-                                            <div class="col-lg-5">
-                                                <div class="form-group">
-                                                    <label class="form-label">statut</label>
-                                                    <span class="form-note">Activé or Désactiver La Video.</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-7">
-                                                <ul class="custom-control-group g-3 align-center flex-wrap">
-                                                    <li>
-                                                        <div class="custom-control custom-radio checked">
-                                                            <input type="radio" class="custom-control-input" checked="" name="reg-public" id="reg-enable">
-                                                            <label class="custom-control-label" for="reg-enable">Activé</label>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="custom-control custom-radio">
-                                                            <input type="radio" class="custom-control-input" name="reg-public" id="reg-disable">
-                                                            <label class="custom-control-label" for="reg-disable">Désactiver</label>
-                                                        </div>
-                                                    </li>
-
-                                                </ul>
                                             </div>
                                         </div>
                                         <div class="row g-3 align-center">
@@ -154,6 +75,7 @@
                                                                name="video"
                                                                data-max-file-size="500MB"
                                                                data-max-files="1">
+                                                        <input type="text" id="videoUrl" name="video_url" hidden>
                                                     </div>
                                                 </div>
                                             </div>
@@ -163,7 +85,7 @@
                                         <div class="row g-3">
                                             <div class="col-lg-7 offset-lg-5">
                                                 <div class="form-group mt-2">
-                                                    <button type="submit" class="btn btn-lg btn-primary">Update</button>
+                                                    <button  id="submitVideo" class="btn btn-lg btn-primary" hidden>Ajouté</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -176,4 +98,9 @@
             </div>
         </div>
     </div>
+    <style>
+        #input2{
+            position: absolute !important;
+        }
+    </style>
 @endsection

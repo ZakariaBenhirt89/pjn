@@ -202,6 +202,14 @@
         }
 
     </style>
+    <style>
+        .card .table tr:first-child th, .card .table tr:first-child td{
+            text-align: right;
+        }
+        .table th, .table td{
+            vertical-align: inherit;
+        }
+    </style>
 </head>
 <body class="nk-body npc-invest bg-lighter ">
 <div class="preloader css-selector">
@@ -222,8 +230,8 @@
                     </div>
                     <div class="nk-header-brand">
                         <a href="html/index.html" class="logo-link">
-                            <img style="max-height: 50px !important;" class="logo-light logo-img" src="{{ asset('images/logo_student.png') }}" srcset="./images/logo2x.png 2x" alt="logo">
-                            <img style="max-height: 50px !important;" class="logo-dark logo-img" src="{{ asset('images/logo_student.png') }}" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">
+                            <img style="max-height: 74px !important;" class="logo-light logo-img" src="{{ asset('images/logo_student.png') }}" srcset="./images/logo2x.png 2x" alt="logo">
+                            <img style="max-height: 74px !important;" class="logo-dark logo-img" src="{{ asset('images/logo_student.png') }}" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">
                         </a>
                     </div><!-- .nk-header-brand -->
                     <div class="nk-header-menu" data-content="headerNav">
@@ -240,65 +248,16 @@
                         </div>
                         <ul class="nk-menu nk-menu-main ui-s2">
                             <li class="nk-menu-item has-sub">
-                                <a href="#" class="nk-menu-link nk-menu-toggle">
-                                    <span class="nk-menu-text" style="font-weight: bolder; font-size: larger">دروس</span>
+                                <a href="#" class="nk-menu-link">
+                                    <span class="nk-menu-text" style="font-weight: bolder; font-size: 19px;">دروس</span>
                                 </a>
-                                <ul class="nk-menu-sub">
-                                    <li class="nk-menu-item">
-                                        <a href="html/index.html" class="nk-menu-link">
-                                            <span class="nk-menu-text">Default Dashboard</span>
-                                        </a>
-                                    </li><!-- .nk-menu-item -->
-                                    <li class="nk-menu-item">
-                                        <a href="html/index-sales.html" class="nk-menu-link">
-                                            <span class="nk-menu-text">Sales Dashboard</span>
-                                        </a>
-                                    </li><!-- .nk-menu-item -->
-                                    <li class="nk-menu-item">
-                                        <a href="html/index-crypto.html" class="nk-menu-link">
-                                            <span class="nk-menu-text">Crypto Dashboard</span>
-                                        </a>
-                                    </li><!-- .nk-menu-item -->
-                                    <li class="nk-menu-item">
-                                        <a href="html/index-analytics.html" class="nk-menu-link">
-                                            <span class="nk-menu-text">Analytics Dashboard</span>
-                                        </a>
-                                    </li><!-- .nk-menu-item -->
-                                    <li class="nk-menu-heading">
-                                        <h6 class="overline-title text-primary">Use-Case Concept</h6>
-                                    </li><!-- .nk-menu-item -->
-                                    <li class="nk-menu-item">
-                                        <a href="html/invest/index.html" class="nk-menu-link" target="_blank">
-                                            <span class="nk-menu-text">Investment Panel</span>
-                                            <span class="nk-menu-badge">HOT</span>
-                                        </a>
-                                    </li><!-- .nk-menu-item -->
-                                </ul><!-- .nk-menu-sub -->
+
                             </li><!-- .nk-menu-item -->
                             <li class="nk-menu-item has-sub">
-                                <a href="#" class="nk-menu-link nk-menu-toggle">
-                                    <span class="nk-menu-text" style="font-weight: bolder; font-size: larger">عروض العمل</span>
+                                <a href="#" class="nk-menu-link">
+                                    <span class="nk-menu-text" style="font-weight: bolder; font-size: 19px;">عروض العمل</span>
                                 </a>
-                                <ul class="nk-menu-sub">
-                                    <li class="nk-menu-item">
-                                        <a href="html/apps-messages.html" class="nk-menu-link"><span class="nk-menu-text">Messages</span></a>
-                                    </li>
-                                    <li class="nk-menu-item">
-                                        <a href="html/apps-inbox.html" class="nk-menu-link"><span class="nk-menu-text">Inbox / Mail</span></a>
-                                    </li>
-                                    <li class="nk-menu-item">
-                                        <a href="html/apps-file-manager.html" class="nk-menu-link"><span class="nk-menu-text">File Manager</span></a>
-                                    </li>
-                                    <li class="nk-menu-item">
-                                        <a href="html/apps-chats.html" class="nk-menu-link"><span class="nk-menu-text">Chats / Messenger</span></a>
-                                    </li>
-                                    <li class="nk-menu-item">
-                                        <a href="html/apps-calendar.html" class="nk-menu-link"><span class="nk-menu-text">Calendar</span></a>
-                                    </li>
-                                    <li class="nk-menu-item">
-                                        <a href="html/apps-kanban.html" class="nk-menu-link"><span class="nk-menu-text">Kanban Board</span></a>
-                                    </li>
-                                </ul><!-- .nk-menu-sub -->
+
                             </li><!-- .nk-menu-item -->
                         </ul><!-- .nk-menu -->
                     </div><!-- .nk-header-menu -->
@@ -369,7 +328,7 @@
                         <div class="nk-block-head nk-block-head-sm" style="direction : rtl">
                             <div class="nk-block-between">
                                 <div class="nk-block-head-content">
-                                    <h3 class="nk-block-title page-title">لوحة الإعدادات</h3>
+                                    <h3 class="nk-block-title page-title">لوحة التحكم</h3>
                                     <div class="nk-block-des text-soft">
 
                                     </div>
@@ -385,7 +344,7 @@
                                         <div class="card-inner">
                                             <div class="card-title-group align-start mb-0">
                                                 <div class="card-title">
-                                                    <h6 class="subtitle">Total Deposit</h6>
+                                                    <h6 class="subtitle">عدد الدروس المتوفرة</h6>
                                                 </div>
                                                 <div class="card-tools">
                                                     <em class="card-hint icon ni ni-help-fill" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Total Deposited" aria-label="Total Deposited"></em>
@@ -485,11 +444,11 @@
                                     <div class="card card-bordered card-full">
                                         <div class="card-inner">
 
-                                            <div class="nk-block-head">
+                                            <div style="text-align: right;" class="nk-block-head">
                                                 <div class="nk-block-head-content">
-                                                    <h4 class="nk-block-title">Data Table</h4>
+                                                    <h4 class="nk-block-title">الدروس المتوفرة في الحساب </h4>
                                                     <div class="nk-block-des">
-                                                        <p>Using the most basic table markup, here’s how <code class="code-class">.table</code> based tables look by default.</p>
+                                                        <p>مرحبا بك في لوحة التحكم الخاصة بالدروس المتوفرة في المنصة</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -508,7 +467,17 @@
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                            <td>Tiger Nixon</td>
+                                                            <td>
+                                                                <div class="nk-activity-item">
+                                                                <div style="margin-left: 6px;" class="nk-activity-media user-avatar bg-success">
+                                                                    <img src="./images/avatar/c-sm.jpg" alt="" />
+                                                                </div>
+                                                                <div class="nk-activity-data">
+                                                                    <div class="label">Keith Jensen requested to Widthdrawl.</div>
+
+                                                                </div>
+                                                                </div>
+                                                            </td>
                                                             <td>System Architect</td>
                                                             <td>Edinburgh</td>
                                                             <td>61</td>
@@ -527,59 +496,7 @@
                                     </div>
                                 </div><!-- .col -->
 
-                                <div class="col-md-12 col-xxl-12">
-                                    <div class="card card-bordered card-full">
-                                        <div class="card-inner border-bottom">
-                                            <div class="card-title-group">
-                                                <div class="card-title">
-                                                    <h6 class="title">Recent Activities</h6>
-                                                </div>
-                                                <div class="card-tools">
-                                                    <ul class="card-tools-nav">
 
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <ul class="nk-activity">
-                                            <li class="nk-activity-item">
-                                                <div class="nk-activity-media user-avatar bg-success"><img src="./images/avatar/c-sm.jpg" alt=""></div>
-                                                <div class="nk-activity-data">
-                                                    <div class="label">Keith Jensen requested to Widthdrawl.</div>
-                                                    <span class="time">2 hours ago</span>
-                                                </div>
-                                            </li>
-                                            <li class="nk-activity-item">
-                                                <div class="nk-activity-media user-avatar bg-warning">HS</div>
-                                                <div class="nk-activity-data">
-                                                    <div class="label">Harry Simpson placed a Order.</div>
-                                                    <span class="time">2 hours ago</span>
-                                                </div>
-                                            </li>
-                                            <li class="nk-activity-item">
-                                                <div class="nk-activity-media user-avatar bg-azure">SM</div>
-                                                <div class="nk-activity-data">
-                                                    <div class="label">Stephanie Marshall got a huge bonus.</div>
-                                                    <span class="time">2 hours ago</span>
-                                                </div>
-                                            </li>
-                                            <li class="nk-activity-item">
-                                                <div class="nk-activity-media user-avatar bg-purple"><img src="./images/avatar/d-sm.jpg" alt=""></div>
-                                                <div class="nk-activity-data">
-                                                    <div class="label">Nicholas Carr deposited funds.</div>
-                                                    <span class="time">2 hours ago</span>
-                                                </div>
-                                            </li>
-                                            <li class="nk-activity-item">
-                                                <div class="nk-activity-media user-avatar bg-pink">TM</div>
-                                                <div class="nk-activity-data">
-                                                    <div class="label">Timothy Moreno placed a Order.</div>
-                                                    <span class="time">2 hours ago</span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div><!-- .card -->
-                                </div><!-- .col -->
 
                             </div>
                         </div>

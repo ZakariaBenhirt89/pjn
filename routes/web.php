@@ -121,10 +121,11 @@ Route::group( [ 'prefix' => 'dashboard/' ,'middleware'=>'auth'], function(){
         Route::get('/student/create', 'App\Http\Controllers\admin\StudentController@create')->name('student.create');
         Route::post('/student/store', 'App\Http\Controllers\admin\StudentController@store')->name('student.store');
         /*end student*/
-        /*start video*/
+        /* start video */
         Route::get('/videos/', 'App\Http\Controllers\admin\VideoController@index')->name('videos.index');
         Route::get('/videos/create', 'App\Http\Controllers\admin\VideoController@create')->name('videos.create');
         Route::post('/videos/store', 'App\Http\Controllers\admin\VideoController@store')->name('videos.store');
+        Route::post('/videos/stock', 'App\Http\Controllers\admin\VideoController@stock')->name('videos.stock');
         /*end video*/
         /*start audios*/
         Route::get('/audios/', 'App\Http\Controllers\admin\AudioController@index')->name('audios.index');

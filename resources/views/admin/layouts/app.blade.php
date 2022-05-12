@@ -153,6 +153,9 @@
             border-color: #06933e;
         }
     </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
 </head>
 
 <body class="nk-body bg-lighter npc-default has-sidebar ">
@@ -479,6 +482,8 @@
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.css" rel="stylesheet" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.js"></script>
+
+<script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
 <script src="{{asset('js/app.js')}}" defer></script>
 @yield('scripts')
 </body>

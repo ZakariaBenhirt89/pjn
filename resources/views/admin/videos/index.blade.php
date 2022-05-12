@@ -27,7 +27,6 @@
                                         <div class="nk-block-head-content">
                                             <h2 class="nk-block-title fw-normal"><i style="top: -9px;position: relative;" class="bi bi-camera-reels"></i> Tous Les Video</h2>
                                             <div class="nk-block-des">
-                                                <p class="lead">Form is most esential part of your project. We styled out nicely so you can build your form so quickly.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -65,7 +64,7 @@
                                 <div class="nk-block-head-xs">
                                     <div class="nk-block-between g-2">
                                         <div class="nk-block-head-content">
-                                            <h6 class="nk-block-title title">Browse Files</h6>
+                                            <h4 class="nk-block-title title">Tous les videos</h4>
                                         </div>
                                         <div class="nk-block-head-content">
                                             <ul class="nk-block-tools g-3 nav">
@@ -82,67 +81,51 @@
                                             <div class="nk-files-head">
                                                 <div class="nk-file-item">
                                                     <div class="nk-file-info">
-                                                        <div class="dropdown">
-                                                            <div class="tb-head dropdown-toggle dropdown-indicator-caret" data-toggle="dropdown">Last Opened</div>
-                                                            <div class="dropdown-menu dropdown-menu-xs">
-                                                                <ul class="link-list-opt no-bdr">
-                                                                    <li><a class="active" href="#"><span>Last Opened</span></a></li>
-                                                                    <li><a href="#"><span>Name</span></a></li>
-                                                                    <li><a href="#"><span>Size</span></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
                                                     </div>
 
                                                 </div>
                                             </div>
-                                            <div class="nk-files-list">
-                                                <div class="nk-file-item nk-file">
-                                                    <div class="nk-file-info">
-                                                        <div class="nk-file-title">
-                                                            <div class="nk-file-icon">
-                                                                <a class="nk-file-icon-link" href="#">
-                                                                    <span class="nk-file-icon-type">
-                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
-                                                                                    <path d="M49,61H23a5.0147,5.0147,0,0,1-5-5V16a5.0147,5.0147,0,0,1,5-5H40.9091L54,22.1111V56A5.0147,5.0147,0,0,1,49,61Z" style="fill:#e3edfc"></path>
-                                                                                    <path d="M54,22.1111H44.1818a3.3034,3.3034,0,0,1-3.2727-3.3333V11s1.8409.2083,6.9545,4.5833C52.8409,20.0972,54,22.1111,54,22.1111Z" style="fill:#b7d0ea"></path>
-                                                                                    <path d="M19.03,59A4.9835,4.9835,0,0,0,23,61H49a4.9835,4.9835,0,0,0,3.97-2Z" style="fill:#c4dbf2"></path>
-                                                                                    <path d="M46,46.5v-13A3.5042,3.5042,0,0,0,42.5,30h-13A3.5042,3.5042,0,0,0,26,33.5v13A3.5042,3.5042,0,0,0,29.5,50h13A3.5042,3.5042,0,0,0,46,46.5ZM40,45v3H37V45Zm-3-2V37h7v6Zm0-8V32h3v3Zm-2-3v3H32V32Zm0,5v6H28V37Zm0,8v3H32V45Zm7.5,3H42V45h2v1.5A1.5016,1.5016,0,0,1,42.5,48ZM44,33.5V35H42V32h.5A1.5016,1.5016,0,0,1,44,33.5ZM29.5,32H30v3H28V33.5A1.5016,1.5016,0,0,1,29.5,32ZM28,46.5V45h2v3h-.5A1.5016,1.5016,0,0,1,28,46.5Z" style="fill:#f74141"></path>
-                                                                                </svg>
-                                                                            </span>
+                                            <div class="nk-block-head nk-block-head-sm">
+                                                <div class="nk-block-between">
 
-                                                                </a>
-                                                            </div>
-                                                            <div class="nk-file-name">
-                                                                <div class="nk-file-name-text">
-                                                                    <a href="#" class="title">UI Design</a>
-                                                                    <div class="asterisk"><a href="#"><em class="asterisk-off icon ni ni-star"></em><em class="asterisk-on icon ni ni-star-fill"></em></a></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <ul class="nk-file-desc">
-                                                            <li class="date">Today</li>
-                                                            <li class="size">4.5 MB</li>
-                                                            <li class="members">3 Members</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="nk-file-actions">
-                                                        <div class="dropdown">
-                                                            <a href="" class="dropdown-toggle btn btn-sm btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
-                                                            <div class="dropdown-menu dropdown-menu-right">
-                                                                <ul class="link-list-plain no-bdr">
-                                                                    <li><a href="#file-details" data-toggle="modal"><em class="icon ni ni-eye"></em><span>Details</span></a></li>
 
-                                                                    <li><a href="#" class="file-dl-toast"><em class="icon ni ni-download"></em><span>Download</span></a></li>
-
-                                                                    <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div><!-- .nk-file -->
-
+                                                </div><!-- .nk-block-between -->
                                             </div>
+                                            @if( count($data) > 0 )
+                                                <div class="nk-tb-list">
+                                                    <div class="nk-tb-item nk-tb-head">
+                                                        <div class="nk-tb-col tb-col-sm font-weight-bold"><h6>Titre de la vidéo</h6></div>
+                                                        <div class="nk-tb-col font-weight-bold"><h6>Module</h6></div>
+                                                        <div class="nk-tb-col font-weight-bold"><h6>Cours</h6></div>
+                                                        <div class="nk-tb-col font-weight-bold"><h6>Catégories</h6></div>
+                                                    </div><!-- .nk-tb-item -->
+                                                    @foreach( $data as $d)
+                                                        <div class="nk-tb-item vid" data-url="{{ $d["url"] }}">
+                                                            <div class="nk-tb-col tb-col-sm">
+                                                            <span class="tb-product">
+                                                                {{ $d["video"] }}
+                                                            </span>
+                                                            </div>
+                                                            <div class="nk-tb-col">
+                                                                <span class="tb-sub">
+                                                                    {{ $d["module"] }}
+                                                                </span>
+                                                            </div>
+                                                            <div class="nk-tb-col">
+                                                                <span class="tb-lead">
+                                                                    {{ $d["course"] }}
+                                                                </span>
+                                                            </div>
+                                                            <div class="nk-tb-col">
+                                                                <span class="tb-sub">
+                                                                    {{ $d["cat"] }}
+                                                                </span>
+                                                            </div>
+                                                        </div><!-- .nk-tb-item -->
+                                                @endforeach
+                                                <!-- .nk-tb-item -->
+                                                </div>
+                                            @endif
                                         </div><!-- .nk-files -->
                                     </div><!-- .tab-pane -->
                                     <div class="tab-pane" id="file-group-view">
@@ -150,16 +133,7 @@
                                             <div class="nk-files-head">
                                                 <div class="nk-file-item">
                                                     <div class="nk-file-info">
-                                                        <div class="dropdown">
-                                                            <div class="tb-head dropdown-toggle dropdown-indicator-caret" data-toggle="dropdown">Last Opened</div>
-                                                            <div class="dropdown-menu dropdown-menu-xs">
-                                                                <ul class="link-list-opt no-bdr">
-                                                                    <li><a class="active" href="#"><span>Last Opened</span></a></li>
-                                                                    <li><a href="#"><span>Name</span></a></li>
-                                                                    <li><a href="#"><span>Size</span></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
+
                                                     </div>
 
                                                 </div>
@@ -316,4 +290,34 @@
             </div>
         </div>
     </div>
+    <!-- Modal Content Code -->
+    <div class="modal fade" tabindex="-1" id="modalDefault">
+        <div class="modal-dialog w-75" role="document">
+            <div class="modal-content">
+                <a  class="close" data-bs-dismiss="modal" aria-label="Close" id="closeModal">
+                    <em class="icon ni ni-cross"></em>
+                </a>
+                <div class="modal-header">
+                    <h5 class="modal-title">Video</h5>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer bg-light">
+                    <video
+                        id="my-video"
+                        class="video-js vjs-big-play-centered"
+                        controls
+                        preload="auto"
+                        width="640"
+                        height="264"
+                        data-setup="{}"
+                    >
+
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 @endsection
