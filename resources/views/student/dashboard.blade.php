@@ -49,13 +49,13 @@
         }
 
         .border-gradient-red {
-            border-image-source: linear-gradient(to left, #e50b24, #f37d7d);
+            border-image-source: linear-gradient(to left, #e52a2e, #e52a2e);
         }
         .border-gradient-blue {
-            border-image-source: linear-gradient(to left, #134cd7, #1282bd);
+            border-image-source: linear-gradient(to left, #00afe2, #00afe2);
         }
         .border-gradient-yellow {
-            border-image-source: linear-gradient(to left, #e8ff18, #c7c78c);
+            border-image-source: linear-gradient(to left, #fcc400, #fcc400);
         }
         .border-gradient-green {
             border-image-source: linear-gradient(to left, #06933e, #c7c78c );
@@ -339,7 +339,10 @@
             <div class="container-xl wide-xl">
                 <div class="nk-content-inner">
                     <div class="nk-content-body">
+
+
                         <div class="nk-block-head nk-block-head-sm" style="direction : rtl">
+
                             <div class="nk-block-between">
                                 <div class="nk-block-head-content">
                                     <h3 class="nk-block-title page-title arab">لوحة التحكم</h3>
@@ -348,18 +351,19 @@
                                     </div>
                                 </div><!-- .nk-block-head-content -->
                                 <div class="nk-block-head-content">
+
                                 </div><!-- .nk-block-head-content -->
                             </div><!-- .nk-block-between -->
                         </div><!-- .nk-block-head -->
                         <div class="nk-block">
                             <div class="row g-gs">
                                 <div class="col-md-4">
-                                    <div style="background-color: antiquewhite;" class="card card-bordered card-full border-gradient border-gradient-red">
+                                    <div  class="card card-bordered card-full border-gradient border-gradient-red">
                                         <div class="card-inner">
                                             <div style="text-align: right;" class="card-title-group align-start mb-0">
                                                 <div class="card-title">
-                                                    <h6 class="subtitle arab">عدد الدروس المتوفرة</h6>
-                                                    <span style="font-size: 18px;font-weight: bold;color:#364a63;" class="amount arab">36</span>
+                                                    <h6 style="color: #364a63;" class="subtitle arab">عدد الدروس المتوفرة</h6>
+                                                    <span style="font-size: 54px;font-weight: bold;color:#364a63;" class="amount arab">36</span>
                                                 </div>
                                                 <div style="width:30%;" class="card-tools">
                                                     <img style="width: 100%;" src="{{ asset('student_assets/images/online_learning.png') }}" />
@@ -375,32 +379,15 @@
                                         <div class="card-inner">
                                             <div style="text-align: right;" class="card-title-group align-start mb-0">
                                                 <div class="card-title">
-                                                    <h6 class="subtitle arab">عدد عروض العمل</h6>
+                                                    <h6 style="color: #364a63;" class="subtitle arab">عدد عروض العمل</h6>
+                                                    <span style="font-size: 54px;color: #364a63;font-weight: bold;color:#364a63;" class="amount arab">36</span>
                                                 </div>
                                                 <div style="width:30%;" class="card-tools">
-                                                    <em class="card-hint icon ni ni-help-fill" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Total Withdraw" aria-label="Total Withdraw"></em>
+                                                    <img src="{{ asset('student_assets/images/briefcase.png') }}" />
                                                 </div>
                                             </div>
-                                            <div class="card-amount">
-                                                    <span class="amount"> 49,595.34 <span class="currency currency-usd">USD</span>
-                                                    </span>
-                                                <span class="change down text-danger"><em class="icon ni ni-arrow-long-down"></em>1.93%</span>
-                                            </div>
-                                            <div class="invest-data">
-                                                <div class="invest-data-amount g-2">
-                                                    <div class="invest-data-history">
-                                                        <div class="title">This Month</div>
-                                                        <div class="amount">2,940.59 <span class="currency currency-usd">USD</span></div>
-                                                    </div>
-                                                    <div class="invest-data-history">
-                                                        <div class="title">This Week</div>
-                                                        <div class="amount">1,259.28 <span class="currency currency-usd">USD</span></div>
-                                                    </div>
-                                                </div>
-                                                <div class="invest-data-ck"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
-                                                    <canvas class="iv-data-chart chartjs-render-monitor" id="totalWithdraw" width="92" height="48" style="display: block; width: 92px; height: 48px;"></canvas>
-                                                </div>
-                                            </div>
+
+
                                         </div>
                                     </div><!-- .card -->
                                 </div><!-- .col -->
@@ -410,30 +397,47 @@
                                             <div class="card-title-group align-start mb-0">
                                                 <div class="card-title">
                                                     <h6 class="subtitle">الدروس التي تمت مشاهدتها</h6>
+                                                    <span style="font-size: 54px;color: #364a63;font-weight: bold;color:#364a63;" class="amount arab">36</span>
                                                 </div>
-                                                <div class="card-tools">
-                                                    <em class="card-hint icon ni ni-help-fill" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Total Balance in Account" aria-label="Total Balance in Account"></em>
+                                                <div style="width:30%;" class="card-tools">
+                                                    <img src="{{ asset('student_assets/images/agreement.png') }}" />
                                                 </div>
                                             </div>
-                                            <div class="card-amount">
-                                                    <span class="amount"> 79,358.50 <span class="currency currency-usd">USD</span>
-                                                    </span>
-                                            </div>
-                                            <div class="invest-data">
-                                                <div class="invest-data-amount g-2">
-                                                    <div class="invest-data-history">
-                                                        <div class="title">This Month</div>
-                                                        <div class="amount">44</div>
-                                                    </div>
 
-                                                </div>
-                                                <div class="invest-data-ck"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
-                                                    <canvas class="iv-data-chart chartjs-render-monitor" id="totalBalance" width="92" height="48" style="display: block; width: 92px; height: 48px;"></canvas>
-                                                </div>
-                                            </div>
+
                                         </div>
                                     </div><!-- .card -->
                                 </div><!-- .col -->
+
+                                <div class="col-lg-12">
+                                    <div class="card card-bordered h-100">
+                                        <div class="card-inner mb-n2">
+                                            <div class="card-title-group">
+                                                <div style="padding-right: 30px;" class="card-title card-title-sm">
+                                                    <h6 style="font-size: larger !important;" class="title arab">معلومات عن المستخدم</h6>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="nk-tb-list is-loose">
+                                            <div class="nk-tb-item nk-tb-head">
+                                                <div style="font-size: 15px;font-weight: bold;" class="nk-tb-col arab"><span>الاسم و نسب</span></div>
+                                                <div class="nk-tb-col text-right"><span>Users</span></div>
+                                                <div style="font-size: 15px;font-weight: bold;" class="nk-tb-col"><span>السن</span></div>
+                                                <div class="nk-tb-col text-right"><span>Users</span></div>
+                                                <div style="font-size: 15px;font-weight: bold;" class="nk-tb-col"><span>بريد الالكتروني</span></div>
+                                                <div class="nk-tb-col tb-col-sm text-right"><span>Bounce Rate</span></div>
+                                                <div style="font-size: 15px;font-weight: bold;" class="nk-tb-col"><span>عنوان</span></div>
+                                                <div class="nk-tb-col tb-col-sm text-right"><span>Bounce Rate</span></div>
+                                                <div style="font-size: 15px;font-weight: bold;" class="nk-tb-col"><span>الهاتف</span></div>
+                                                <div class="nk-tb-col tb-col-sm text-right"><span>Bounce Rate</span></div>
+                                                <div style="font-size: 15px;font-weight: bold;" class="nk-tb-col"><span>تاريخ الميلاد</span></div>
+                                                <div class="nk-tb-col tb-col-sm text-right"><span>Bounce Rate</span></div>
+                                            </div><!-- .nk-tb-head -->
+
+                                        </div><!-- .nk-tb-list -->
+                                    </div><!-- .card -->
+                                </div>
                                 <div class="col-md-12 col-xxl-12">
                                     <div class="card card-bordered card-full">
                                         <div class="card-inner">
