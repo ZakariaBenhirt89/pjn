@@ -151,6 +151,9 @@
                                 <a href="{{ route('ConcourIdee.index') }}" class="nk-menu-link" data-original-title="" title=""><span class="nk-menu-text">Tous les Concours D'idées</span></a>
                             </li>
                             <li class="nk-menu-item">
+                                <a href="{{ route('ConcourIdee.poster.index') }}" class="nk-menu-link" data-original-title="" title=""><span class="nk-menu-text">Tous les postilation</span></a>
+                            </li>
+                            <li class="nk-menu-item">
                                 <a href="{{ route('ConcourIdee.create') }}" class="nk-menu-link" data-original-title="" title=""><span class="nk-menu-text">Ajouter  Concours D'ideé</span></a>
                             </li>
                         </ul><!-- .nk-menu-sub -->
@@ -162,20 +165,6 @@
                     <li class="nk-menu-item has-sub">
                         <a href="#" class="nk-menu-link nk-menu-toggle" data-original-title="" title="">
                             <span class="nk-menu-icon"><em  class="fs-20px bi bi-bounding-box"></em></span>
-                            <span class="nk-menu-text">Carriére</span>
-                        </a>
-                        <ul class="nk-menu-sub" style="display: none;">
-                            <li class="nk-menu-item">
-                                <a href="{{ route('carriere.index') }}" class="nk-menu-link" data-original-title="" title=""><span class="nk-menu-text">Tous les Carriére</span></a>
-                            </li>
-                            <li class="nk-menu-item">
-                                <a href="{{ route('carriere.create') }}" class="nk-menu-link" data-original-title="" title=""><span class="nk-menu-text">Ajouter Un Carriére</span></a>
-                            </li>
-                        </ul><!-- .nk-menu-sub -->
-                    </li>
-                    <li class="nk-menu-item has-sub">
-                        <a href="#" class="nk-menu-link nk-menu-toggle" data-original-title="" title="">
-                            <span class="nk-menu-icon"><em  class="fs-20px bi bi-bounding-box"></em></span>
                             <span class="nk-menu-text">Recrutement</span>
                         </a>
                         <ul class="nk-menu-sub" style="display: none;">
@@ -183,7 +172,21 @@
                                 <a href="{{ route('carriere.index') }}" class="nk-menu-link" data-original-title="" title=""><span class="nk-menu-text">Tous les Recrutements</span></a>
                             </li>
                             <li class="nk-menu-item">
-                                <a href="{{ route('carriere.create') }}" class="nk-menu-link" data-original-title="" title=""><span class="nk-menu-text">Ajouter Un Recrutement</span></a>
+                                <a href="{{ route('carriere.create') }}" class="nk-menu-link" data-original-title="" title=""><span class="nk-menu-text">Ajouter Un Recrutements</span></a>
+                            </li>
+                        </ul><!-- .nk-menu-sub -->
+                    </li>
+                    <li class="nk-menu-item has-sub">
+                        <a href="#" class="nk-menu-link nk-menu-toggle" data-original-title="" title="">
+                            <span class="nk-menu-icon"><em  class="fs-20px bi bi-bounding-box"></em></span>
+                            <span class="nk-menu-text">Carriére</span>
+                        </a>
+                        <ul class="nk-menu-sub" style="display: none;">
+                            <li class="nk-menu-item">
+                                <a href="{{ route('recrutement.index') }}" class="nk-menu-link" data-original-title="" title=""><span class="nk-menu-text">Tous les Carriéres</span></a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="{{ route('recrutement.create') }}" class="nk-menu-link" data-original-title="" title=""><span class="nk-menu-text">Ajouter Un Carriére</span></a>
                             </li>
                         </ul><!-- .nk-menu-sub -->
                     </li>

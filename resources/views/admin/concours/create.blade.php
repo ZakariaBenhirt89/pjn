@@ -92,6 +92,16 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
+                                                        <label class="form-label">Date de Limite</label>
+                                                        <div class="form-control-wrap">
+
+                                                            <input type="text" class="form-control date-picker" name="limite_date" autocomplete="off" data-date-format="yyyy-mm-dd">
+                                                        </div>
+                                                        <div class="form-note">Date format <code>yyyy-mm-dd</code></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
                                                         <label class="form-label" for="fw-last-name">Email :</label>
                                                         <div class="form-control-wrap">
 

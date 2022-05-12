@@ -21,6 +21,28 @@ Route::get('/actualite/', 'App\Http\Controllers\landing_page\LandingController@A
 Route::get('/recrutement/', 'App\Http\Controllers\landing_page\LandingController@Allcarriere')->name('all_recrutement');
 Route::get('/recrutement/{id}', 'App\Http\Controllers\landing_page\LandingController@singleCarriere')->name('single.carriere');
 
+Route::get('/axe-entrepreneuriat/', 'App\Http\Controllers\landing_page\LandingController@axe_entrepreneuriat')->name('axe-entrepreneuriat');
+Route::get('/single-entrepreneuriat/{id}', 'App\Http\Controllers\landing_page\LandingController@SingleEntrepreneuriat')->name('axe-entrepreneuriat-single');
+
+Route::get('/single-concours/{id}', 'App\Http\Controllers\landing_page\LandingController@SingleConcours')->name('concours-single');
+Route::get('/poster-concours/{id}', 'App\Http\Controllers\landing_page\LandingController@PostConcours')->name('concours-poster');
+
+Route::post('/ajouter_commentaire/', 'App\Http\Controllers\landing_page\LandingController@storeComment')->name('comments.store');
+
+
+Route::get('/axe-employabilite/', 'App\Http\Controllers\landing_page\LandingController@getemployabilite')->name('axe_employabilite');
+
+
+Route::post('/poster-concours-store/', 'App\Http\Controllers\landing_page\LandingController@poster_concours_store')->name('poster.concours.store');
+
+
+
+
+
+
+
+Route::get('/single_cours/', 'App\Http\Controllers\landing_page\LandingController@single_cours')->name('single_cours');
+
 /*end actualite*/
 
 
@@ -28,13 +50,9 @@ Route::get('/axe-gestion', function () {
     return view('landing_page.axe_gestion');
 })->name('axe_gestion');
 
-Route::get('/axe-employabilite', function () {
-    return view('landing_page.axe_employabilite');
-})->name('axe_employabilite');
 
-Route::get('/axe-entrepreneuriat', function () {
-    return view('landing_page.axe_entrepreneuriat');
-})->name('axe-entrepreneuriat');
+
+
 
 Route::get('/indh', function () {
     return view('landing_page.indh');
@@ -73,12 +91,20 @@ Route::group( [ 'prefix' => 'dashboard/' ,'middleware'=>'auth'], function(){
         Route::get('/Pre-Inscription/complete/{id}', 'App\Http\Controllers\admin\AdminController@complete')->name('pre-inscription.complete');
         Route::post('/Pre-Inscription/complete/store/{id}', 'App\Http\Controllers\admin\AdminController@completeStore')->name('pre-inscription.complete.store');
         /*end pre-regestration*/
-        /*start carrire*/
-          Route::get('/carriere', 'App\Http\Controllers\admin\CarriereController@index')->name('carriere.index');
-          Route::get('/carriere/create', 'App\Http\Controllers\admin\CarriereController@create')->name('carriere.create');
-          Route::get('/carriere/edit/{id}', 'App\Http\Controllers\admin\CarriereController@edit')->name('carriere.edit');
-          Route::post('/carriere/update/{id}', 'App\Http\Controllers\admin\CarriereController@update')->name('carriere.update');
-          Route::post('/carriere/store', 'App\Http\Controllers\admin\CarriereController@store')->name('carriere.store');
+        /*start recrutement*/
+          Route::get('/recrutement', 'App\Http\Controllers\admin\CarriereController@index')->name('carriere.index');
+          Route::get('/recrutement/create', 'App\Http\Controllers\admin\CarriereController@create')->name('carriere.create');
+          Route::get('/recrutement/edit/{id}', 'App\Http\Controllers\admin\CarriereController@edit')->name('carriere.edit');
+          Route::post('/recrutement/update/{id}', 'App\Http\Controllers\admin\CarriereController@update')->name('carriere.update');
+          Route::post('/recrutement/store', 'App\Http\Controllers\admin\CarriereController@store')->name('carriere.store');
+        /*end carrire*/
+
+        /*start Carriere*/
+          Route::get('/carriere', 'App\Http\Controllers\admin\recrutementController@index')->name('recrutement.index');
+          Route::get('/carriere/create', 'App\Http\Controllers\admin\recrutementController@create')->name('recrutement.create');
+          Route::get('/carriere/edit/{id}', 'App\Http\Controllers\admin\recrutementController@edit')->name('recrutement.edit');
+          Route::post('/carriere/update/{id}', 'App\Http\Controllers\admin\recrutementController@update')->name('recrutement.update');
+          Route::post('/carriere/store', 'App\Http\Controllers\admin\recrutementController@store')->name('recrutement.store');
         /*end carrire*/
         /*start Recrutement*/
 
@@ -129,7 +155,15 @@ Route::group( [ 'prefix' => 'dashboard/' ,'middleware'=>'auth'], function(){
         Route::get('/ConcourIdee/', 'App\Http\Controllers\admin\ConcourIdeeController@index')->name('ConcourIdee.index');
         Route::get('/ConcourIdee/create', 'App\Http\Controllers\admin\ConcourIdeeController@create')->name('ConcourIdee.create');
         Route::post('/ConcourIdee/store', 'App\Http\Controllers\admin\ConcourIdeeController@store')->name('ConcourIdee.store');
+        Route::get('/ConcourIdee/poster', 'App\Http\Controllers\admin\ConcourIdeeController@all_posts')->name('ConcourIdee.poster.index');
+        Route::get('/ConcourIdee/poster/edit/{id}', 'App\Http\Controllers\admin\ConcourIdeeController@singlePost')->name('post.edit');
+        Route::post('/ConcourIdee/poster/completer/{id}', 'App\Http\Controllers\admin\ConcourIdeeController@completerPost')->name('ConcourIdee.poster.complete');
+        Route::get('/ConcourIdee/poster/rejeter/{id}', 'App\Http\Controllers\admin\ConcourIdeeController@rejeterPost')->name('ConcourIdee.poster.rejeter');
         /*end concours idéee*/
+
+
+
+
     });
 
 

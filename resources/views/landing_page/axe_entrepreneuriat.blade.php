@@ -7,11 +7,11 @@
     </div>
     <div class="container">
         <div style="max-width:none;" class="header-page-content">
-            <h1 @if( app()->getLocale() == 'ar' ) class="arab" @endif>{{ trans('messages.Axe_Entrepreneuriat') }}</h1>
+            <h1 @if( app()->getLocale() == 'ar' ) class="arab" @endif>Axe appui à l&#39;entrepreneuriat des jeunes</h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a class="@if( app()->getLocale() == 'ar' ) arab @endif" style="color: #06933e;" href="#">{{ trans('messages.accueil') }}</a></li>
-                    <li class="breadcrumb-item active @if( app()->getLocale() == 'ar' ) arab @endif" aria-current="page">{{ trans('messages.Axe_Entrepreneuriat') }}</li>
+                    <li class="breadcrumb-item active @if( app()->getLocale() == 'ar' ) arab @endif" aria-current="page">Axe appui à l&#39;entrepreneuriat des jeunes</li>
                 </ol>
             </nav>
         </div>
@@ -27,16 +27,16 @@
                     <div style="padding-right: 30px;"  class="about-section-title section-title section-title-left section-title-shapeless position-relative">
                         <div class="overlay-text">
                             <h3 class="font-family-3">Axe
-                                <br/>Appui à <br/>
-                                l’Entrepr<br/>
+                                <br/>appui à <br/>
+                                l&#39;entrepr<br/>
                                 eneuriat<br/>
-                                des Jeunes</h3>
+                                des jeunes</h3>
                         </div>
-                        <h2><span style="color: #06933e;">Axe Appui à l’Entrepreneuriat des Jeunes</span></h2>
+                        <h2><span style="color: #06933e;">Axe appui à l&#39;entrepreneuriat des jeunes</span></h2>
                         <p style="text-align: justify;">L’appui à l’entrepreneuriat chez les jeunes vise à promouvoir et développer la culture de l’entrepreneuriat chez les jeunes et encourager les concours d’idées dans les secteurs porteurs et ce à travers :</p>
                         <p style="text-align: justify;">L’appui à la création d’une nouvelle génération de projets générateurs de revenu notamment des petites et très petites entreprises </p>
                         <p style="text-align: justify;">La mise en œuvre d’une offre d’appui couvrant de façon homogène et continue tout le processus d’appui à l’entrepreneuriat (appui pré et post création).</p>
-                        <p style="text-align: justify;">L’Amélioration de revenu vise à apporter un accompagnement au profit des porteurs de projets issus de l’analyse des chaines de valeur et des coopératives ainsi que les autres organisations professionnelles œuvrant dans le domaine de l’économie sociale et solidaire.</p>
+                        <p style="text-align: justify;">L’amélioration de revenu vise à apporter un accompagnement au profit des porteurs de projets issus de l’analyse des chaines de valeur et des coopératives ainsi que les autres organisations professionnelles œuvrant dans le domaine de l’économie sociale et solidaire.</p>
                         <p style="text-align: justify;">L’objectif consiste à développer les perspectives des activités économiques locales issues des résultats des analyses de chaines de valeurs à travers l’accompagnement des porteurs de projets, des structures existantes ayant un fort potentiel de croissance et créant des opportunités d’emploi pour les jeunes ou des structures nouvellement créées répondant aux critères de création de valeur.</p>
 
                     </div>
@@ -45,19 +45,12 @@
             </div>
             <div class="col-12 col-lg-5 pb-30 desk-plr-0 order-lg-1 pb-30">
                 <div class="text-center">
-                    <img style="width: 95%;" src="{{ asset('images/hrj.png') }}" alt="study">
+                    <img style="width: 95%;" src="{{ asset('images/logo_HD.jpg') }}" alt="study">
                 </div>
             </div>
         </div>
         <div style="padding-bottom: 25px;" class="about-section   position-relative overflow-hidden">
-            <div class="background-shapes">
-                <div class="background-shape-item">
-                    <img src="assets/images/shapes/curved-line.png" alt="line">
-                </div>
-                <div class="background-shape-item">
-                    <img src="assets/images/shapes/half-circle-shape.png" alt="line">
-                </div>
-            </div>
+
 
             <div class="container">
                 <div class="row">
@@ -79,7 +72,7 @@
     border-radius: 8px;"><span style="color: #fefefe;
     font-size: 28px;
     font-weight: bold;" class="">Appui Technique </span></h6>
-                                <p style="    color: white;">concerne d’apporter de l’aide lors de la création des coopératives ou TPMEs porteurs de projets à fort impact, ou la mobilisation d’une assistance technique pour la labélisation et la certification de qualité, et ce de concerte avec les départements ministériels concernés.</p>
+                                <p style="    color: white;">Concerne l’apport d’aide lors de la création des coopératives ou TPMEs porteurs de projets à fort impact, ou la mobilisation d’une assistance technique pour la labélisation et la certification de qualité, et ce de concerte avec les départements ministériels concernés.</p>
                             </div>
                         </div>
                     </div>
@@ -90,17 +83,17 @@
                             <div class="about-card-text">
                                 <h6 style="background: linear-gradient(90deg, rgba(246,3,3,1) 0%, rgb(255 76 65) 100%);
                                     padding: 8px;
-                                    border-radius: 8px;" "><span style="color: #fefefe;
+                                    border-radius: 8px;"><span style="color: #fefefe;
     font-size: 28px;
-    font-weight: bold;><span style="color: white;" class=""> Appui Financier</span></h6>
-                                <p style="color: white;">destinée à appuyer le processus d'exploitation des coopératives, GIE et TPMEs afin de les inciter à la création de l’emploi et de l’auto-emploi, en particulier pour les jeunes.<br/><br/></p>
+    font-weight: bold;"><span style="color: white;" class=""> Appui Financier</span></h6>
+                                <p style="color: white;">Destiné à appuyer le processus d'exploitation des coopératives, GIE et TPMEs afin de les inciter à la création de l’emploi et de l’auto-emploi, en particulier pour les jeunes.<br/><br/></p>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-12 col-lg-12">
                         <div style="max-width: 100% !important;" class="section-title mt-15">
-                            <h2><span>Axe de soutien aux projets générateurs de revenu </span>  </h2>
-                            <p>L’axe de soutien aux projets générateurs de revenu prévoit l’organisation d’un concours d’idée inspiré des Hackathons en substitution des appels à projets classiques. 14 Il s'agit en l'occurrence de mobiliser les jeunes dans un esprit de concours d’idées et de faire émerger des projets innovants qui répondent à des problématiques de développement local en relation avec les chaines de valeurs. Le concours d’idée concerne  </p>
+                            <h2><span>Axe de soutien aux projets générateurs de revenu </span>  </h2>
+                            <p>L’axe de soutien aux projets générateurs de revenu prévoit l’organisation d’un concours d’idées inspiré des Hackathons en substitution des appels à projets classiques. 14 (à enlever) Il s&#39;agit en l&#39;occurrence de mobiliser les jeunes dans un esprit de concours d’idées et de faire émerger des projets innovants qui répondent à des problématiques de développement local en relation avec les chaines de valeurs. Le concours d’idées concerne :</p>
                         </div>
 
                     </div>
@@ -302,76 +295,105 @@
                 <h2>Explore <span>How Can</span> I Help You</h2>
                 <p>We believe everyone has the capacity to be creative. Tuition is a place where people develop their own potential.</p>
             </div>
-            <div class="row">
+
 
 
 
                 <!--Carousel Gallery-->
-                <div class="carousel-gallery">
-                    <div class="swiper-container swiper-container-horizontal">
-                        <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-297.5px, 0px, 0px);">
-                            <div class="swiper-slide swiper-slide-prev" style="width: 277.5px; margin-right: 20px;">
-                                <a href="{{ asset('images/axe_entrepreneuriat/axe_entrepreneuriat1.jpg') }}" data-fancybox="gallery">
-                                    <div class="image" style="background-image: url({{ asset('images/axe_entrepreneuriat/axe_entrepreneuriat1.jpg') }})">
-                                        <div class="overlay">
-                                            <em class="mdi mdi-magnify-plus"></em>
-                                        </div>
-                                    </div>
-                                </a>
+                <div class="gallery-tab-details popup-gallery">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3 element-item photos campus pb-30" style="position: absolute; left: 0px; top: 0px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_entrepreneuriat/_Q7B0604.jpg') }}" alt="gallery">
+                                </div>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_entrepreneuriat/_Q7B0604.jpg') }}" title="Photos"><i class="flaticon-plus"></i></a>
+                                </div>
                             </div>
-                            <div class="swiper-slide swiper-slide-active" style="width: 277.5px; margin-right: 20px;">
-                                <a href="{{ asset('images/axe_entrepreneuriat/axe_entrepreneuriat2.jpg') }}" data-fancybox="gallery">
-                                    <div class="image" style="background-image: url({{ asset('images/axe_entrepreneuriat/axe_entrepreneuriat2.jpg') }})">
-                                        <div class="overlay">
-                                            <em class="mdi mdi-magnify-plus"></em>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>    <div class="swiper-slide swiper-slide-active" style="width: 277.5px; margin-right: 20px;">
-                                <a href="{{ asset('images/axe_entrepreneuriat/axe_entrepreneuriat2.jpg') }}" data-fancybox="gallery">
-                                    <div class="image" style="background-image: url({{ asset('images/axe_entrepreneuriat/axe_entrepreneuriat2.jpg') }})">
-                                        <div class="overlay">
-                                            <em class="mdi mdi-magnify-plus"></em>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>    <div class="swiper-slide swiper-slide-active" style="width: 277.5px; margin-right: 20px;">
-                                <a href="{{ asset('images/axe_entrepreneuriat/axe_entrepreneuriat2.jpg') }}" data-fancybox="gallery">
-                                    <div class="image" style="background-image: url({{ asset('images/axe_entrepreneuriat/axe_entrepreneuriat2.jpg') }})">
-                                        <div class="overlay">
-                                            <em class="mdi mdi-magnify-plus"></em>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>    <div class="swiper-slide swiper-slide-active" style="width: 277.5px; margin-right: 20px;">
-                                <a href="{{ asset('images/axe_entrepreneuriat/axe_entrepreneuriat2.jpg') }}" data-fancybox="gallery">
-                                    <div class="image" style="background-image: url({{ asset('images/axe_entrepreneuriat/axe_entrepreneuriat2.jpg') }})">
-                                        <div class="overlay">
-                                            <em class="mdi mdi-magnify-plus"></em>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>    <div class="swiper-slide swiper-slide-active" style="width: 277.5px; margin-right: 20px;">
-                                <a href="{{ asset('images/axe_entrepreneuriat/axe_entrepreneuriat2.jpg') }}" data-fancybox="gallery">
-                                    <div class="image" style="background-image: url({{ asset('images/axe_entrepreneuriat/axe_entrepreneuriat2.jpg') }})">
-                                        <div class="overlay">
-                                            <em class="mdi mdi-magnify-plus"></em>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>    <div class="swiper-slide swiper-slide-active" style="width: 277.5px; margin-right: 20px;">
-                                <a href="{{ asset('images/axe_entrepreneuriat/axe_entrepreneuriat2.jpg') }}" data-fancybox="gallery">
-                                    <div class="image" style="background-image: url({{ asset('images/axe_entrepreneuriat/axe_entrepreneuriat2.jpg') }})">
-                                        <div class="overlay">
-                                            <em class="mdi mdi-magnify-plus"></em>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
                         </div>
-                        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span></div>
-                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                        <div class="col-12 col-md-6 col-lg-3 element-item campus pb-30" style="position: absolute; left: 400px; top: 0px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_entrepreneuriat/_Q7B0605.jpg') }}" alt="gallery">
+                                </div>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_entrepreneuriat/_Q7B0605.jpg') }}" title="Campus"><i class="flaticon-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 element-item students photos pb-30" style="position: absolute; left: 800px; top: 0px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_entrepreneuriat/_Q7B0663.jpg') }}" alt="gallery">
+                                </div>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_entrepreneuriat/_Q7B0663.jpg') }}" title="Students"><i class="flaticon-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 element-item campus pb-30" style="position: absolute; left: 0px; top: 400px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_entrepreneuriat/_Q7B0715.jpg') }}" alt="gallery">
+                                </div>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_entrepreneuriat/_Q7B0715.jpg') }}" title="Campus"><i class="flaticon-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 element-item students pb-30" style="position: absolute; left: 400px; top: 400px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_entrepreneuriat/_Q7B0750.jpg') }}" alt="gallery">
+                                </div>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_entrepreneuriat/_Q7B0750.jpg') }}" title="Students"><i class="flaticon-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 element-item students pb-30" style="position: absolute; left: 400px; top: 400px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_entrepreneuriat/DSC02747.jpg') }}" alt="gallery">
+                                </div>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_entrepreneuriat/DSC02747.jpg') }}" title="Students"><i class="flaticon-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 element-item students pb-30" style="position: absolute; left: 400px; top: 400px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_entrepreneuriat/DSC02806.jpg') }}" alt="gallery">
+                                </div>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_entrepreneuriat/DSC02806.jpg') }}" title="Students"><i class="flaticon-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 element-item students pb-30" style="position: absolute; left: 400px; top: 400px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_entrepreneuriat/DSC02845.jpg') }}" alt="gallery">
+                                </div>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_entrepreneuriat/DSC02845.jpg') }}" title="Students"><i class="flaticon-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 element-item students pb-30" style="position: absolute; left: 400px; top: 400px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_entrepreneuriat/DSC02899.jpg') }}" alt="gallery">
+                                </div>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_entrepreneuriat/DSC02899.jpg') }}" title="Students"><i class="flaticon-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
                 <!--#Carousel Gallery-->
 
@@ -380,7 +402,6 @@
                 <!-- /.gallery-slider -->
 
 
-            </div>
         </div>
     </div>
 </section>
@@ -392,17 +413,19 @@
         </div>
 
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 pb-30">
+            @isset($concours)
+                @foreach($concours as $concour)
+                     <div class="col-12 col-md-6 col-lg-4 pb-30">
                 <div class="course-flat-card course-flat-card">
                     <div class="course-card-thumb">
-                        <a href="#"><img src="assets/images/events/event-course-1.jpg" alt="course"></a>
+                        <a href="{{ route('concours-single',$concour->id) }}"><img src="{{ asset('images/concours/'.$concour->photo) }}" alt="course"></a>
                     </div>
                     <div class="course-card-content">
                         <ul class="course-entry-list">
-                            <li><i class="flaticon-open-book"></i> Anapic</li>
-                            <li><i class="flaticon-man"></i> email@gmail.com</li>
+                            <li><i class="flaticon-open-book"></i> {{ $concour->{'lieu_'.app()->getLocale() }  }}</li>
+                            <li><i class="flaticon-man"></i>{{ $concour->email }}</li>
                         </ul>
-                        <h3>Le Lorem Ipsum est simplement du faux texte employé dans </h3>
+                        <h3 @if( app()->getLocale() == "fr" ) class="avenir"  @endif style="text-align: justify; ">{{ $concour->{'title_'.app()->getLocale() }  }} </h3>
                         <p style="    background: #f6fdff;
     padding: 8px;
     /* text-align: center; */
@@ -410,61 +433,15 @@
     font-weight: bold;
     border-radius: 8px;
     text-align: start;
-    padding-left: 24px;"><a style="color: #00afe2 !important;" href="#" class="redirect-link">Apprendre encore plus <i class="flaticon-right-arrow"></i></a></p>
+    padding-left: 24px;"><a style="color: #00afe2 !important;" href="{{ route('concours-single',$concour->id) }}" class="redirect-link">Apprendre encore plus <i class="flaticon-right-arrow"></i></a></p>
                     </div>
                     <ul class="course-filter-list">
-                        <li style="background-color: #e4332d !important;" class="course-filter course-filter-focus">Date Limite</li>
-                    </ul>
-                </div>
-            </div> <div class="col-12 col-md-6 col-lg-4 pb-30">
-                <div class="course-flat-card course-flat-card">
-                    <div class="course-card-thumb">
-                        <a href="#"><img src="assets/images/events/event-course-1.jpg" alt="course"></a>
-                    </div>
-                    <div class="course-card-content">
-                        <ul class="course-entry-list">
-                            <li><i class="flaticon-open-book"></i> Anapic</li>
-                            <li><i class="flaticon-man"></i> email@gmail.com</li>
-                        </ul>
-                        <h3>Le Lorem Ipsum est simplement du faux texte employé dans </h3>
-                        <p style="    background: #f6fdff;
-    padding: 8px;
-    /* text-align: center; */
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 8px;
-    text-align: start;
-    padding-left: 24px;"><a style="color: #00afe2 !important;" href="#" class="redirect-link">Apprendre encore plus <i class="flaticon-right-arrow"></i></a></p>
-                    </div>
-                    <ul class="course-filter-list">
-                        <li style="background-color: #e4332d !important;" class="course-filter course-filter-focus">Date Limite</li>
-                    </ul>
-                </div>
-            </div> <div class="col-12 col-md-6 col-lg-4 pb-30">
-                <div class="course-flat-card course-flat-card">
-                    <div class="course-card-thumb">
-                        <a href="#"><img src="assets/images/events/event-course-1.jpg" alt="course"></a>
-                    </div>
-                    <div class="course-card-content">
-                        <ul class="course-entry-list">
-                            <li><i class="flaticon-open-book"></i> Anapic</li>
-                            <li><i class="flaticon-man"></i> email@gmail.com</li>
-                        </ul>
-                        <h3>Le Lorem Ipsum est simplement du faux texte employé dans </h3>
-                        <p style="    background: #f6fdff;
-    padding: 8px;
-    /* text-align: center; */
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 8px;
-    text-align: start;
-    padding-left: 24px;"><a style="color: #00afe2 !important;" href="#" class="redirect-link">Apprendre encore plus <i class="flaticon-right-arrow"></i></a></p>
-                    </div>
-                    <ul class="course-filter-list">
-                        <li style="background-color: #e4332d !important;" class="course-filter course-filter-focus">Date Limite</li>
+                        <li style="background-color: #e4332d !important;" class="course-filter course-filter-focus">{{ $concour->limite_date }}</li>
                     </ul>
                 </div>
             </div>
+                @endforeach
+          @endisset
 
 
         </div>
@@ -488,10 +465,12 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-3 pb-30">
+            @isset($Entrepreneurs)
+                @foreach($Entrepreneurs as $Entrepreneur)
+                   <div class="col-12 col-md-6 col-lg-3 pb-30">
                 <div class="instructor-card">
                     <div class="instructor-card-thumb">
-                        <a href="#"><img src="images/_Q7B0508.jpg" alt="instructor"></a>
+                        <a href="{{ route('axe-entrepreneuriat-single',$Entrepreneur->id) }}"><img src="{{ asset('images/entrepreneurs/'.$Entrepreneur->image_profile) }}" alt="instructor"></a>
                         <ul class="instructor-social-list">
                             <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
                             <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
@@ -499,268 +478,18 @@
                         </ul>
                     </div>
                     <div class="instructor-card-content">
-                        <h3><a href="#">John Andre</a></h3>
-                        <h4>Teacher</h4>
-                        <p>Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.</p>
+                        <h3 style="font-size: 29px !important;"><a  @if( app()->getLocale() == "ar" )  class="arab" @endif style="color: #00afe2 !important;" href="{{ route('axe-entrepreneuriat-single',$Entrepreneur->id) }}">{{ $Entrepreneur->{'title_'.app()->getLocale() }  }}</a></h3>
+                        <h4 @if( app()->getLocale() == "ar" )  class="arab" @endif >{{ $Entrepreneur->{'statut_juridique_'.app()->getLocale() }  }} </h4>
+                        <p style="text-align: justify;" @if( app()->getLocale() == "ar" )  class="arab"  @endif >{{ $Entrepreneur->{'short_description_'.app()->getLocale() }  }}</p>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 pb-30">
-                <div class="instructor-card">
-                    <div class="instructor-card-thumb">
-                        <a href="#"><img src="images/_Q7B0512.jpg" alt="instructor"></a>
-                        <ul class="instructor-social-list">
-                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-instagram-alt"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="instructor-card-content">
-                        <h3><a href="#">Olivia Smith</a></h3>
-                        <h4>Teacher</h4>
-                        <p>Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 pb-30">
-                <div class="instructor-card">
-                    <div class="instructor-card-thumb">
-                        <a href="#"><img src="images/_Q7B0514.jpg" alt="instructor"></a>
-                        <ul class="instructor-social-list">
-                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-instagram-alt"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="instructor-card-content">
-                        <h3><a href="#">Richard Clark</a></h3>
-                        <h4>Teacher</h4>
-                        <p>Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 pb-30">
-                <div class="instructor-card">
-                    <div class="instructor-card-thumb">
-                        <a href="#"><img src="images/_Q7B0518.jpg" alt="instructor"></a>
-                        <ul class="instructor-social-list">
-                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-instagram-alt"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="instructor-card-content">
-                        <h3><a href="#">Isabella Tomas</a></h3>
-                        <h4>Teacher</h4>
-                        <p>Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 pb-30">
-                <div class="instructor-card">
-                    <div class="instructor-card-thumb">
-                        <a href="#"><img src="images/_Q7B0519.jpg" alt="instructor"></a>
-                        <ul class="instructor-social-list">
-                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-instagram-alt"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="instructor-card-content">
-                        <h3><a href="#">Amelia Disuza</a></h3>
-                        <h4>Teacher</h4>
-                        <p>Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 pb-30">
-                <div class="instructor-card">
-                    <div class="instructor-card-thumb">
-                        <a href="#"><img src="images/_Q7B0523.jpg" alt="instructor"></a>
-                        <ul class="instructor-social-list">
-                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-instagram-alt"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="instructor-card-content">
-                        <h3><a href="#">Amelia Disuza</a></h3>
-                        <h4>Teacher</h4>
-                        <p>Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 pb-30">
-                <div class="instructor-card">
-                    <div class="instructor-card-thumb">
-                        <a href="#"><img src="images/_Q7B0525.jpg" alt="instructor"></a>
-                        <ul class="instructor-social-list">
-                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-instagram-alt"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="instructor-card-content">
-                        <h3><a href="#">Charlotte Smith</a></h3>
-                        <h4>Teacher</h4>
-                        <p>Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 pb-30">
-                <div class="instructor-card">
-                    <div class="instructor-card-thumb">
-                        <a href="#"><img src="images/_Q7B0527.jpg" alt="instructor"></a>
-                        <ul class="instructor-social-list">
-                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-instagram-alt"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="instructor-card-content">
-                        <h3><a href="#">Charlotte Smith</a></h3>
-                        <h4>Teacher</h4>
-                        <p>Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 pb-30">
-                <div class="instructor-card">
-                    <div class="instructor-card-thumb">
-                        <a href="#"><img src="images/_Q7B0529.jpg" alt="instructor"></a>
-                        <ul class="instructor-social-list">
-                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-instagram-alt"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="instructor-card-content">
-                        <h3><a href="#">Charlotte Smith</a></h3>
-                        <h4>Teacher</h4>
-                        <p>Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 pb-30">
-                <div class="instructor-card">
-                    <div class="instructor-card-thumb">
-                        <a href="#"><img src="images/_Q7B0531.jpg" alt="instructor"></a>
-                        <ul class="instructor-social-list">
-                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-instagram-alt"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="instructor-card-content">
-                        <h3><a href="#">Charlotte Smith</a></h3>
-                        <h4>Teacher</h4>
-                        <p>Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 pb-30">
-                <div class="instructor-card">
-                    <div class="instructor-card-thumb">
-                        <a href="#"><img src="images/_Q7B0535.jpg" alt="instructor"></a>
-                        <ul class="instructor-social-list">
-                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-instagram-alt"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="instructor-card-content">
-                        <h3><a href="#">Charlotte Smith</a></h3>
-                        <h4>Teacher</h4>
-                        <p>Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 pb-30">
-                <div class="instructor-card">
-                    <div class="instructor-card-thumb">
-                        <a href="#"><img src="images/_Q7B0538.jpg" alt="instructor"></a>
-                        <ul class="instructor-social-list">
-                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-instagram-alt"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="instructor-card-content">
-                        <h3><a href="#">Charlotte Smith</a></h3>
-                        <h4>Teacher</h4>
-                        <p>Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 pb-30">
-                <div class="instructor-card">
-                    <div class="instructor-card-thumb">
-                        <a href="#"><img src="images/_Q7B0540.jpg" alt="instructor"></a>
-                        <ul class="instructor-social-list">
-                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-instagram-alt"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="instructor-card-content">
-                        <h3><a href="#">Charlotte Smith</a></h3>
-                        <h4>Teacher</h4>
-                        <p>Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 pb-30">
-                <div class="instructor-card">
-                    <div class="instructor-card-thumb">
-                        <a href="#"><img src="images/_Q7B0543.jpg" alt="instructor"></a>
-                        <ul class="instructor-social-list">
-                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-instagram-alt"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="instructor-card-content">
-                        <h3><a href="#">Charlotte Smith</a></h3>
-                        <h4>Teacher</h4>
-                        <p>Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 pb-30">
-                <div class="instructor-card">
-                    <div class="instructor-card-thumb">
-                        <a href="#"><img src="images/_Q7B0544.jpg" alt="instructor"></a>
-                        <ul class="instructor-social-list">
-                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-instagram-alt"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="instructor-card-content">
-                        <h3><a href="#">Charlotte Smith</a></h3>
-                        <h4>Teacher</h4>
-                        <p>Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 pb-30">
-                <div class="instructor-card">
-                    <div class="instructor-card-thumb">
-                        <a href="#"><img src="images/_Q7B0550.jpg" alt="instructor"></a>
-                        <ul class="instructor-social-list">
-                            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-instagram-alt"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="instructor-card-content">
-                        <h3><a href="#">Charlotte Smith</a></h3>
-                        <h4>Teacher</h4>
-                        <p>Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </div>
+                @endforeach
+            @endisset
+
+
         </div>
+
 
     </div>
 </section>

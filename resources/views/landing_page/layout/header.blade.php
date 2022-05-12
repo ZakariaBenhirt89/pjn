@@ -266,10 +266,10 @@
                                     <a href="{{ route('axe_gestion') }}" class="nav-link @if( app()->getLocale() == "ar" ) arab @endif">{{ trans('messages.axe_gestion') }}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('axe_employabilite') }}" class="nav-link @if( app()->getLocale() == "ar" ) arab @endif">{{ trans('messages.Axe_employabilité') }}</a>
+                                    <a href="{{ route('axe_employabilite') }}" class="nav-link @if( app()->getLocale() == "ar" ) arab @endif">Axe d'Appui à l'Employabilité</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('axe-entrepreneuriat') }}" class="nav-link @if( app()->getLocale() == "ar" ) arab @endif">{{ trans('messages.Axe_Entrepreneuriat') }}</a>
+                                    <a href="{{ route('axe-entrepreneuriat') }}" class="nav-link @if( app()->getLocale() == "ar" ) arab @endif">Axe appui à l'entrepreneuriat des jeunes</a>
                                 </li>
                             </ul>
                         </li>

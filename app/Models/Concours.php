@@ -11,5 +11,10 @@ class Concours extends Model
 
     protected $table = "Concours";
 
-    protected $fillable = ['title_fr','title_ar','short_description_fr','short_description_ar','contenu_fr','contenu_ar','date_creation','email','photo','tele','attachement','lieu_fr','lieu_ar'];
+    protected $fillable = ['title_fr','title_ar','short_description_fr','short_description_ar','contenu_fr','contenu_ar','date_creation','limite_date','email','photo','tele','attachement','lieu_fr','lieu_ar'];
+
+    public function post(){
+        return $this->hasMany(Post::class,'post_id','id');
+//        return $this->belongsTo(Post::class,'post_id','id');
+    }
 }

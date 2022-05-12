@@ -257,6 +257,93 @@
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div style="background: #c9ffdf;padding: 8px;border-radius: 9px;color: #FFF;text-align: center;">
+                                                        <h3>Gallery</h3>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="customFileLabel">Photo 1</label>
+                                                        <div class="form-control-wrap">
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input" name="photo_1" id="customFile">
+                                                                <label class="custom-file-label" for="customFile">Choose file</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="customFileLabel">Photo 2</label>
+                                                        <div class="form-control-wrap">
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input" name="photo_2" id="customFile">
+                                                                <label class="custom-file-label" for="customFile">Choose file</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="customFileLabel">Photo 3</label>
+                                                        <div class="form-control-wrap">
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input" name="photo_3" id="customFile">
+                                                                <label class="custom-file-label" for="customFile">Choose file</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="customFileLabel">Photo 4</label>
+                                                        <div class="form-control-wrap">
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input" name="photo_4" id="customFile">
+                                                                <label class="custom-file-label" for="customFile">Choose file</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="customFileLabel">Photo 5</label>
+                                                        <div class="form-control-wrap">
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input" name="photo_5" id="customFile">
+                                                                <label class="custom-file-label" for="customFile">Choose file</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="customFileLabel">Photo 6</label>
+                                                        <div class="form-control-wrap">
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input" name="photo_6" id="customFile">
+                                                                <label class="custom-file-label" for="customFile">Choose file</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div style="background: #c9ffdf;padding: 8px;border-radius: 9px;color: #FFF;text-align: center;">
+                                                        <h3>Services</h3>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="container">
+                                                        <div style="margin-bottom: 8px;" class='element' id='div_1'>
+                                                            <button  type="button" class='btn btn-lg btn-success mb-4 add'>Ajouter Un Service</button>
+                                                            <input class="form-control required" type='text' name='service_name[]' placeholder='Ajouter Un Service' id='txt_1' >
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div style="background: #c9ffdf;padding: 8px;border-radius: 9px;color: #FFF;text-align: center;">
                                                         <h3>Financement</h3>
                                                     </div>
 
@@ -379,6 +466,46 @@
                         height: 350,
                         toolbar: [['style', ['style']], ['font', ['bold', 'underline', 'strikethrough', 'clear']], ['font', ['superscript', 'subscript']], ['color', ['color']], ['fontsize', ['fontsize', 'height']], ['para', ['ul', 'ol', 'paragraph']], ['table', ['table']], ['insert', ['link', 'picture', 'video']], ['view', ['fullscreen', 'codeview', 'help']]]
 
+
+                    });
+                });
+            </script>
+            <script>
+                $(document).ready(function(){
+
+                    // Add new element
+                    $(".add").click(function(){
+
+                        // Finding total number of elements added
+                        var total_element = $(".element").length;
+
+                        // last <div> with element class id
+                        var lastid = $(".element:last").attr("id");
+                        var split_id = lastid.split("_");
+                        var nextindex = Number(split_id[1]) + 1;
+
+                        var max = 5;
+                        // Check total number elements
+                        if(total_element < max ){
+                            // Adding new div container after last occurance of element class
+                            $(".element:last").after("<div style='display: flex;margin-bottom: 8px;' class='element' id='div_"+ nextindex +"'></div>");
+
+                            // Adding element to <div>
+                            $("#div_" + nextindex).append("<input class='form-control required' name='service_name[]'  type='text' placeholder='Ajouter Un Service' id='txt_"+ nextindex +"'>&nbsp;<span style='background: red;color: #FFF;padding: 8px;padding-top: 7px;border-radius: 8px;' id='remove_" + nextindex + "' class='remove'>X</span>");
+
+                        }
+
+                    });
+
+                    // Remove element
+                    $('.container').on('click','.remove',function(){
+
+                        var id = this.id;
+                        var split_id = id.split("_");
+                        var deleteindex = split_id[1];
+
+                        // Remove <div> with id
+                        $("#div_" + deleteindex).remove();
 
                     });
                 });

@@ -298,18 +298,8 @@
         .arab{
             font-family: 'Cairo', sans-serif !important;
         }
-        .carriere_content p,
-        .carriere_content span,
-        .carriere_content font{
-            font-family: 'Cairo', sans-serif !important;
-            line-height: 24px  !important;
-        }
-        .actualite_content p,
-        .actualite_content span,
-        .actualite_content font{
-            font-family: 'Cairo', sans-serif !important;
-            line-height: 24px  !important;
-        }
+
+
 
         .connexios:after{
             background-color: #06933e !important;
@@ -674,6 +664,22 @@
             50%{background-position:100% 50%}
             100%{background-position:0% 50%}
         }
+
+
+        .entrepreneurs span{
+            font-family: 'Avenir', sans-serif !important;
+        }
+        .entrepreneurs font,
+        .entrepreneurs ul,
+        .entrepreneurs ul li,
+        .entrepreneurs ul li font{
+            font-family: 'Avenir', sans-serif !important;
+        }
+
+        .avenir{
+            font-family: 'Avenir', sans-serif !important;
+        }
+
 
     </style>
 

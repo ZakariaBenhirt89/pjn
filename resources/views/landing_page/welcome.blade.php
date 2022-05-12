@@ -36,12 +36,9 @@
                 <div class="col-12 col-lg-6 pb-30 desk-plr-0 order-lg-2 pb-30">
                     <div class="max-600 desk-mr-auto desk-pad-left-30">
                         <div class="about-section-title section-title section-title-left section-title-shapeless section-title-lineless section-title-secondcolor position-relative">
-                            <div class="overlay-text">
-                                <h3 class="font-family-3">Jeunes de Nouaceur</h3>
-                            </div>
-                            <h2>La Plateforme Des <span style="color:#06933e !important;">Jeunes de Nouaceur</span></h2>
-                            <p>Un projet royal, réalisé dans le cadre du programme III de l’INDH : Amélioration du revenu et inclusion économique des jeunes qui vise à contribuer à l’amélioration de la situation économique et sociale des populations défavorisées de la Province de Nouaceur,</p>
-                            <p>notamment les jeunes par l’accompagnement à l’emploi, à l’entrepreneuriat ainsi qu’à l’appui aux projets s’inscrivant dans l’économie sociale et solidaire.</p>
+
+                            <h2>La Plateforme des <span style="color:#06933e !important;">jeunes de Nouaceur</span></h2>
+                            <p style="text-align: justify;">Un projet royal, réalisé dans le cadre du programme III de l’INDH : Amélioration du revenu et inclusion économique des jeunes qui vise à contribuer à l’amélioration de la situation économique et sociale des populations défavorisées de la Province de Nouaceur,notamment les jeunes, par l’accompagnement à l’emploi, à l’entrepreneuriat ainsi qu’à l’appui aux projets s’inscrivant dans l’économie sociale et solidaire.</p>
                         </div>
                         <div class="section-button-group">
                             <div class="section-button-item">
@@ -73,8 +70,8 @@
                             <img width="40" src="{{ asset('images/espaces_daccueil.png') }}" />
                         </div>
                         <div class="help-card-content">
-                            <h3>Espaces d’Accueil, d’Ecoute & d’orientation</h3>
-                            <p>Accueil des visiteurs,Ecoute et recueil des besoins,Conseil et orientation</p>
+                            <h3>Espaces d’accueil, d’écoute &amp; d’orientation</h3>
+                            <p>Accueil des visiteurs, écoute et recueil des besoins, conseil et orientation</p>
                         </div>
                     </div>
                 </div>
@@ -84,8 +81,8 @@
                            <img width="40" src="{{ asset('images/espace_de_formation.png') }}" />
                         </div>
                         <div class="help-card-content">
-                            <h3>Espace de formation en Employabilité</h3>
-                            <p>Soft Skills,Placement,Suivi</p>
+                            <h3>Espace de formation en employabilité</h3>
+                            <p>Soft Skills, placement ,Suivi</p>
                         </div>
                     </div>
                 </div>
@@ -95,8 +92,8 @@
                             <img width="40" src="{{ asset('images/accompagnement.png') }}" />
                         </div>
                         <div class="help-card-content">
-                            <h3>Espace de formation et Accompagnement en Entrepreneuriat/Economie sociale et solidaire.</h3>
-                            <p>Sourcing terrain,Conseil et accompagnement,Suivi des porteurs de projets</p>
+                            <h3>espace de formation et accompagnement en entrepreneuriat/économie sociale et solidaire.</h3>
+                            <p>Sourcing terrain,conseil et accompagnement,suivi des porteurs de projets</p>
                         </div>
                     </div>
                 </div>
@@ -107,7 +104,7 @@
                         </div>
                         <div class="help-card-content">
                             <h3>Hub de rencontre et d’échange</h3>
-                            <p>Renforcement des acteurs locaux ,Développement de partenariat ,Organisation des événements</p>
+                            <p>Renforcement des acteurs locaux , développement de partenariat ,organisation des événements</p>
                         </div>
                     </div>
                 </div>
@@ -182,7 +179,7 @@
             <div class="row align-items-center">
                 <div class="col-12 col-lg-5 pb-30">
                     <div class="section-title section-title-left text-start">
-                        <h2>Avec qui allez-vous <span style="color: #06933e;"> apprendre ??</span> </h2>
+                        <h2> <span style="color: #06933e;"> Nos partenaires</span> </h2>
                         <p>Vous pouvez répertorier ici les marques de vos partenaires ou de vos instructeurs pour montrer la réputation de votre site et les étudiants peuvent vous faire davantage confiance.</p>
                     </div>
                     <div class="faq-accordion">
@@ -208,7 +205,7 @@
         <div class="container">
             <div class="section-title-group">
                 <div class="section-title section-title-shapeless">
-                    <h2>Nos Dernières  <span>Actualités</span></h2>
+                    <h2>Nos dernières <span>actualités</span></h2>
                 </div>
                 <a href="{{ route('all_actualite') }}" class="btn btn-success btn-radius">VOIR TOUS LES Actualités <i class="flaticon-edit"></i></a>
 
@@ -253,8 +250,8 @@
                 </div>
                 <div class="col-12 col-lg-12 pb-30">
                     <div class="about-feedback">
-                        <p class="about-feedback-paragraph">Une Plateforme Provinciale Physique dédiée aux jeunes : </p>
-                        <p class="about-feedback-paragraph">« Plateformes des jeunes / Carrefour des jeunes » créée au niveau de DAR BOUAZZA avec 4 antennes d’Accueil, d’Ecoute et D’Orientation au niveau de Lemkanssa, Bouskoura, Oulad Salah et la Nouaceur ; Pour accueillir les jeunes en quête d’opportunités. Réparti en trois axes :</p>
+                        <p class="about-feedback-paragraph">Une plateforme provinciale physique dédiée aux jeunes : </p>
+                        <p style="text-align: justify;" class="about-feedback-paragraph">« Plateformes des jeunes / Carrefour des jeunes » créée au niveau de Dar Bouazza avec 4 antennes d’accueil, d’écoute et d’orientation au niveau de Mkanssa, Bouskoura, Ouled Saleh et la(supprimer) Nouaceur ; pour accueillir les jeunes en quête d’opportunités. Répartie en trois axes :</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-12 pb-30">

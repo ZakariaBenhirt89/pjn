@@ -14,7 +14,7 @@
                                     <ul class="footer-details footer-list">
                                         <li><a @if( app()->getLocale() == "ar" ) class="arab" @endif href="#"><span>Télephone : </span> 0522 41 93 00/10</a></li>
 
-                                        <li><a @if( app()->getLocale() == "ar" ) class="arab" @endif href="#">Address : 5, rue Abbas El Jiraoui, Belvédère, Casablanca</a></li>
+                                        <li><a @if( app()->getLocale() == "ar" ) class="arab" @endif href="#">Adresse : 5, rue Abbas El Jiraoui, Belvédère, Casablanca</a></li>
                                         <li><a @if( app()->getLocale() == "ar" ) class="arab" @endif href="#">Email : accueil@heurejoyeuse.ma</a></li>
                                         <li><a @if( app()->getLocale() == "ar" ) class="arab" @endif href="#">Website : www.heurejoyeuse.ma</a></li>
 
@@ -28,8 +28,8 @@
                                     </div>
                                     <ul class="footer-details footer-list">
                                         <li><a @if( app()->getLocale() == "ar" ) class="arab" @endif href="#">Télephone : 0522 98 01 36 </a></li>
-                                        <li><a @if( app()->getLocale() == "ar" ) class="arab" @endif href="#">Ecole El Bachiri Garçons</a></li>
-                                        <li><a @if( app()->getLocale() == "ar" ) class="arab" @endif href="#">Address : Angle Rue Ahmed Kadmiri et Rue Bachir Laâlaj – Casablanca</a></li>
+
+                                        <li><a @if( app()->getLocale() == "ar" ) class="arab" @endif href="#">Adresse : Ecole El Bachiri Garçons, angle Rue Ahmed Kadmiri et Rue Bachir Laâlaj – Casablanca</a></li>
                                         <li><a @if( app()->getLocale() == "ar" ) class="arab" @endif href="#">Email : contact@aljisr.ma</a></li>
                                         <li><a @if( app()->getLocale() == "ar" ) class="arab" @endif href="#">Website : www.aljisr.ma</a></li>
 
@@ -43,7 +43,7 @@
                                     </div>
                                     <ul class="footer-details footer-list">
                                         <li><a @if( app()->getLocale() == "ar" ) class="arab" @endif href="#">Télephone : 0522 59 02 94/91</a></li>
-                                        <li><a @if( app()->getLocale() == "ar" ) class="arab" @endif href="#">Address : Z.I Ouled Saleh Bouskoura</a></li>
+                                        <li><a @if( app()->getLocale() == "ar" ) class="arab" @endif href="#">Adresse : Z.I Ouled Saleh Bouskoura</a></li>
                                         <li><a @if( app()->getLocale() == "ar" ) class="arab" @endif href="#">Email : das.prnouaceur@gmail.com</a></li>
                                     </ul>
                                 </div>

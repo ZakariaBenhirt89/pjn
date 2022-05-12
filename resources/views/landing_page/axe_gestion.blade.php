@@ -28,9 +28,9 @@
                             <h3 class="font-family-3">Axe Gestion</h3>
                         </div>
                         <h2><span style="color: #06933e;">Axe Gestion</span></h2>
-                        <p style="text-align: justify;">Accueil, écoute et orientation des jeunes pour mieux répondre à leurs besoins et leurs attentes en information, et partant assurer leur employabilité et leur accès à l’entreprenariat. Les jeunes sont reçus par des professionnels spécialisés dans leurs domaines d’activités, afin de les orienter vers des offres de formation adaptés à leur profil (OFPPT, ANAPEC) et aux opportunités correspondantes à leurs aspirations et leurs projets professionnels.</p>
-                        <p style="text-align: justify;">L’Heure Joyeuse est une association à but non lucratif créée en 1959 ; reconnue d’utilité publique, elle est engagée pour la lutte contre l’exclusion sociale et professionnelle des personnes en situation défavorisée. Elle a pour mission d’œuvrer, à travers l’Education, l’employabilité et l’entrepreneuriat, à l’inclusion socio-économique des jeunes en situation vulnérable, en plaçant l’innovation sociale au cœur de son action. Sa vision est de Donner aux jeunes l’opportunité de s’accomplir et trouver leur voie, et de façonner leur avenir avec dignité.</p>
-                        <p style="text-align: justify;">Composée aujourd’hui de 10 centres, au siège - Belvédère, la plateforme - Sidi-Maarouf, Dar Bouazza - la plateforme des jeunes Nouaceur, l’antenne et CFA – Mkanssa, l’antenne et CFA Bouskoura, à l’antenne – Oulad SALAH, la Plateforme des jeunes - BENMSIK, la plateforme des Jeunes - Ain Sbaa et la plateforme des Jeunes - Roches Noires tous situés dans la région du Grand Casablanca. </p>
+                        <p style="text-align: justify;">Accueil, écoute et orientation des jeunes pour mieux répondre à leurs besoins et leurs attentes en information, et pour assurer leur employabilité et leur accès à l’entrepreneuriat. Les jeunes sont reçus par des professionnels spécialisés dans leurs domaines d’activités, afin de les orienter vers des offres de formation adaptées à leur profil (OFPPT, ANAPEC) et aux opportunités correspondantes à leurs aspirations et leurs projets professionnels.</p>
+                        <p style="text-align: justify;">L’Heure Joyeuse est une association à but non lucratif créée en 1959 ; reconnue d’utilité publique, elle est engagée pour la lutte contre l’exclusion sociale et professionnelle des personnes en situation défavorisée. Elle a pour mission d’œuvrer, à travers l’Education, l’Employabilité et l’Entrepreneuriat, à l’inclusion socio-économique des jeunes en situation vulnérable, en plaçant l’innovation sociale au cœur de son action. Sa vision est de donner aux jeunes l’opportunité de s’accomplir et trouver leur voie, et de façonner leur avenir avec dignité.</p>
+                        <p style="text-align: justify;">Composée aujourd’hui de 10 centres, au siège - Belvédère, la plateforme - Sidi-Maarouf, Dar Bouazza - la plateforme des jeunes Nouaceur, l’antenne et CFA – Mkanssa, l’antenne et CFA Bouskoura, à l’antenne – Ouled Saleh, la Plateformedes jeunes – Ben M’sick, la plateforme des Jeunes - Ain Sebaa et la plateforme des Jeunes - Roches Noires, tous situés dans la région du Grand Casablanca.</p>
 
                     </div>
 
@@ -38,7 +38,7 @@
             </div>
             <div class="col-12 col-lg-5 pb-30 desk-plr-0 order-lg-1 pb-30">
                 <div class="text-center">
-                    <img style="width: 100% !important;" src="{{ asset('images/hrj.png') }}" alt="study">
+                    <img style="width: 100% !important;" src="{{ asset('images/logo_HD.jpg') }}" alt="study">
                 </div>
             </div>
         </div>
@@ -97,7 +97,7 @@
                             </div>
                             <div class="about-card-text">
                                 <h6 style="background: #52008d;padding: 5px;border-radius: 8px;font-size: 22px;font-weight: bold;"><span style="color: #ffffff;" class="">Pôle Engagement Citoyen</span></h6>
-                                <p>Ce pôle a été créé avec objectif principal de réaffirmer l’engagement social et sociétal continu de l’Heure Joyeuse, les programmes que met en place ce pôle sont : la sensibilisation aux ODD, l’accompagnement des associations et le plaidoyer.</p>
+                                <p>Ce pôle a été créé avec objectif principal de réaffirmer l’engagement social et sociétal continu de l’Heure Joyeuse. Les programmes mis en place par ce pôle sont : la sensibilisation aux ODD, l’accompagnement des associations et le plaidoyer.</p>
                             </div>
                         </div>
                     </div>
@@ -201,78 +201,65 @@
                 <h2>Explore <span>How Can</span> I Help You</h2>
                 <p>We believe everyone has the capacity to be creative. Tuition is a place where people develop their own potential.</p>
             </div>
-            <div class="row">
 
 
 
                     <!--Carousel Gallery-->
-                    <div class="carousel-gallery">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a href="{{ asset('images/axe_gestion/axe_gestion1.jpg') }}" data-fancybox="gallery">
-                                        <div class="image" style="background-image: url({{ asset('images/axe_gestion/axe_gestion1.jpg') }})">
-                                            <div class="overlay">
-                                                <em class="mdi mdi-magnify-plus"></em>
-                                            </div>
-                                        </div>
-                                    </a>
+                <div class="gallery-tab-details popup-gallery">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3 element-item photos campus pb-30" style="position: absolute; left: 0px; top: 0px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_gestion/IMG_0164.jpg') }}" alt="gallery">
                                 </div>
-                                <div class="swiper-slide">
-                                    <a href="{{ asset('images/axe_gestion/axe_gestion1.jpg') }}" data-fancybox="gallery">
-                                        <div class="image" style="background-image: url({{ asset('images/axe_gestion/axe_gestion1.jpg') }})">
-                                            <div class="overlay">
-                                                <em class="mdi mdi-magnify-plus"></em>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div> <div class="swiper-slide">
-                                    <a href="{{ asset('images/axe_gestion/axe_gestion1.jpg') }}" data-fancybox="gallery">
-                                        <div class="image" style="background-image: url({{ asset('images/axe_gestion/axe_gestion1.jpg') }})">
-                                            <div class="overlay">
-                                                <em class="mdi mdi-magnify-plus"></em>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div> <div class="swiper-slide">
-                                    <a href="{{ asset('images/axe_gestion/axe_gestion1.jpg') }}" data-fancybox="gallery">
-                                        <div class="image" style="background-image: url({{ asset('images/axe_gestion/axe_gestion1.jpg') }})">
-                                            <div class="overlay">
-                                                <em class="mdi mdi-magnify-plus"></em>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div> <div class="swiper-slide">
-                                    <a href="{{ asset('images/axe_gestion/axe_gestion1.jpg') }}" data-fancybox="gallery">
-                                        <div class="image" style="background-image: url({{ asset('images/axe_gestion/axe_gestion1.jpg') }})">
-                                            <div class="overlay">
-                                                <em class="mdi mdi-magnify-plus"></em>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div> <div class="swiper-slide">
-                                    <a href="{{ asset('images/axe_gestion/axe_gestion1.jpg') }}" data-fancybox="gallery">
-                                        <div class="image" style="background-image: url({{ asset('images/axe_gestion/axe_gestion1.jpg') }})">
-                                            <div class="overlay">
-                                                <em class="mdi mdi-magnify-plus"></em>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div> <div class="swiper-slide">
-                                    <a href="{{ asset('images/axe_gestion/axe_gestion1.jpg') }}" data-fancybox="gallery">
-                                        <div class="image" style="background-image: url({{ asset('images/axe_gestion/axe_gestion1.jpg') }})">
-                                            <div class="overlay">
-                                                <em class="mdi mdi-magnify-plus"></em>
-                                            </div>
-                                        </div>
-                                    </a>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_gestion/IMG_0164.jpg') }}" title="Photos"><i class="flaticon-plus"></i></a>
                                 </div>
-
-
                             </div>
-                            <div class="swiper-pagination"></div>
                         </div>
+                        <div class="col-12 col-md-6 col-lg-3 element-item campus pb-30" style="position: absolute; left: 400px; top: 0px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_gestion/IMG_0226.jpg') }}" alt="gallery">
+                                </div>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_gestion/IMG_0226.jpg') }}" title="Campus"><i class="flaticon-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 element-item students photos pb-30" style="position: absolute; left: 800px; top: 0px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_gestion/IMG_0235.jpg') }}" alt="gallery">
+                                </div>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_gestion/IMG_0235.jpg') }}" title="Students"><i class="flaticon-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 element-item campus pb-30" style="position: absolute; left: 0px; top: 400px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_gestion/IMG_0264.jpg') }}" alt="gallery">
+                                </div>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_gestion/IMG_0264.jpg') }}" title="Campus"><i class="flaticon-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 element-item students pb-30" style="position: absolute; left: 400px; top: 400px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_gestion/IMG_0304.jpg') }}" alt="gallery">
+                                </div>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_gestion/IMG_0304.jpg') }}" title="Students"><i class="flaticon-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+                </div>
                     <!--#Carousel Gallery-->
 
 
@@ -280,7 +267,6 @@
                     <!-- /.gallery-slider -->
 
 
-            </div>
         </div>
     </div>
 </section>

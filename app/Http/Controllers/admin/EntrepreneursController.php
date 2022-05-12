@@ -19,16 +19,73 @@ class EntrepreneursController extends Controller
 
 
 
+
+
+
+
         if ($request->has('image_profile')){
             $imageName = time().'.'.$request->image_profile->extension();
 
             $request->image_profile->move(public_path('images/entrepreneurs'), $imageName);
+        }else{
+            $imageName="";
         }
+        ///$photo_1
+        if ($request->has('photo_1')){
+            $photo_1 = time().'.'.$request->photo_1->extension();
+
+            $request->photo_1->move(public_path('images/entrepreneurs/photo_1'), $photo_1);
+        }else{
+            $photo_1="";
+        }
+        //$photo_1
+        if ($request->has('photo_2')){
+            $photo_2 = time().'.'.$request->photo_2->extension();
+
+            $request->photo_2->move(public_path('images/entrepreneurs/photo_2'), $photo_2);
+        }else{
+            $photo_2="";
+        }
+        //$photo_3
+        if ($request->has('photo_3')){
+            $photo_3 = time().'.'.$request->photo_3->extension();
+
+            $request->photo_3->move(public_path('images/entrepreneurs/photo_3'), $photo_3);
+        }else{
+            $photo_3="";
+        }
+        //photo_4
+        if ($request->has('photo_4')){
+            $photo_4 = time().'.'.$request->photo_4->extension();
+
+            $request->photo_4->move(public_path('images/entrepreneurs/photo_4'), $photo_4);
+        }else{
+            $photo_4="";
+        }
+        //photo_5
+        if ($request->has('photo_5')){
+            $photo_5 = time().'.'.$request->photo_5->extension();
+
+            $request->photo_5->move(public_path('images/entrepreneurs/photo_5'), $photo_5);
+        }else{
+            $photo_5="";
+        }
+        //photo_6
+        if ($request->has('photo_6')){
+            $photo_6 = time().'.'.$request->photo_6->extension();
+
+            $request->photo_6->move(public_path('images/entrepreneurs/photo_6'), $photo_6);
+        }else{
+            $photo_6="";
+        }
+
         if ($request->has('logo')){
 
             $logo_name = time().'.'.$request->logo->extension();
 
             $request->logo->move(public_path('images/entrepreneurs/logo'), $logo_name);
+        }else{
+            $logo_name =  "";
         }
 
         if ($request->has('contenu_ar')){
@@ -66,6 +123,7 @@ class EntrepreneursController extends Controller
             $dom_fr = new \DOMDocument();
             $dom_fr->loadHTML('<?xml encoding="utf-8" ?>' . $contenu_fr);
 
+
             $images_fr = $dom_fr->getElementsByTagName('img');
 
             foreach($images_fr as $fr => $img_fr){
@@ -84,6 +142,11 @@ class EntrepreneursController extends Controller
             $contenu_fr = $dom_fr->saveHTML();
         }
 
+        $new_services = array_filter($request->service_name, function($v){
+            return !is_null($v) && $v !== '';
+        });
+
+//        return implode(",",$new_services);
 
         $entreprenours = Entrepreneurs::create([
             'image_profile'=>$imageName,
@@ -113,8 +176,15 @@ class EntrepreneursController extends Controller
             'apport_INDH'=> $request->apport_INDH,
             'apport_entrepreneur'=> $request->apport_entrepreneur,
             'opportunite_financement'=> $request->opportunite_financement,
-            'contenu_fr'   => $contenu_ar,
-            'contenu_ar'    => $contenu_fr
+            'contenu_fr'   => $contenu_fr,
+            'contenu_ar'    => $contenu_ar,
+            'photo_1' => $photo_1,
+            'photo_2' => $photo_2,
+            'photo_3' => $photo_3,
+            'photo_4' => $photo_4,
+            'photo_5' => $photo_5,
+            'photo_6' => $photo_6,
+            'service_name' => implode(",",$new_services),
         ]);
 
         return 'create successfully !!';

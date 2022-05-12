@@ -55,7 +55,7 @@
 
                                 <div class="about-card-text">
                                     <h6 style="color: #fff;background: #7bdf02;padding: 11px;border-radius: 8px;"><span style="color: #ffffff;font-size: 22px;font-weight: bold;" class="">Formation-Employabilité </span></h6>
-                                    <p style="color: #fefefe;">consiste à proposer une panoplie de formations en Soft Skills destinées à renforcer les compétences des jeunes en techniques de recherche d’emploi à travers des ateliers de rédaction de CV et lettre de motivation, des sessions de préparation aux entretiens d’embauche et réseautage.</p>
+                                    <p style="color: #fefefe;">Consiste à proposer une panoplie de formations en Soft Skills destinées à renforcer les compétences des jeunes en techniques de recherche d’emploi à travers des ateliers de rédaction de CV et lettre de motivation, des sessions de préparation aux entretiens d’embauche et réseautage.</p>
                                 </div>
                             </div>
                         </div>
@@ -65,14 +65,14 @@
 
                                 <div class="about-card-text">
                                     <h6 style="background: #74dc00;padding: 11px;border-radius: 8px;"><span style="color: #fefefe;font-size: 22px;font-weight: bold;" class="">Formation-Insertion</span></h6>
-                                    <p style="color: #fff;">en plus des formations en compétences techniques, comportementales et linguistiques demandées sur le marché du travail, les jeunes chercheurs d’emploi bénéficieront d’une formation dans des métiers en croissance demandés par le marché de l’emploi.<br/><br/></p>
+                                    <p style="color: #fff;">En plus des formations en compétences techniques, comportementales et linguistiques demandées sur le marché du travail, les jeunes chercheurs d’emploi bénéficieront d’une formation dans des métiers en croissance demandés par le marché de l’emploi.<br/><br/></p>
                                 </div>
                             </div>
                         </div>
                         <div class="text-details-content  desk-pad-right-40">
 
 
-                            <p>Les jeunes ayant suivi des formations de type « Formation-Insertion » bénéficieront d’une insertion en emploi formel dans un emploi dans lequel il est déclaré par un organisme employeur affilié à la Caisse Nationale de Sécurité Sociale (CNSS). En l’occurrence d’assurer le maintien en emploi formel pour les bénéficiaires ayant été insérés.</p>
+                            <p>Les jeunes ayant suivi des formations de type « Formation-Insertion » bénéficieront d’une insertion en emploi formel, tout en étant déclaré par un organisme employeur affilié à la Caisse Nationale de Sécurité Sociale (CNSS). Cela vise à assurer le maintien en emploi formel pour les bénéficiaires ayant été insérés.<p>
                             <p>« Créée en 1999, l’association Al Jisr a l’insigne privilège d’être placée sous la Présidence d’honneur de Sa Majesté le Roi Mohammed VI et bénéficie de la Reconnaissance d’Utilité Publique depuis 2007. Al Jisr s’est donné pour mission de construire des projets de formation et d’insertion, de consolider des ponts entre l’école et l’entreprise, afin de permettre à chaque jeune de devenir pleinement acteur de sa vie, pour préparer ensemble le Maroc de demain.>></p>
                         </div>
 
@@ -165,73 +165,60 @@
 
 
                     <!--Carousel Gallery-->
-                    <div class="carousel-gallery">
-                        <div class="swiper-container swiper-container-horizontal">
-                            <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
-                                <div class="swiper-slide swiper-slide-active" style="width: 277.5px; margin-right: 20px;">
-                                    <a href="{{ asset('images/axe_employabilite/axe_employabilite1.jpg') }}" data-fancybox="gallery">
-                                        <div class="image" style="background-image: url({{ asset('images/axe_employabilite/axe_employabilite1.jpg') }})">
-                                            <div class="overlay">
-                                                <em class="mdi mdi-magnify-plus"></em>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>  <div class="swiper-slide swiper-slide-active" style="width: 277.5px; margin-right: 20px;">
-                                    <a href="{{ asset('images/axe_employabilite/axe_employabilite1.jpg') }}" data-fancybox="gallery">
-                                        <div class="image" style="background-image: url({{ asset('images/axe_employabilite/axe_employabilite1.jpg') }})">
-                                            <div class="overlay">
-                                                <em class="mdi mdi-magnify-plus"></em>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>  <div class="swiper-slide swiper-slide-active" style="width: 277.5px; margin-right: 20px;">
-                                    <a href="{{ asset('images/axe_employabilite/axe_employabilite1.jpg') }}" data-fancybox="gallery">
-                                        <div class="image" style="background-image: url({{ asset('images/axe_employabilite/axe_employabilite1.jpg') }})">
-                                            <div class="overlay">
-                                                <em class="mdi mdi-magnify-plus"></em>
-                                            </div>
-                                        </div>
-                                    </a>
+                    <div class="gallery-tab-details popup-gallery">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-3 element-item photos campus pb-30" style="position: absolute; left: 0px; top: 0px;">
+                                <div class="gallery-card">
+                                    <div class="gallery-card-thumb">
+                                        <img src="{{ asset('images/axe_employabilite/IMG_0164.jpg') }}" alt="gallery">
+                                    </div>
+                                    <div class="gallery-zoom">
+                                        <a href="{{ asset('images/axe_employabilite/IMG_0164.jpg') }}" title="Photos"><i class="flaticon-plus"></i></a>
+                                    </div>
                                 </div>
-                                <div class="swiper-slide swiper-slide-active" style="width: 277.5px; margin-right: 20px;">
-                                    <a href="{{ asset('images/axe_employabilite/axe_employabilite1.jpg') }}" data-fancybox="gallery">
-                                        <div class="image" style="background-image: url({{ asset('images/axe_employabilite/axe_employabilite1.jpg') }})">
-                                            <div class="overlay">
-                                                <em class="mdi mdi-magnify-plus"></em>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>      <div class="swiper-slide swiper-slide-active" style="width: 277.5px; margin-right: 20px;">
-                                    <a href="{{ asset('images/axe_employabilite/axe_employabilite1.jpg') }}" data-fancybox="gallery">
-                                        <div class="image" style="background-image: url({{ asset('images/axe_employabilite/axe_employabilite1.jpg') }})">
-                                            <div class="overlay">
-                                                <em class="mdi mdi-magnify-plus"></em>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>      <div class="swiper-slide swiper-slide-active" style="width: 277.5px; margin-right: 20px;">
-                                    <a href="{{ asset('images/axe_employabilite/axe_employabilite1.jpg') }}" data-fancybox="gallery">
-                                        <div class="image" style="background-image: url({{ asset('images/axe_employabilite/axe_employabilite1.jpg') }})">
-                                            <div class="overlay">
-                                                <em class="mdi mdi-magnify-plus"></em>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-{{--                                <div class="swiper-slide swiper-slide-next" style="width: 277.5px; margin-right: 20px;">--}}
-{{--                                    <a href="images/_Q7B0468.jpg" data-fancybox="gallery">--}}
-{{--                                        <div class="image" style="background-image: url(http://localhost:8000/images/_Q7B0468.jpg)">--}}
-{{--                                            <div class="overlay">--}}
-{{--                                                <em class="mdi mdi-magnify-plus"></em>--}}
-{{--                                            </div>--}}
-{{--                                        </div>--}}
-{{--                                    </a>--}}
-{{--                                </div>--}}
-
-
                             </div>
-                            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span></div>
-                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                            <div class="col-12 col-md-6 col-lg-3 element-item campus pb-30" style="position: absolute; left: 400px; top: 0px;">
+                                <div class="gallery-card">
+                                    <div class="gallery-card-thumb">
+                                        <img src="{{ asset('images/axe_employabilite/IMG_0226.jpg') }}" alt="gallery">
+                                    </div>
+                                    <div class="gallery-zoom">
+                                        <a href="{{ asset('images/axe_employabilite/IMG_0226.jpg') }}" title="Campus"><i class="flaticon-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3 element-item students photos pb-30" style="position: absolute; left: 800px; top: 0px;">
+                                <div class="gallery-card">
+                                    <div class="gallery-card-thumb">
+                                        <img src="{{ asset('images/axe_employabilite/IMG_0235.jpg') }}" alt="gallery">
+                                    </div>
+                                    <div class="gallery-zoom">
+                                        <a href="{{ asset('images/axe_employabilite/IMG_0235.jpg') }}" title="Students"><i class="flaticon-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3 element-item campus pb-30" style="position: absolute; left: 0px; top: 400px;">
+                                <div class="gallery-card">
+                                    <div class="gallery-card-thumb">
+                                        <img src="{{ asset('images/axe_employabilite/IMG_0264.jpg') }}" alt="gallery">
+                                    </div>
+                                    <div class="gallery-zoom">
+                                        <a href="{{ asset('images/axe_employabilite/IMG_0264.jpg') }}" title="Campus"><i class="flaticon-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3 element-item students pb-30" style="position: absolute; left: 400px; top: 400px;">
+                                <div class="gallery-card">
+                                    <div class="gallery-card-thumb">
+                                        <img src="{{ asset('images/axe_employabilite/IMG_0304.jpg') }}" alt="gallery">
+                                    </div>
+                                    <div class="gallery-zoom">
+                                        <a href="{{ asset('images/axe_employabilite/IMG_0304.jpg') }}" title="Students"><i class="flaticon-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                     <!--#Carousel Gallery-->
 
@@ -575,7 +562,7 @@
 
             </div>
             <div class="text-center">
-                <a href="#" class="btn main-btn btn-thirdcolor">Voir Tous Les Offres d'emploi <i class="flaticon-edit"></i></a>
+                <a href="#" class="btn main-btn btn-thirdcolor">Voir toutes les offres d’emploi <i class="flaticon-edit"></i></a>
             </div>
         </div>
     </section>
@@ -595,59 +582,24 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-sm-6 col-lg-3 pb-30">
-                    <div class="offer-card offer-card-thirdcolor">
-                        <div class="offer-card-inner">
-                            <div style="background-color: #0098e6;" class="offer-card-thumb">
-                                <img src="{{ asset('images/success1.png') }}" alt="shape">
+                @isset($Entrepreneurs)
+                    @foreach($Entrepreneurs as $Entrepreneur)
+                             <div class="col-12 col-sm-6 col-lg-3 pb-30">
+                                <div class="offer-card offer-card-thirdcolor">
+                                    <div class="offer-card-inner">
+                                        <div style="background-color: #0098e6;" class="offer-card-thumb">
+                                            <img src="{{ asset('images/entrepreneurs/'.$Entrepreneur->image_profile) }}" alt="course">
+                                        </div>
+                                        <div class="offer-card-content">
+                                            <h3>{{ $Entrepreneur->{'title_'.app()->getLocale() }  }}</h3>
+                                            <div class="entren">{!! $Entrepreneur->{'short_description_'.app()->getLocale()} !!}</div>
+                                        </div>
+                                        <a href="{{ route('axe-entrepreneuriat-single',$Entrepreneur->id) }}" class="offer-redirect-link"><i class="flaticon-right-arrow"></i></a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="offer-card-content">
-                                <h3>Business Studies</h3>
-                                <p>Skills veniam, quis nosttation ullamco laboris nsiprhederit in magnaalquaquaerat</p>
-                            </div>
-                            <a href="#" class="offer-redirect-link"><i class="flaticon-right-arrow"></i></a>
-                        </div>
-                    </div>
-                </div> <div class="col-12 col-sm-6 col-lg-3 pb-30">
-                    <div class="offer-card offer-card-thirdcolor">
-                        <div class="offer-card-inner">
-                            <div style="background-color: #0098e6;" class="offer-card-thumb">
-                                <img src="{{ asset('images/success1.png') }}" alt="shape">
-                            </div>
-                            <div class="offer-card-content">
-                                <h3>Business Studies</h3>
-                                <p>Skills veniam, quis nosttation ullamco laboris nsiprhederit in magnaalquaquaerat</p>
-                            </div>
-                            <a href="#" class="offer-redirect-link"><i class="flaticon-right-arrow"></i></a>
-                        </div>
-                    </div>
-                </div> <div class="col-12 col-sm-6 col-lg-3 pb-30">
-                    <div class="offer-card offer-card-thirdcolor">
-                        <div class="offer-card-inner">
-                            <div style="background-color: #0098e6;" class="offer-card-thumb">
-                                <img src="{{ asset('images/success1.png') }}" alt="shape">
-                            </div>
-                            <div class="offer-card-content">
-                                <h3>Business Studies</h3>
-                                <p>Skills veniam, quis nosttation ullamco laboris nsiprhederit in magnaalquaquaerat</p>
-                            </div>
-                            <a href="#" class="offer-redirect-link"><i class="flaticon-right-arrow"></i></a>
-                        </div>
-                    </div>
-                </div> <div class="col-12 col-sm-6 col-lg-3 pb-30">
-                    <div class="offer-card offer-card-thirdcolor">
-                        <div class="offer-card-inner">
-                            <div style="background-color: #0098e6;" class="offer-card-thumb">
-                                <img src="{{ asset('images/success1.png') }}" alt="shape">
-                            </div>
-                            <div class="offer-card-content">
-                                <h3>Business Studies</h3>
-                                <p>Skills veniam, quis nosttation ullamco laboris nsiprhederit in magnaalquaquaerat</p>
-                            </div>
-                            <a href="#" class="offer-redirect-link"><i class="flaticon-right-arrow"></i></a>
-                        </div>
-                    </div>
-                </div>
+                    @endforeach
+                @endisset
 
 
             </div>
@@ -702,4 +654,22 @@
         });
 
     </script>
+
+    @if( app()->getLocale() == "ar" )
+        <script>
+            $(document).ready(function (){
+                $('.entren p').addClass('arab');
+                $('.entren span').addClass('arab');
+            });
+        </script>
+    @endif
+
+    @if( app()->getLocale() == "fr" )
+        <script>
+            $(document).ready(function (){
+                $('.entren p').addClass('avenir');
+                $('.entren span').addClass('avenir');
+            });
+        </script>
+    @endif
 @endsection

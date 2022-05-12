@@ -24,7 +24,7 @@
                 <div class="col-12 col-lg-4 pb-30 order-lg-2">
                     <div class="summery-details-item">
                         <div class="summery-box mb-30">
-                            <div class="summery-inner">
+                            <div  class="summery-inner">
                                 <div class="summery-list">
                                     <div class="summery-list-item">
                                         <div class="summery-label @if( app()->getLocale() == "ar" ) arab @endif "><i class="flaticon-calendar"></i>{{ trans('messages.date_de_publication') }}</div>
@@ -45,15 +45,13 @@
                                         <div class="summery-option"><a @if( app()->getLocale() == "ar" ) class="arab" @endif href="#">{{ $carriere->tele  }}</a></div>
                                     </div>
                                 </div>
-                                <div class="summery-buttons">
-                                    <a href="#" class="btn main-btn @if( app()->getLocale() == "ar" ) arab @endif" data-bs-toggle="modal" data-target="#eventModal">{{ trans('messages.postulez_maintenant') }}</a>
-                                </div>
+
                             </div>
                         </div>
                         <div class="summery-box">
                             <div class="summery-inner">
                                 <div class="sidebar-title">
-                                    <h3 @if( app()->getLocale() == "ar" ) class="arab"  @endif>{{ trans('messages.modern_carriere') }}</h3>
+                                    <h3 @if( app()->getLocale() == "ar" ) class="arab"  @endif>Nouveau Recrutement</h3>
                                 </div>
                                 <!-- this "blog-recent-content" class with inner classes will be use for the recent job as well. -->
                                 <div class="blog-recent-content">
@@ -78,6 +76,11 @@
                     <div class="summery-details-item desk-pad-right-30">
                         <div class="summery-info-details">
                             <div class="summery-info-details-inner">
+                                <div style="display: flex;justify-content: center;">
+                                    <img style="width: 42%;" src="{{ asset('images/carriere/'.$carriere->photo) }}" />
+                                </div>
+                            </div>
+                            <div class="summery-info-details-inner">
                                 <h2  @if( app()->getLocale() == "ar" ) class="arab" @endif>{{ $carriere->{'title_'.app()->getLocale() }  }}</h2>
                                 <p @if( app()->getLocale() == "ar" ) class="arab" @endif>
                                     {{ $carriere->{'short_description_'.app()->getLocale() }  }}
@@ -101,4 +104,31 @@
 
     <!-- .end become-section -->
 @endsection()
+@section('scripts')
+    <!-- .end become-section -->
+    @if( app()->getLocale() == "ar" )
+        <script>
 
+            $(document).ready(function (){
+
+                $('.carriere_content p').addClass('arab');
+                $('.carriere_content span').addClass('arab');
+                $('.carriere_content font').addClass('arab');
+
+            });
+
+        </script>
+    @endif
+
+    @if( app()->getLocale() == "fr" )
+        <script>
+
+            $(document).ready(function (){
+
+                $('.carriere_content p').addClass('avenir');
+                $('.carriere_content span').addClass('avenir');
+                $('.carriere_content font').addClass('avenir');
+            });
+        </script>
+    @endif
+@endsection

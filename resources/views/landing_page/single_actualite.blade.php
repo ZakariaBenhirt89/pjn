@@ -52,7 +52,7 @@
                             <li  @if( app()->getLocale()  == 'ar' ) class="arab" @endif>{{ trans('messages.commentaires') }} : <span>17</span></li>
                         </ul>
                         <div class="blog-action">
-                            <p class="blog-action-tag @if( app()->getLocale()  == 'ar' ) arab @endif"><i class="flaticon-tag"></i> {{ trans('messages.etudiant_pprenants') }}</p>
+                            <p class="blog-action-tag @if( app()->getLocale()  == 'ar' ) arab @endif"><i class="flaticon-tag"></i> Étudiant, Apprenants?</p>
                             <div class="blog-share">
                                 <p @if( app()->getLocale()  == 'ar' ) class="arab" @endif>{{ trans('messages.Partager_article') }}:</p>
                                 <ul class="social-list">
@@ -67,26 +67,30 @@
 
                     <div class="blog-comment-area">
                         <div class="blog-comment-reply">
-                            <h3>Comments (02)</h3>
+                            <h3 @if( app()->getLocale() == "ar" ) class="arab"  @endif>{{ trans('messages.commentaires') }} (0{{  \App\Models\Comment::where('type',app()->getLocale())->count() }})</h3>
                             <div class="blog-people-comment">
                                 <!-- individual comment with reply -->
                                 <div class="blog-people-comment-item">
+
+
+
+                                     @isset($comments)
                                     <!-- main comment holder -->
-                                    <div class="blog-people-reply blog-people-comment-main">
-                                        <div class="blog-people-comment-thumb">
-                                            <img src="{{ asset('assets/images/comments/comment-2.jpg') }}" alt="people">
-                                        </div>
-                                        <div class="blog-people-comment-content">
-                                            <div class="blog-people-comment-info">
-                                                <h3 class="blog-post-name">Devit Killer</h3>
-                                                <h4 class="blog-post-date">January 29, 2021</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                                <div class="blog-people-reply-action">
-                                                    <a href="#" class="redirect-link">Reply <i class="bx bx-plus"></i></a>
+                                    @foreach($comments as $comment)
+
+                                            <div class="blog-people-reply blog-people-comment-main">
+
+                                                <div class="blog-people-comment-content">
+                                                    <div class="blog-people-comment-info">
+                                                        <h3 class="blog-post-name @if( app()->getLocale() == "ar" ) arab @endif ">{{ $comment->{'name_'.app()->getLocale()} }}</h3>
+                                                        <h4 class="blog-post-date  @if( app()->getLocale() == "ar" ) arab @endif">{{ $comment->created_at }}</h4>
+                                                        <p @if( app()->getLocale() == "ar" ) class="arab" @endif>{{ $comment->{'comment_'.app()->getLocale()} }}</p>
+
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
+                                    @endforeach
+                                     @endisset
                                     <!-- reply of the comment. you can use this block as an item -->
 
                                 </div>
@@ -102,7 +106,10 @@
                                 <p @if( app()->getLocale()  == 'ar' ) class="arab" @endif>{{ trans('messages.votre_commentaire') }}</p>
                             </div>
                             <div class="comment-input-area mt-30">
-                                <form>
+                                <form action="{{ route('comments.store') }}" method="POST">
+                                    @csrf
+                                    <input type="hidden" name="id" value="{{ $actualite->id }}" />
+                                    <input type="hidden" name="type" value="{{ app()->getLocale() }}" />
                                     <div class="row">
                                         <div class="col-sm-12 col-md-6 col-lg-6">
                                             <div class="form-group mb-20">
@@ -110,7 +117,7 @@
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text"><i class="flaticon-user"></i></span>
                                                     </div>
-                                                    <input type="text" name="name" id="name" class="form-control @if( app()->getLocale()  == 'ar' ) arab @endif" placeholder="{{ trans('messages.nom')  }}*">
+                                                    <input type="text" name="name_{{ app()->getLocale() }}" class="form-control @if( app()->getLocale()  == 'ar' ) arab @endif" placeholder="{{ trans('messages.nom')  }}*">
                                                 </div>
                                             </div>
                                         </div>
@@ -120,7 +127,7 @@
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text"><i class="flaticon-book"></i></span>
                                                     </div>
-                                                    <input type="text" name="url" id="url" class="form-control @if( app()->getLocale()  == 'ar' ) arab @endif" placeholder="{{ trans('messages.sujet')  }}*">
+                                                    <input type="text" name="subject_{{ app()->getLocale() }}" id="url" class="form-control @if( app()->getLocale()  == 'ar' ) arab @endif" placeholder="{{ trans('messages.sujet')  }}*">
                                                 </div>
                                             </div>
                                         </div>
@@ -130,7 +137,7 @@
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text"><i class="flaticon-envelope"></i></span>
                                                     </div>
-                                                    <textarea name="message" class="form-control @if( app()->getLocale()  == 'ar' ) arab @endif" id="message" rows="6" placeholder="{{trans('messages.votre_commentaire_a')}}*"></textarea>
+                                                    <textarea name="message_{{ app()->getLocale() }}" class="form-control @if( app()->getLocale()  == 'ar' ) arab @endif" id="message" rows="6" placeholder="{{trans('messages.votre_commentaire_a')}}*"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -164,7 +171,7 @@
                 </div>
                 <div class="sidebar-item mb-40">
                     <div class="sidebar-title">
-                        <h3 @if( app()->getLocale() == 'ar' ) class="arab" @endif>{{ trans('messages.actulite.recent_actualite') }}</h3>
+                        <h3 @if( app()->getLocale() == 'ar' ) class="arab" @endif>Actualité récente</h3>
                     </div>
                     <div class="blog-recent-content">
                         @foreach($all_latest_actualites as $all_latest_actualite)
@@ -205,4 +212,31 @@
 </div>
 <!-- .end become-section -->
 <!-- footer -->
+@endsection
+@section('scripts')
+    <!-- .end become-section -->
+    @if( app()->getLocale() == "ar" )
+        <script>
+
+            $(document).ready(function (){
+
+                $('.actualite_content p').addClass('arab');
+                $('.actualite_content span').addClass('arab');
+                $('.actualite_content font').addClass('arab');
+            });
+
+        </script>
+    @endif
+
+    @if( app()->getLocale() == "fr" )
+        <script>
+
+            $(document).ready(function (){
+
+                $('.actualite_content p').addClass('avenir');
+                $('.actualite_content span').addClass('avenir');
+                $('.actualite_content font').addClass('avenir');
+            });
+        </script>
+    @endif
 @endsection

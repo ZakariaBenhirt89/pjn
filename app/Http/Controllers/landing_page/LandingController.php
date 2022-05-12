@@ -5,6 +5,10 @@ namespace App\Http\Controllers\landing_page;
 use App\Http\Controllers\Controller;
 use App\Models\Actualite;
 use App\Models\Carriere;
+use App\Models\Comment;
+use App\Models\Concours;
+use App\Models\Entrepreneurs;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class LandingController extends Controller
@@ -19,11 +23,11 @@ class LandingController extends Controller
         $local = app()->getLocale();
         $actualite = Actualite::select('id','photo','title_'.$local,'contenu_'.$local,'tags_'.$local,'created_at')->where('id',$id)->first();
         $all_latest_actualites = Actualite::select('id','photo','title_'.$local,'contenu_'.$local,'created_at')->where('id','!=',$id)->limit(4)->latest()->get();
+        $comments = Comment::select('name_'.$local,'subject_'.$local,'comment_'.$local,'type')->where('actualite_id',$id)->where('type',app()->getLocale())->get();
 
 
 
-
-        return view('landing_page.single_actualite',compact(['actualite','all_latest_actualites']));
+        return view('landing_page.single_actualite',compact(['actualite','all_latest_actualites','comments']));
     }
     public function Allcarriere() {
         $local = app()->getLocale();
@@ -45,5 +49,123 @@ class LandingController extends Controller
         $actualites = Actualite::select('id','photo','title_'.$local,'contenu_'.$local,'created_at')->latest()->paginate(5);
 
        return view('landing_page.actualite',compact('actualites'));
+    }
+
+    public function axe_entrepreneuriat(){
+        $local = app()->getLocale();
+        $Entrepreneurs = Entrepreneurs::select('id','title_'.$local,'image_profile','niveau_scolaire_'.$local,'formation_professionnelle_'.$local,'age','project_name_'.$local,'logo','short_description_'.$local,'statut_juridique_'.$local,'category_'.$local,'secteur_activite_'.$local,'domiciliation_'.$local,'canaux_communication_'.$local,'capitale_initiale','apport_INDH','apport_entrepreneur','opportunite_financement','contenu_'.$local)->get();
+        $concours = Concours::select('id','title_'.$local,'short_description_'.$local,'contenu_'.$local,'date_creation','limite_date','email','photo','tele','attachement','lieu_'.$local)->get();
+        return view('landing_page.axe_entrepreneuriat',compact(['Entrepreneurs','concours']));
+    }
+
+    public function SingleEntrepreneuriat($id){
+        $local = app()->getLocale();
+        $Entrepreneurs = Entrepreneurs::select('id','title_'.$local,'image_profile','niveau_scolaire_'.$local,'formation_professionnelle_'.$local,'age','project_name_'.$local,'logo','short_description_'.$local,'statut_juridique_'.$local,'category_'.$local,'secteur_activite_'.$local,'domiciliation_'.$local,'canaux_communication_'.$local,'capitale_initiale','apport_INDH','apport_entrepreneur','opportunite_financement','contenu_'.$local,'photo_1','photo_2','photo_3','photo_4','photo_5','photo_6','service_name')->where('id',$id)->first();
+
+
+        return view('landing_page.single_entrepreneurs',compact('Entrepreneurs'));
+    }
+
+    public function SingleConcours($id){
+        $local = app()->getLocale();
+        $concours = Concours::select('id','title_'.$local,'short_description_'.$local,'contenu_'.$local,'date_creation','limite_date','email','photo','tele','attachement','lieu_'.$local)->where('id',$id)->first();
+
+        return view('landing_page.single_concours',compact('concours'));
+    }
+
+    public function getemployabilite(){
+        $local = app()->getLocale();
+        $Entrepreneurs = Entrepreneurs::select('id','title_'.$local,'image_profile','niveau_scolaire_'.$local,'formation_professionnelle_'.$local,'age','project_name_'.$local,'logo','short_description_'.$local,'statut_juridique_'.$local,'category_'.$local,'secteur_activite_'.$local,'domiciliation_'.$local,'canaux_communication_'.$local,'capitale_initiale','apport_INDH','apport_entrepreneur','opportunite_financement','contenu_'.$local)->get();
+
+        return view('landing_page.axe_employabilite',compact("Entrepreneurs"));
+    }
+    public function poster_concours_store(Request $request){
+
+        //UPLOAD PHOTO
+        if ($request->has('photo')){
+            $imageName = time().'.'.$request->photo->extension();
+
+            $request->photo->move(public_path('images/concours/posts'), $imageName);
+        }
+
+        //UPLOAD carte_national
+        if ($request->has('carte_national')){
+            $carte_national = time().'.'.$request->carte_national->extension();
+
+            $request->carte_national->move(public_path('images/concours/posts/carte_national'), $carte_national);
+        }
+        //UPLOAD cv
+        if ($request->has('cv')){
+            $cv = time().'.'.$request->cv->extension();
+
+            $request->cv->move(public_path('images/concours/posts/cv'), $cv);
+        }
+        //UPLOAD certificat
+        if ($request->has('certificat')){
+            $certificat = time().'.'.$request->certificat->extension();
+
+            $request->certificat->move(public_path('images/concours/posts/certificat'), $certificat);
+        }
+       //UPLOAD demande
+        if ($request->has('demande')){
+            $demande = time().'.'.$request->demande->extension();
+
+            $request->demande->move(public_path('images/concours/posts/demande'), $demande);
+        }
+
+
+        $posts = Post::create([
+           'post_id' => $request->id,
+           'photo' => $imageName,
+           'first_name' => $request->nom,
+           'last_name' => $request->prenom,
+           'description' => $request->short_description,
+           'tele' => $request->phone,
+           'email' => $request->email,
+           'cart_national' => $carte_national,
+           'cv' => $cv,
+           'certificat' => $certificat,
+           'Demande' => $demande,
+           'status' => 'inactive',
+        ]);
+
+        return redirect()->back();
+    }
+
+    public function PostConcours($id){
+        $local = app()->getLocale();
+        $concours = Concours::select('id','title_'.$local,'short_description_'.$local,'contenu_'.$local,'date_creation','limite_date','email','photo','tele','attachement','lieu_'.$local)->where('id',$id)->first();
+
+
+        return view('landing_page.poster_concours',compact("concours"));
+    }
+
+    public function storeComment(Request $request){
+
+
+
+        if ( app()->getLocale() == 'fr' ){
+                $comment = Comment::create([
+                'actualite_id' => $request->id,
+                'name_fr'     => $request->name_fr,
+                'subject_fr'     => $request->subject_fr,
+                'comment_fr'     => $request->message_fr,
+                'type'     => app()->getLocale(),
+           ]);
+        }elseif( app()->getLocale() == 'ar' ){
+            $comment = Comment::create([
+                'actualite_id' => $request->id,
+                'name_ar'     => $request->name_ar,
+                'subject_ar'     => $request->subject_ar,
+                'comment_ar'     => $request->message_ar,
+                'type'     => app()->getLocale(),
+            ]);
+        }
+
+//
+    }
+
+    public function single_cours(){
+        return view('landing_page.single_cours');
     }
 }

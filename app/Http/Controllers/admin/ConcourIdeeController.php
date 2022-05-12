@@ -3,13 +3,114 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Comment;
 use App\Models\Concours;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class ConcourIdeeController extends Controller
 {
     public function index(){
-        return view("admin.concours.index");
+        $concours = Concours::with('post')->withCount('post')->get();
+
+        return view("admin.concours.index",compact("concours"));
+    }
+    public function all_posts(){
+        $posts = Post::with('consours')->latest()->get();
+
+
+        return view("admin.concours.posts",compact("posts"));
+    }
+    public function singlePost($id){
+        $post = Post::where('id',$id)->first();
+
+
+        $concours = Concours::where('id',$id)->first();
+        $all_concours = Concours::all();
+
+        return view('admin.concours.single_post',compact(['post','concours','all_concours']));
+    }
+    public function completerPost($id, Request $request){
+        $post = Post::where('id',$id)->first();
+
+
+
+
+        //update photo
+        if ($request->has('photo')){
+            $imageName = time().'.'.$request->photo->extension();
+
+            $request->photo->move(public_path('images/concours/posts/'), $imageName);
+        }else{
+            $imageName=$post->photo;
+        }
+
+        //UPDATE CARTE NATIONAL
+        if ($request->has('carte_national')){
+            $carte_national = time().'.'.$request->carte_national->extension();
+
+            $request->carte_national->move(public_path('images/concours/posts/carte_national/'), $carte_national);
+        }else{
+            $carte_national = $post->cart_national;
+        }
+        //UPDATE CV
+        if ($request->has('cv')){
+            $cv = time().'.'.$request->cv->extension();
+
+            $request->cv->move(public_path('images/concours/posts/cv/'), $cv);
+        }else{
+            $cv=$post->cv;
+        }
+        //UPDATE CERTIFICAT
+        if ($request->has('certificat')){
+            $certificat = time().'.'.$request->certificat->extension();
+
+            $request->certificat->move(public_path('images/concours/posts/certificat/'), $certificat);
+        }else{
+            $certificat=$post->certificat;
+        }
+        //UPDATE DEMANDE
+        //UPDATE CERTIFICAT
+        if ($request->has('demande')){
+            $demande = time().'.'.$request->demande->extension();
+
+            $request->demande->move(public_path('images/concours/posts/demande/'), $demande);
+        }else{
+            $demande=$post->Demande;
+        }
+
+
+        //UPDATE DATA
+        $post->update([
+            'post_id' =>$request->post_id,
+            'photo' =>$imageName,
+            'first_name'=>$request->first_name,
+            'last_name'=>$request->last_name,
+            'description'=>$request->description,
+            'tele'=>$request->tele,
+            'email'=>$request->email,
+            'cart_national'=>$carte_national,
+            'cv'=>$cv,
+            'certificat'=>$certificat,
+            'Demande'=>$demande,
+            'status'=>"active"
+        ]);
+
+
+        return redirect()->route('ConcourIdee.poster.index')->with(['success' => 'La Demande Confermer' ]);
+
+
+
+
+
+    }
+    public function rejeterPost($id){
+        $post = Post::findOrFail($id);
+        $post->update([
+            "status" => "reject"
+        ]);
+
+        return redirect()->route('ConcourIdee.poster.index')->with(['success' => 'La Demande Rejeter' ]);
     }
 
     public function create(){
@@ -91,6 +192,7 @@ class ConcourIdeeController extends Controller
             'contenu_fr' => $contenu_fr,
             'contenu_ar' => $contenu_ar,
             'date_creation' => $request->date_creation,
+            'limite_date' => $request->limite_date,
             'email' => $request->email,
             'photo' => $imageName,
             'tele' => $request->tele,

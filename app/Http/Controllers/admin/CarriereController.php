@@ -122,7 +122,7 @@ class CarriereController extends Controller
             'contenu_fr' => 'required',
         ]);
 
-        $carriere = Carriere::findOrFail($id);
+        $carriere = Carriere::find($id);
 
         if ($request->has('photo')){
 
