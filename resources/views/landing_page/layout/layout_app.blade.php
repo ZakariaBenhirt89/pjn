@@ -90,6 +90,7 @@
         <link rel="stylesheet" href="{{ asset('assets_trl/css/rtl.css') }}" type="text/css" media="all" />
         <!-- responsive css -->
         <link rel="stylesheet" href="{{ asset('assets_trl/css/responsive.css') }}" type="text/css" media="all" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@460&display=swap" rel="stylesheet">
     @endif

@@ -28,19 +28,20 @@ class AdminController extends Controller
                 \Illuminate\Support\Facades\Log::info("the category ".$cat->id);
                 $courses = Cours::where("category_id" , $cat->id)->get();
                 \Illuminate\Support\Facades\Log::info("the num of courses ".count($courses));
+                $sectionNum = 0;
+                $videosNum = 0 ;
                 foreach ($courses as $cours){
                     $sections = $cours->category;
-                    $sectionNum = 0;
-                    $videosNum = 0 ;
+
                     foreach ($sections as $section){
                         $temp = count($section->videos);
-                        $videosNum += $temp;
+                        $videosNum =$videosNum + $temp;
+                        $temp1 = count($section->mats);
+                        $sectionNum = $sectionNum + $temp1;
                     }
-                    foreach ($sections as $section){
-                        $temp = count($section->mats);
-                        $sectionNum += $temp;
-                    }
-                    $data->push(["name" => $cours->cours_name , "photo" => $cours->photo , "created_at" => $cours->created_at , "category"=> $cat->category_name , "modules" => $sectionNum , "videos"  => $videosNum]);
+                    \Illuminate\Support\Facades\Log::info($videosNum);
+                    \Illuminate\Support\Facades\Log::info($sectionNum);
+                    $data->push(["name" => $cours->id , "photo" => $cours->photo , "created_at" => $cours->created_at , "category"=> $cat->category_name , "modules" => $sectionNum , "videos"  => $videosNum]);
                 }
             }
             return view('student.dashboard' , ["data" => $data]);

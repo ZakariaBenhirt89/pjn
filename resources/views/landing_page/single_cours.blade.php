@@ -9,11 +9,11 @@
             <div class="header-page-content desk-pad-right-30">
 
 
-                <h1 class="arab"> نموذج العمل التجاري</h1>
+                <h1 class="arab"> {{$title}}</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a class="arab" href="#">لوحة التحكم</a></li>
-                        <li class="breadcrumb-item active arab" aria-current="page"> نموذج العمل التجاري</li>
+                        <li class="breadcrumb-item active arab" aria-current="page">{{$title}}</li>
                     </ol>
                 </nav>
             </div>
@@ -30,10 +30,6 @@
                             </div>
                             <div class="summery-inner">
                                 <div class="summery-list">
-                                    <div class="summery-list-item">
-                                        <div class="summery-label arab"><i class="flaticon-equalizer"></i>المستوى</div>
-                                        <div class="summery-option arab">مستوى متقدم</div>
-                                    </div>
                                     <div class="summery-list-item">
                                         <div class="summery-label arab"><i class="flaticon-instructor"></i>مسير الدرس</div>
                                         <div class="summery-option arab">فرانكوا اراب</div>
@@ -75,50 +71,7 @@
                         <div class="summery-info-details">
                             <div class="summery-info-details-item summery-info-details-item-active" data-summery-info-details="1">
                                 <div class="summery-info-details-inner">
-                                    <h4 style="background: aliceblue;padding: 10px;border-radius: 8px;" class="arab">الهدف من المجزوءة</h4>
-                                    <ul>
-                                        <li class="arab"><i class="flaticon-check"></i>نتعرف على نموذج العمل التجاري و الهدف منو </li>
-                                        <li class="arab"><i class="flaticon-check"></i> نعرف الاجزاء ديال النموذج التجاري و كيفاش نطور به فكرة المشروع ديالي </li>
-
-                                    </ul>
-
-                                        <ul style="padding-left: 0;padding-right: revert;">
-                                            <li class="arab"></li>
-                                            <li class="arab"></li>
-                                        </ul>
-
-                                    <h4 style="background: aliceblue;padding: 10px;border-radius: 8px;" class="arab">تذكير</h4>
-                                    <p class="arab">كيفما تعرفنا سابقا على مخطط الفرصة لكيخلينا نعرفو امكانية تطبيق فكرة المشروع ديالي فارض الواقع.
-                                        نتعرفو على نموذج العمل التجاري لهو عبارة على واحد البطاقة تقنية كتكون من 9 ديال الخانات لكتمكنا من تحليل فكرة المشروع و كتعطينا رؤية شاملة عليه مع مختلف مكوناته.</p>
-                                  <h4 style="background: aliceblue;padding: 10px;border-radius: 8px;" class="arab">نتعرفو على مراحل صياغة النموذج العمل التجاري اولا لهما اربعة ׃</h4>
-                                    <ul>
-                                        <li class="arab"><i class="flaticon-check"></i>الزبناء </li>
-                                        <li class="arab"><i class="flaticon-check"></i> العرض </li>
-                                        <li class="arab"><i class="flaticon-check"></i> البنية الاساسية</li>
-                                        <li class="arab"><i class="flaticon-check"></i>النجاعة المالية</li>
-                                    </ul>
-                                    <h4 style="background: aliceblue;padding: 10px;border-radius: 8px;" class="arab">كيف سبق لي ذكرت فنموذج العمل التجاري كيتكون من 9 ديال الخانات:</h4>
-                                    <ul>
-
-                                        <li class="arab">1-شرائح العملاء، كيفما كنعرفوا جميع الزبناء كيمثلوا القلب ديال المشروع بحيث انه من غير الزبناء ما يمكنش المشروع يعيش، و باش يكون المشروع الناجح خاصني نعرف بالضبط شكون هما الزبناء ديالي فهاذ الخانة كنحدد شكون هما العملاء ديالي بالتحديد واش B to C  بمعنى العميل العادي و كنحدد شكون هو الجنس ديالو،الشريحة العمرية ، الموقع الاستراتيجي ... الخ، و النوع الثاني لهو B to B  بمعنى الشركات و المؤسسات</li>
-                                       <br/>
-                                        <li class="arab">2-من بعدما عرفنا العملاء ديالنا دابا كنحددو القيم المقترحة بمعنى انه فهاذ الخانة كنحدد القيمة المضافة لكيقترحها المنتوج او الخدمة اللي كنقدم و في نفس الخانة كنجاوب على الاسئلة التالية ׃
-                                            - شنو هو الحل لكنقدم لزبناء دياولي باش نرضي الاحتياج ديالهم ؟
-                                            - علاش هاذ الزبون غدي يختار الخدمة او المنتوج ديالي و ما غديش يمشي عند المشاريع المناسبة ؟</li>
-                                        <li class="arab">3-العلاقات مع العملاء ، هاذ المرحلة تعتبر مهمة جدا كذلك ، لانه كيفما منعرفو البيع مكيتوقفش فقط فمرحلة اخد الزبون للمنتوج او الخدمة و انما كاين مرحلة اخرى لكنسميوها مرحلة ما بعد البيع هنا الزبون ديالي تيحس بانني ماشي غير تندير معاه معاملة تجارية و فقط بل كنواكبو و مكنساهش و فهاذ النقطة بالذات الكليان ديالي متيبقاش غير زبون عادي بل كيقدر يلعب الدور ديال سفير المشروع و يبدا هو يجيب ليا زبائن جداد داكشي علاش خاص نركزو على هاذ النقطة بزاف و منساوهاش و ما بين الاشياء اللي نقدر نقترحها على الزبون ديالي التخفيضات، اعطاء بطاقة الولاء، اقتراح ضمانات ... .</li>
-                                        <br/>
-                                        <li class="arab">4-القنوات هنا كنحدد فين غدي نبيع الخدمة او المنتوج ديالي بمعنى واش غدي نحتاج محل، نقط البيع ،المعارض، غدي نبيع من خلال الانترنيت... ، و كنحدد قنوات التواصل بمعنى كيفاش الزبناء غدي يتعرفو على المشروع ديالي واش من خلال مواقع التواصل الاجتماعي او من خلال الاشهارات في وسائل الاعلام او من خلال تفريق المنشورات ...</li>
-                                        <br/>
-                                        <li class="arab">5-الانشطة الرئيسية هنا بالذات كنحاول نتخيل السيناريو لكيدوز منو المنتوج او الخدمة حتى نوصل لمرحلة البيع او ما بعد البيع مثلا ׃ بشراء المواد الخام، من بعد تخزين، صنع المنتوج، بيع و توصيل المنتوج، و في الاخير خدمة ما بعد البيع للمنتوج.</li>
-                                        <br/>
-                                        <li class="arab">6- الموارد الاساسية مرتبطة بشكل مباشر بالخانة السابقة لهي الانشطة الرئيسية بحيث انه باش نوصل لهاديك الخدمة المنتوج النهائي فكنحتاج لمجموعة من الموارد مثلا المحل فين غادي نخدم ، الاليات باش غدي نصنع ، العمال لغدي ينتجو، الرخصة اللي بيها غادي نقدر نبيع بطريقة قانونية.</li>
-                                        <br/>
-                                        <li class="arab">7-الشركاء كيفما كيقول المثل المغربي ديال يد وحدة مكتصفقش، كذلك وهو مثال للمؤسسة ديالي باش نقدر نخدم ضروري غدي نحتاج لشركاء هنا كنهدر على الموردون، الشكاء الماليين، الخبراء، شركات التوصيل.</li>
-                                        <br/>
-                                        <li class="arab">8-هيكل التكاليف هنا كتبدا نهضر على كل ماهو مادي بمعنى الفلوس، اذن فهاذ الخانة كنحدد جميع المصاريف لغدي نبدا نخلص بمعنى  واجب الكراء، تعويضات العمال ثمن فاتورة الماء، الكهرباء، الأنترنت، مصاريف التنقل، ثمن شراء المواد الخام</li>
-                                        <br/>
-                                        <li class="arab">9-مصادر الإيرادات بمعنى منين غدي نربح الفلوس أي من خلال بيع المنتوج أو المنتوجات و الخدمة أو الخدمات.</li>
-                                    </ul>
+                                    {!! $desc !!}
                                 </div>
                             </div>
                             <div class="summery-info-details-item" data-summery-info-details="2">
@@ -126,50 +79,27 @@
                                     <h4 style="background: aliceblue;
     padding: 10px;
     border-radius: 8px;" class="arab">فيديوهات الدرس</h4>
-                                    <small><i>General introduction to the course outline</i></small>
                                     <ul class="summery-lesson-list">
+                                        @foreach($video as $vid)
                                         <li>
-                                            <a href="#">
-                                                <span class="summery-lesson-name arab">بطاقة تقنية كتمكنا من تحليل فكرة المشروع  </span>
-
+                                            <a href="#" class="linkVid" data-toggle="modal" data-target="#modalLarge{{$vid["id"]}}">
+                                                <span class="summery-lesson-name arab"> {{ $vid["title"] }} </span>
                                             </a>
                                         </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="summery-lesson-name arab">استراتيجية دراسة السوق لاثارة انتباه الزبنا</span>
-
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="summery-lesson-name arab">النموذج الاقتصادي ديال واحد المؤسسة  </span>
-
-                                            </a>
-                                        </li>
+                                        @endforeach
 
                                     </ul>
                                     <h4 style="background: aliceblue;
     padding: 10px;
     border-radius: 8px;" class="arab">ملفات الدرس</h4>
                                     <ul class="summery-lesson-list">
+                                        @foreach($mats as $m)
                                         <li>
-                                            <a href="#">
-                                                <span class="summery-lesson-name arab">بطاقة تقنية كتمكنا من تحليل فكرة المشروع  </span>
-
+                                            <a href="#" data-toggle="modal" data-target="#modalLargeMat{{$m["id"]}}">
+                                                <span class="summery-lesson-name arab">{{ $m["title"] }} </span>
                                             </a>
                                         </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="summery-lesson-name arab">استراتيجية دراسة السوق لاثارة انتباه الزبنا</span>
-
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="summery-lesson-name arab">النموذج الاقتصادي ديال واحد المؤسسة  </span>
-
-                                            </a>
-                                        </li>
+                                        @endforeach
 
                                     </ul>
                                 </div>
@@ -193,6 +123,51 @@
                 </div>
             </div>
         </div>
+        @foreach($video as $vid)
+            <div class="modal fade" tabindex="-1" id="modalLarge{{$vid["id"]}}">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal Title</h5>
+                            <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                                <em class="icon ni ni-cross"></em>
+                            </a>
+                        </div>
+                        <div class="modal-body">
+                            <video controls width="100%">
+
+                                <source src="{{$vid["url"]}}"
+                                        type="video/mp4">
+
+                                Sorry, your browser doesn't support embedded videos.
+                            </video>
+                        </div>
+                        <div class="modal-footer bg-light">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @endforeach
+        @foreach($mats as $vid)
+            <div class="modal fade" tabindex="-1" id="modalLargeMat{{$vid["id"]}}">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal Title</h5>
+                            <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                                <em class="icon ni ni-cross"></em>
+                            </a>
+                        </div>
+                        <div class="modal-body">
+                            <iframe style="width: 100% ; height: 80vh" src="//docs.google.com/gview?url={{$vid["url"]}}&embedded=true"  frameborder="0"></iframe>
+                        </div>
+                        <div class="modal-footer bg-light">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @endforeach
+
     </section>
     <!-- .end course-details-section -->
     <!-- course-section -->
@@ -271,4 +246,11 @@
         </div>
     </section>
 
+<script>
+    $("[data-toggle='modal']").on("click" , function (e) {
+        console.log("holla ")
+        const id = $(this).attr("data-target")
+        $(id).modal("show")
+    })
+</script>
 @endsection

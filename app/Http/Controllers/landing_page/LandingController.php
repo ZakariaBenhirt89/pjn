@@ -7,6 +7,7 @@ use App\Models\Actualite;
 use App\Models\Carriere;
 use App\Models\Comment;
 use App\Models\Concours;
+use App\Models\Cours;
 use App\Models\Entrepreneurs;
 use App\Models\Post;
 use Illuminate\Http\Request;
@@ -165,7 +166,26 @@ class LandingController extends Controller
 //
     }
 
-    public function single_cours(){
-        return view('landing_page.single_cours');
+    public function single_cours($name){
+        $coure = Cours::find($name);
+        $video = collect();
+        $matt = collect();
+        $description = $coure->description;
+        $title = $coure->cours_name;
+
+
+            $temp = $coure->category;
+            foreach ($temp as $t){
+                $vid = $t->videos;
+                $mt = $t->mats;
+                foreach ($vid as $v){
+                    $video->push(["id" => $v->id , "url" => $v->url , "title"=> $v->title]);
+                }
+                foreach ($mt as $m){
+                    $matt->push(["id" => $m->id , "url" => $m->url , "title"=> $m->title]);
+                }
+            }
+
+        return view('landing_page.single_cours' , ["title" => $title , "desc" => $description , "video" => $video , "mats"=> $matt]);
     }
 }
