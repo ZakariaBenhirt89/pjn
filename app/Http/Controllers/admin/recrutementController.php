@@ -5,6 +5,7 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use App\Models\Carriere;
 use App\Models\Recrutement;
+use AWS\CRT\Log;
 use Illuminate\Http\Request;
 
 class recrutementController extends Controller
@@ -156,6 +157,7 @@ class recrutementController extends Controller
             'short_description_ar' => $request->short_description_ar,
             'lieu_fr' => $request->lieu_fr,
             'lieu_ar' => $request->lieu_ar,
+            'status' => $request->status,
         ]);
 
         return redirect()->route('recrutement.index')->with(['success' => "Carriére Est Mise à jour."]);
@@ -165,13 +167,18 @@ class recrutementController extends Controller
 
 
 
-        $request->validate([
-            'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'title_fr' => 'required|string',
-            'title_ar' => 'required|string',
-            'contenu_ar' => 'required',
-            'contenu_fr' => 'required',
-        ]);
+
+//        $request->validate([
+//            'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+//            'title_fr' => 'required|string',
+//            'title_ar' => 'required|string',
+//            'contenu_ar' => 'required',
+//            'contenu_fr' => 'required',
+//        ]);
+
+
+
+
 
         if ($request->has('contenu_ar')){
             $contenu_ar = $request->input('contenu_ar');
@@ -230,7 +237,6 @@ class recrutementController extends Controller
 
             $request->attachement->move(public_path('images/recrutement/attachment'), $fileName);
         }
-
         $carriere = Recrutement::create([
             'title_fr' => $request->title_fr,
             'title_ar' => $request->title_ar,

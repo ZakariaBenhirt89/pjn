@@ -31,15 +31,6 @@ class ActualiteController extends Controller
 
 
 
-        $request->validate([
-            'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'title_fr' => 'required|string',
-            'title_ar' => 'required|string',
-            'contenu_ar' => 'required',
-            'contenu_fr' => 'required',
-         ]);
-
-
         if ($request->has('contenu_ar')){
 
             $contenu_ar = $request->input('contenu_ar');
@@ -108,6 +99,7 @@ class ActualiteController extends Controller
         $actualite = Actualite::create([
            'title_fr' => $request->title_fr,
            'title_ar' => $request->title_ar,
+           'date_creatnion' => $request->date_creation,
            'photo' => $imageName,
            'contenu_fr' => $contenu_fr,
            'contenu_ar' => $contenu_ar,
@@ -235,6 +227,7 @@ class ActualiteController extends Controller
 
             'title_fr' => $request->title_fr,
             'title_ar' => $request->title_ar,
+            'date_creatnion' => $request->date_creation,
             'photo' => $imageName,
             'contenu_fr' => $contenu_fr,
             'contenu_ar' => $contenu_ar,

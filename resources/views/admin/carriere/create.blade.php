@@ -8,7 +8,7 @@
                         <div class="nk-block-head nk-block-head-lg wide-sm">
                             <div class="nk-block-head-content">
                                 <div class="nk-block-head-sub"><a class="back-to" href="#"><em class="icon ni ni-arrow-left"></em><span>Tous Les Recrutements</span></a></div>
-                                <h2 class="nk-block-title fw-normal"><em class="bi bi-bounding-box"></em> Ajouter une Offre d'emploi</h2>
+                                <h2 class="nk-block-title fw-normal"><em class="bi bi-bounding-box"></em> Ajouter Recrutement</h2>
                                 <div class="nk-block-des">
                                     <p class="lead">Form is most esential part of your project. We styled out nicely so you can build your form so quickly.</p>
                                 </div>

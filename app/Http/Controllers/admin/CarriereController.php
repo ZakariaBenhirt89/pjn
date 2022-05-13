@@ -25,13 +25,8 @@ class CarriereController extends Controller
 
 
 
-        $request->validate([
-            'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'title_fr' => 'required|string',
-            'title_ar' => 'required|string',
-            'contenu_ar' => 'required',
-            'contenu_fr' => 'required',
-        ]);
+
+
 
         if ($request->has('contenu_ar')){
             $contenu_ar = $request->input('contenu_ar');
@@ -110,7 +105,7 @@ class CarriereController extends Controller
         ]);
 
 
-        return redirect()->back();
+        return redirect()->route('carriere.index');
 
 
     }
@@ -251,6 +246,7 @@ class CarriereController extends Controller
             'short_description_ar' => $request->short_description_ar,
             'lieu_fr' => $request->lieu_fr,
             'lieu_ar' => $request->lieu_ar,
+            'status' => $request->status,
         ]);
 
         return redirect()->route('carriere.index')->with(['success' => "Offer D'emploi Est Mise à jour."]);
