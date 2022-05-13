@@ -13,7 +13,10 @@ class Section extends Model
 
     protected $fillable = ['title','coure_id'];
 
-    public function coure(){
-        return $this->hasMany(Cours::class,'id','coure_id');
+    public function videos(){
+        return $this->hasMany(Video::class,'module_id');
+    }
+    public function mats(){
+        return $this->hasMany(Material::class,'module_id');
     }
 }

@@ -10,9 +10,9 @@ class Cours extends Model
     use HasFactory;
     protected $table = "coures";
 
-    protected $fillable = ['cours_name','description','photo','status','category_id'];
+    protected $fillable = ['cours_name','description','photo','status','category_id' , 'animateur' , 'animateur_descriptor' ,'animateur_pic'];
 
     public function category(){
-        return $this->hasMany(Category::class,'id','category_id');
+        return $this->hasMany(Section::class,'id','category_id');
     }
 }

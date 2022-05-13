@@ -56,10 +56,10 @@
                                     </ul>
                                 </div>
                                 <div class="summery-buttons">
-
-                                    <a href="#" class="btn main-btn arab">الذهاب إلى لوحة التحكم</a>
+                                  @if(\Illuminate\Support\Facades\Auth::check())
+                                        <a href="{{route("student")}}" class="btn main-btn arab">الذهاب إلى لوحة التحكم</a>
+                                      @endif
                                 </div>
-
                             </div>
                         </div>
                     </div>

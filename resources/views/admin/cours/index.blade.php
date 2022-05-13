@@ -77,7 +77,7 @@
 
 
                                                         <td class="nk-tb-col tb-col-md">
-                                                            <span class="badge badge-pill badge-warning">{{ $coure->category[0]->category_name }}</span>
+                                                            <span class="badge badge-pill badge-warning">{{ \App\Models\Category::find($coure->category_id)->category_name }}</span>
 
                                                         </td>
                                                         <td class="nk-tb-col tb-col-md">
@@ -134,6 +134,12 @@
                                         <input type="text" class="form-control" id="course-name" name="cours_name" placeholder="Nom du cours">
                                     </div>
                                 </div><!-- .form-group -->
+                                <div class="form-group">
+                                    <label class="form-label" for="course-name">Animateur nom et prenom</label>
+                                    <div class="form-control-wrap">
+                                        <input type="text" class="form-control" id="animateurname" name="animateur_name" placeholder="Nom et Prenom de l'animateur">
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-6">
                                 <div class="form-group">
@@ -170,6 +176,27 @@
                                     </div>
                                 </div><!-- .form-group -->
                             </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="form-label" for="thumb">Animateur Description</label>
+                                    <div class="form-control-wrap">
+                                        <textarea class="form-control" name="animateur_desc"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="form-label" for="thumb">Vignette Du Cours</label>
+                                    <div class="form-control-wrap">
+                                        <div class="custom-file">
+                                            <input type="file" name="photo_animateur" class="custom-file-input" id="customFile-create1">
+                                            <label class="custom-file-label" for="customFile-create">Choose file</label>
+                                        </div>
+                                    </div>
+                                </div><!-- .form-group -->
+                            </div>
+
+
                             <div class="col-12">
                                 <div class="form-group">
                                     <label class="form-label" for="thumb">Status</label>

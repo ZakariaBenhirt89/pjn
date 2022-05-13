@@ -5,7 +5,10 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use App\Models\Acceuil;
 use App\Models\Actualite;
+use App\Models\Category;
+use App\Models\Cours;
 use App\Models\User;
+use AWS\CRT\Log;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
@@ -18,7 +21,29 @@ class AdminController extends Controller
         if ($type == "ADMIN"){
             return view('admin.dashboard');
         }elseif ($type == "STUDENT"){
-            return view('student.dashboard');
+            $data = collect();
+            $acc = Acceuil::where("user_id" , Auth::id())->first();
+            if ($acc !== null && $acc->category !== null){
+                $cat = Category::where("category_name" , $acc->category)->first();
+                \Illuminate\Support\Facades\Log::info("the category ".$cat->id);
+                $courses = Cours::where("category_id" , $cat->id)->get();
+                \Illuminate\Support\Facades\Log::info("the num of courses ".count($courses));
+                foreach ($courses as $cours){
+                    $sections = $cours->modules;
+                    $sectionNum = 0;
+                    $videosNum = 0 ;
+                    foreach ($sections as $section){
+                        $temp = count($section->videos);
+                        $videosNum += $temp;
+                    }
+                    foreach ($sections as $section){
+                        $temp = count($section->mats);
+                        $sectionNum += $temp;
+                    }
+                    $data->push(["name" => $cours->cours_name , "photo" => $cours->photo , "created_at" => $cours->created_at , "category"=> $cat->category_name , "modules" => $sectionNum , "videos"  => $videosNum]);
+                }
+            }
+            return view('student.dashboard' , ["data" => $data]);
         }elseif($type == "VIP"){
             return view('vip.dashboard');
         }

@@ -207,7 +207,7 @@
 
     </style>
     <style>
-        .card .table tr:first-child th, .card .table tr:first-child td{
+        .card .table tr:first-child th, .card .table tr td{
             text-align: right;
         }
         .table th, .table td{
@@ -455,33 +455,47 @@
                                                     <table class="datatable-init table">
                                                         <thead>
                                                         <tr>
+                                                            <th>صورة</th>
                                                             <th>اسم الدرس</th>
                                                             <th>فئة</th>
                                                             <th>الاستاذ</th>
                                                             <th>تاريخ الاضافة</th>
                                                             <th>عدد الفيديوهات</th>
                                                             <th>عدد المرفقات</th>
+                                                            <th>....</th>
                                                         </tr>
                                                         </thead>
                                                         <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <div class="nk-activity-item">
-                                                                <div style="margin-left: 6px;" class="nk-activity-media user-avatar bg-success">
-                                                                    <img src="./images/avatar/c-sm.jpg" alt="" />
-                                                                </div>
-                                                                <div class="nk-activity-data">
-                                                                    <div class="label">Keith Jensen requested to Widthdrawl.</div>
+                                                        @if(count($data) > 0)
+                                                            @foreach($data as $d)
+                                                                <tr>
+                                                                        <td>
+                                                                            <div class="nk-activity-item">
+                                                                                <div style="" class="nk-activity-media user-avatar bg-success">
+                                                                                    <img src="{{ asset("images/cours/". $d["photo"]) }}" alt="" />
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>{{$d["name"]}}</td>
+                                                                        <td>ostad</td>
+                                                                        <td>{{ $d["created_at"] }}</td>
+                                                                        <td>{{ $d["category"] }}</td>
+                                                                        <td>{{ $d["videos"] }}</td>
+                                                                        <td>{{ $d["modules"] }}</td>
+                                                                    <td>
+                                                                        <div class="dropdown">
+                                                                            <a class="text-soft dropdown-toggle btn btn-sm btn-icon btn-trigger" data-toggle="dropdown" aria-expanded="false"><em class="icon ni ni-chevron-left"></em></a>
+                                                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-xs" style="">
+                                                                                <ul class="link-list-plain">
+                                                                                    <li><a href="{{route("single_cours" , ["name" => $d["name"]])}}">عرض</a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
 
-                                                                </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>System Architect</td>
-                                                            <td>Edinburgh</td>
-                                                            <td>61</td>
-                                                            <td>2011/04/25</td>
-                                                            <td>$320,800</td>
-                                                        </tr>
+                                                            @endforeach
+                                                        @endif
 
                                                         </tbody>
                                                     </table>

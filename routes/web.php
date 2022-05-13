@@ -41,7 +41,7 @@ Route::post('/poster-concours-store/', 'App\Http\Controllers\landing_page\Landin
 
 
 
-Route::get('/single_cours/', 'App\Http\Controllers\landing_page\LandingController@single_cours')->name('single_cours');
+Route::get('/single_cours/{name}', 'App\Http\Controllers\landing_page\LandingController@single_cours')->name('single_cours');
 
 /*end actualite*/
 
@@ -168,7 +168,7 @@ Route::group( [ 'prefix' => 'dashboard/' ,'middleware'=>'auth'], function(){
     });
 
 
-    Route::get('/student', 'App\Http\Controllers\admin\AdminController@index');
+    Route::get('/student', 'App\Http\Controllers\admin\AdminController@index')->name("student");
     Route::get('/vip', 'App\Http\Controllers\admin\AdminController@index');
 });
 

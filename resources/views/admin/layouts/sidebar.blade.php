@@ -94,21 +94,6 @@
                     </li>
                     <li class="nk-menu-item has-sub">
                         <a href="#" class="nk-menu-link nk-menu-toggle" data-original-title="" title="">
-                            <span class="nk-menu-icon"><i class="bi bi-mic"></i></span>
-                            <span class="nk-menu-text">Audios</span>
-                        </a>
-                        <ul class="nk-menu-sub" style="display: none;">
-                            <li class="nk-menu-item">
-                                <a href="{{ route('audios.index') }}" class="nk-menu-link" data-original-title="" title=""><span class="nk-menu-text">Tous les Audios</span></a>
-                            </li>
-                            <li class="nk-menu-item">
-                                <a href="{{ route('audios.create') }}" class="nk-menu-link" data-original-title="" title=""><span class="nk-menu-text">Ajouter Un Audio</span></a>
-                            </li>
-                        </ul><!-- .nk-menu-sub -->
-
-                    </li>
-                    <li class="nk-menu-item has-sub">
-                        <a href="#" class="nk-menu-link nk-menu-toggle" data-original-title="" title="">
                             <span class="nk-menu-icon"><i class="bi bi-file-earmark-arrow-down"></i></span>
                             <span class="nk-menu-text">Materials</span>
                         </a>

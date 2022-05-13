@@ -54,18 +54,18 @@ class CoursController extends Controller
 
 
         $request->validate([
-
             'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'cours_name' => 'required|string',
             'category_id' => 'required|exists:categories,id',
-
-
         ]);
 
         if ($request->has('photo')){
             $imageName = time().'.'.$request->photo->extension();
-
             $request->photo->move(public_path('images/cours'), $imageName);
+        }
+        if ($request->has('photo_animateur')){
+            $imageAnimName = 'animateur'.time().'.'.$request->photo_animateur->extension();
+            $request->photo_animateur->move(public_path('images/cours'), $imageAnimName);
         }
 
         $cours = Cours::create([
@@ -74,10 +74,10 @@ class CoursController extends Controller
            'photo' => $imageName,
            'status' => $request->status,
            'category_id' => $request->category_id,
-
+            'animateur' => $request->animateur_name,
+            'animateur_descriptor' => $request->animateur_desc,
+            'animateur_pic' => $imageAnimName,
         ]);
-
-
 
         return redirect()->route('cours.index')->with([ 'success' => 'Le cours est créé' ]);
     }
