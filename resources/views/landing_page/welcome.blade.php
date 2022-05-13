@@ -9,7 +9,7 @@
                     <div style="margin-left: 39px;text-align: center;" class="header-content  desk-pad-right-30">
                         <div class="header-content-text">
                             <h1 style="color: #fcc400;font-size: 58px; font-family: 'Avenir', sans-serif !important;">Plateforme des jeunes Nouaceur</h1>
-                            <p style="margin-bottom: 15px;">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles.</p>
+                            <p style="margin-bottom: 15px;">Jeunes sans emploi ou ayant un emploi précaire, diplômés sans emploi, ou acteurs économiques locaux et jeunes porteurs de projets, vous êtes tous les bienvenus au sein de la plateforme des jeunes Nouaceur!</p>
                         </div>
 
                     </div>
@@ -17,9 +17,9 @@
                 <div style="display: flex;justify-content: center;" class="col-sm-12 col-md-12 col-lg-12 videio">
                     <div>
                         <div style="margin-top: 0px !important;" class="video-content">
-                            <img src="{{ asset('images/thumb_line.png') }}" alt="vide">
+                            <img src="{{ asset('images/back_photo.png') }}" alt="vide">
                             <div class="video-button video-button-thirdcolor">
-                                <a href="https://www.youtube.com/watch?v=_l-psxCOZJc" id="video-popup"><i class="flaticon-play-button"></i></a>
+                                <a href="https://www.youtube.com/watch?v=NtGAQJXlCok" id="video-popup"><i class="flaticon-play-button"></i></a>
                             </div>
 
                         </div>

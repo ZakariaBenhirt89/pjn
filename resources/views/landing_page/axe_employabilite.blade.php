@@ -45,8 +45,8 @@
 
                 <div class="container">
                     <div class="section-title">
-                        <h2><span style="color: #06933e;"> Lorem Ipsum est simplement </span></h2>
-                        <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années</p>
+                        <h2><span style="color: #06933e;">L'Employabilité, un défi à relever </span></h2>
+                        <p class="avenir">Améliorer la qualité des formations et doter les jeunes des compétences nécessaires pour optimiser leur employabilité</p>
                     </div>
                     <div class="row">
                         <div class="col-12 col-sm-6 col-lg-6 pb-30">
@@ -157,8 +157,8 @@
         <div class="container">
             <div class="pb-70">
                 <div class="section-title">
-                    <h2>Explore <span>How Can</span> I Help You</h2>
-                    <p>We believe everyone has the capacity to be creative. Tuition is a place where people develop their own potential.</p>
+                    <h2>Mieux appréhender le marché de <span>l'emploi</span></h2>
+                    <p class="avenir">Donner aux jeunes les outils nécessaires pour booster leur employabilité.</p>
                 </div>
                 <div class="row">
 
@@ -235,8 +235,8 @@
         <div class="container">
             <div class="section-title section-title-shapeless section-title-lineless section-title-thirdcolor">
 
-                <h2><span>Les Offres d'emploi</span></h2>
-                <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années!!</p>
+                <h2><span>Les offres d'emploi</span></h2>
+                <p>Trouvez l'offre qui correspond à votre profil</p>
             </div>
             <div class="row">
 

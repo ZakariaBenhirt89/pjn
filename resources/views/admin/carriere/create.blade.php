@@ -7,7 +7,7 @@
                     <div class="components-preview wide-md mx-auto">
                         <div class="nk-block-head nk-block-head-lg wide-sm">
                             <div class="nk-block-head-content">
-                                <div class="nk-block-head-sub"><a class="back-to" href="#"><em class="icon ni ni-arrow-left"></em><span>Tous Les Actualité</span></a></div>
+                                <div class="nk-block-head-sub"><a class="back-to" href="#"><em class="icon ni ni-arrow-left"></em><span>Tous Les Recrutements</span></a></div>
                                 <h2 class="nk-block-title fw-normal"><em class="bi bi-bounding-box"></em> Ajouter une Offre d'emploi</h2>
                                 <div class="nk-block-des">
                                     <p class="lead">Form is most esential part of your project. We styled out nicely so you can build your form so quickly.</p>
@@ -143,6 +143,28 @@
                                                        <input style="direction: rtl;" type="text" data-msg="Required" class="form-control required" id="title" name="lieu_ar" required="" />
                                                     </div>
                                                 </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="thumb">Status</label>
+                                                    <div class="form-control-wrap">
+                                                        <ul class="custom-control-group g-3 align-center flex-wrap">
+                                                            <li>
+                                                                <div class="custom-control custom-radio checked">
+                                                                    <input type="radio" class="custom-control-input" checked="" value="public" name="status" id="reg-enable">
+                                                                    <label class="custom-control-label" for="reg-enable">Public</label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="custom-control custom-radio">
+                                                                    <input type="radio" class="custom-control-input" value="prive" name="status" id="reg-disable">
+                                                                    <label class="custom-control-label" for="reg-disable">Privé</label>
+                                                                </div>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div><!-- .form-group -->
                                             </div>
 
 

@@ -163,6 +163,8 @@ class recrutementController extends Controller
     }
     public function store(Request $request){
 
+
+
         $request->validate([
             'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'title_fr' => 'required|string',
@@ -243,6 +245,7 @@ class recrutementController extends Controller
             'short_description_ar' => $request->short_description_ar,
             'lieu_fr' => $request->lieu_fr,
             'lieu_ar' => $request->lieu_ar,
+            'status' => $request->status,
         ]);
 
 

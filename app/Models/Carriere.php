@@ -11,6 +11,6 @@ class Carriere extends Model
 
     protected $table = 'carriere';
 
-    protected $fillable = ['title_fr','title_ar','content_fr','content_ar','photo','date_creation','email','tele','attachement','short_description_fr','short_description_ar','lieu_fr','lieu_ar'];
+    protected $fillable = ['title_fr','title_ar','content_fr','content_ar','photo','date_creation','email','tele','attachement','short_description_fr','short_description_ar','lieu_fr','lieu_ar','status'];
 
 }

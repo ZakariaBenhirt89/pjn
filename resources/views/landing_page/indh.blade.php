@@ -80,7 +80,8 @@
 
                         <p>La 3ème phase de l’Initiative Nationale pour le Développement Humain (INDH), (2019-2023), lancée le 19 septembre 2018 sous la présidence de Sa Majesté le Roi Mohammed VI, vient consolider les acquis enregistrés au cours des précédentes phases. Elle repose sur quatre programmes axés sur la réduction du déficit en termes d’infrastructures et de services de base dans les zones sous équipées, l’accompagnement des personnes en situation de précarité, l’amélioration du revenu et l’intégration économique des jeunes, ainsi que le soutien du développement humain en faveur des générations montantes à travers l’investissement dans le capital humain.</p>
                         <div class="section-title">
-                            <h2> Programme 4 de <span style="color: #06933e;"> l’INDH</span></h2>
+                            <h2 style="font-size: 35px;font-weight: bold;">Programme 3 de <span style="color: #06933e;"> l’INDH</span></h2>
+                            <p>« Amélioration du revenu et inclusion économique des jeunes »</p>
 
                         </div>
                        </div>
@@ -133,8 +134,8 @@
             </div>
             <div class="container">
                 <div style="margin-top: 13px;" class="section-title">
-                    <h2 style="font-size: 35px;font-weight: bold;">Programme 3 de <span style="color: #06933e;"> l’INDH</span></h2>
-                    <p>« Amélioration du revenu et inclusion économique des jeunes »</p>
+                    <h2 style="font-size: 35px;font-weight: bold;">Remobiliser les jeunes sur  <span style="color: #06933e;"> la route du progrès</span></h2>
+{{--                    <p>« Amélioration du revenu et inclusion économique des jeunes »</p>--}}
                 </div>
                 <div class="row">
                     <div class="col-12 col-sm-6 col-lg-6 pb-30">

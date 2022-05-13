@@ -144,6 +144,28 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="thumb">Status</label>
+                                                        <div class="form-control-wrap">
+                                                            <ul class="custom-control-group g-3 align-center flex-wrap">
+                                                                <li>
+                                                                    <div class="custom-control custom-radio checked">
+                                                                        <input type="radio" class="custom-control-input" checked="" value="public" name="status" id="reg-enable">
+                                                                        <label class="custom-control-label" for="reg-enable">Public</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="custom-control custom-radio">
+                                                                        <input type="radio" class="custom-control-input" value="prive" name="status" id="reg-disable">
+                                                                        <label class="custom-control-label" for="reg-disable">Privé</label>
+                                                                    </div>
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- .form-group -->
+                                                </div>
 
 
 

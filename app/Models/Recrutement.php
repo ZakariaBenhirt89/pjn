@@ -11,7 +11,7 @@ class Recrutement extends Model
 
     protected $table = "recrutements";
 
-    protected $fillable = ['title_fr','title_ar','content_fr','content_ar','photo','date_creation','email','tele','short_description_fr','short_description_ar','lieu_fr','lieu_ar','attachement'];
+    protected $fillable = ['title_fr','title_ar','content_fr','content_ar','photo','date_creation','email','tele','short_description_fr','short_description_ar','lieu_fr','lieu_ar','attachement','status'];
 
 }
 
