@@ -33,7 +33,7 @@ class CoursController extends Controller
     }
     public function Modelindex(){
         $coures = Cours::all();
-        $models = Section::with('coure')->get();
+        $models = Section::all();
 
         return view('admin.cours.index_models',compact(['coures','models']));
     }

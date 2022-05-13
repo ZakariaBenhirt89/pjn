@@ -29,7 +29,7 @@ class AdminController extends Controller
                 $courses = Cours::where("category_id" , $cat->id)->get();
                 \Illuminate\Support\Facades\Log::info("the num of courses ".count($courses));
                 foreach ($courses as $cours){
-                    $sections = $cours->modules;
+                    $sections = $cours->category;
                     $sectionNum = 0;
                     $videosNum = 0 ;
                     foreach ($sections as $section){

@@ -70,7 +70,7 @@
 
                                                         </td>
                                                         <td class="nk-tb-col tb-col-md">
-                                                            <span class="badge badge-pill badge-warning">{{ $model->coure[0]->cours_name }}</span>
+                                                            <span class="badge badge-pill badge-warning">{{ \App\Models\Cours::find($model->coure_id)->cours_name }}</span>
 
                                                         </td>
 

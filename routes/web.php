@@ -134,6 +134,7 @@ Route::group( [ 'prefix' => 'dashboard/' ,'middleware'=>'auth'], function(){
         /*start materials*/
         Route::get('/materials/', 'App\Http\Controllers\admin\MaterialController@index')->name('materials.index');
         Route::get('/materials/create', 'App\Http\Controllers\admin\MaterialController@create')->name('materials.create');
+        Route::post('/materials/store', 'App\Http\Controllers\admin\MaterialController@store')->name('materials.store');
         /*end materials*/
         /*start cours*/
         Route::get('/cours/', 'App\Http\Controllers\admin\CoursController@index')->name('cours.index');

@@ -14,6 +14,8 @@
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="{{ asset('student_assets/css/dashlite.css?ver=2.8.0') }}">
     <link id="skin-default" rel="stylesheet" href="{{ asset('student_assets/css/theme.css?ver=2.8.0') }}">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

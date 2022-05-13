@@ -27,7 +27,6 @@
                                         <div class="nk-block-head-content">
                                             <h2 class="nk-block-title fw-normal"><i style="top: -9px;position: relative;" class="bi bi-file-earmark-arrow-down"></i> Tous Les Materials</h2>
                                             <div class="nk-block-des">
-                                                <p class="lead">Form is most esential part of your project. We styled out nicely so you can build your form so quickly.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -65,7 +64,7 @@
                                 <div class="nk-block-head-xs">
                                     <div class="nk-block-between g-2">
                                         <div class="nk-block-head-content">
-                                            <h6 class="nk-block-title title">Browse Files</h6>
+                                            <h6 class="nk-block-title title">Parcourir les fichiers</h6>
                                         </div>
                                         <div class="nk-block-head-content">
                                             <ul class="nk-block-tools g-3 nav">
@@ -80,6 +79,7 @@
                                     <div class="tab-pane active" id="file-grid-view">
                                         <div class="nk-files nk-files-view-grid">
                                             <div class="nk-files-head">
+
                                                 <div class="nk-file-item">
                                                     <div class="nk-file-info">
                                                         <div class="dropdown">
@@ -97,10 +97,11 @@
                                                 </div>
                                             </div>
                                             <div class="nk-files-list">
-                                                <div class="nk-file-item nk-file">
-                                                    <div class="nk-file-info">
-                                                        <div class="nk-file-title">
-                                                            <div class="nk-file-icon">
+                                                @foreach(\App\Models\Material::all() as $mat)
+                                                    <div class="nk-file-item nk-file">
+                                                        <div class="nk-file-info">
+                                                            <div class="nk-file-title">
+                                                                <div class="nk-file-icon">
                                                                             <span class="nk-file-icon-type">
                                                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
                                                                                     <path d="M49,61H23a5.0147,5.0147,0,0,1-5-5V16a5.0147,5.0147,0,0,1,5-5H40.9091L54,22.1111V56A5.0147,5.0147,0,0,1,49,61Z" style="fill:#e3edfc"></path>
@@ -109,36 +110,33 @@
                                                                                     <path d="M42,31H30a3.0033,3.0033,0,0,0-3,3V45a3.0033,3.0033,0,0,0,3,3H42a3.0033,3.0033,0,0,0,3-3V34A3.0033,3.0033,0,0,0,42,31ZM29,38h6v3H29Zm8,0h6v3H37Zm6-4v2H37V33h5A1.001,1.001,0,0,1,43,34ZM30,33h5v3H29V34A1.001,1.001,0,0,1,30,33ZM29,45V43h6v3H30A1.001,1.001,0,0,1,29,45Zm13,1H37V43h6v2A1.001,1.001,0,0,1,42,46Z" style="fill:#36c684"></path>
                                                                                 </svg>
                                                                             </span>
+                                                                </div>
+                                                                <div class="nk-file-name">
+                                                                    <div class="nk-file-name-text">
+                                                                        <a href="#" class="title">{{ $mat->title }}</a>
+                                                                        <div class="asterisk"><a ><em class="asterisk-off icon ni ni-star"></em><em class="asterisk-on icon ni ni-star-fill"></em></a></div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                            <div class="nk-file-name">
-                                                                <div class="nk-file-name-text">
-                                                                    <a href="#" class="title">Update Data.xlsx</a>
-                                                                    <div class="asterisk"><a href="#"><em class="asterisk-off icon ni ni-star"></em><em class="asterisk-on icon ni ni-star-fill"></em></a></div>
+                                                            <ul class="nk-file-desc">
+                                                                <li class="date">{{ $mat->created_at }}</li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="nk-file-actions">
+                                                            <div class="dropdown">
+                                                                <a href="" class="dropdown-toggle btn btn-sm btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                <div class="dropdown-menu dropdown-menu-right">
+                                                                    <ul class="link-list-plain no-bdr">
+                                                                        <li><a  data-toggle="modal" data-target="#modalLarge{{$mat->id}}"><em class="icon ni ni-eye"></em><span>Details</span></a></li>
+
+
+                                                                    </ul>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <ul class="nk-file-desc">
-                                                            <li class="date">Today</li>
-                                                            <li class="size">4.5 MB</li>
-                                                            <li class="members">3 Members</li>
-                                                        </ul>
                                                     </div>
-                                                    <div class="nk-file-actions">
-                                                        <div class="dropdown">
-                                                            <a href="" class="dropdown-toggle btn btn-sm btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
-                                                            <div class="dropdown-menu dropdown-menu-right">
-                                                                <ul class="link-list-plain no-bdr">
-                                                                    <li><a href="#file-details" data-toggle="modal"><em class="icon ni ni-eye"></em><span>Details</span></a></li>
-
-                                                                    <li><a href="#" class="file-dl-toast"><em class="icon ni ni-download"></em><span>Download</span></a></li>
-
-                                                                    <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div><!-- .nk-file -->
-
+                                                @endforeach
                                             </div>
                                         </div><!-- .nk-files -->
                                     </div><!-- .tab-pane -->
@@ -313,4 +311,24 @@
             </div>
         </div>
     </div>
+    @foreach(\App\Models\Material::all() as $mat)
+        <div class="modal fade" tabindex="-1" id="modalLarge{{$mat->id}}">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal Title</h5>
+                        <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                            <em class="icon ni ni-cross"></em>
+                        </a>
+                    </div>
+                    <div class="modal-body">
+                        <iframe style="width: 100% ; height: 80vh" src="//docs.google.com/gview?url={{$mat->url}}&embedded=true"  frameborder="0"></iframe>
+                    </div>
+                    <div class="modal-footer bg-light">
+                        <span class="sub-text">Modal Footer Text</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    @endforeach()
 @endsection

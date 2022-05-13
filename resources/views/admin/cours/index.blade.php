@@ -8,16 +8,15 @@
                     <div class="nk-block-head nk-block-head-sm">
                         <div class="nk-block-between">
                             <div class="nk-block-head-content">
-                                <div class="nk-block-head-sub"><a class="back-to" href="#"><em class="icon ni ni-arrow-left"></em><span>Tous Les Carrieres</span></a></div>
+                                <div class="nk-block-head-sub"><a class="back-to" ><em class="icon ni ni-arrow-left"></em><span>Tous Les Carrieres</span></a></div>
                                 <h2 class="nk-block-title fw-normal"><em class="bi bi-bounding-box"></em> Tous Les Cours</h2>
                                 <div class="nk-block-des">
-                                    <p class="lead">Form is most esential part of your project. We styled out nicely so you can build your form so quickly.</p>
                                 </div>
                             </div>
 
                             <div class="nk-block-head-content">
                                 <div class="toggle-wrap nk-block-tools-toggle">
-                                    <a href="#" class="btn btn-icon btn-trigger toggle-expand mr-n1" data-target="pageMenu"><em class="icon ni ni-menu-alt-r"></em></a>
+                                    <a  class="btn btn-icon btn-trigger toggle-expand mr-n1" data-target="pageMenu"><em class="icon ni ni-menu-alt-r"></em></a>
                                     <div class="toggle-expand-content" data-content="pageMenu">
                                         <ul class="nk-block-tools g-3">
 
@@ -88,14 +87,14 @@
 
                                                                 <li>
                                                                     <div class="drodown">
-                                                                        <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <a  class="dropdown-toggle btn btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
                                                                         <div class="dropdown-menu dropdown-menu-right">
                                                                             <ul class="link-list-opt no-bdr">
                                                                                 <li><a href="{{ route('actualite.edit',$coure->id) }}"><em class="icon ni ni-focus"></em><span>Édit Actualité</span></a></li>
 
                                                                                 <li class="divider"></li>
 
-                                                                                <li><a href="#"><em class="icon ni ni-na"></em><span>Supprimer Actualité</span></a></li>
+                                                                                <li><a ><em class="icon ni ni-na"></em><span>Supprimer Actualité</span></a></li>
                                                                             </ul>
                                                                         </div>
                                                                     </div>
@@ -121,7 +120,7 @@
     <div class="modal fade" id="modalCreate">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <a href="#" class="close" data-dismiss="modal" aria-label="Close"> <em class="icon ni ni-cross-sm"></em></a>
+                <a  class="close" data-dismiss="modal" aria-label="Close"> <em class="icon ni ni-cross-sm"></em></a>
                 <div class="modal-body modal-body-md">
                     <h5 class="modal-title">Créer Un Cours</h5>
                     <form action="{{ route('cours.store') }}" method="POST" enctype="multipart/form-data" class="pt-2">
