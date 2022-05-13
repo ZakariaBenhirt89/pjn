@@ -329,7 +329,7 @@
                     </div>
 
 
-                    <div class="navbar-option-item navbar-option-authentication">
+                    <div class="navbar-option-item navbar-option-authentication" style="display: flex">
 
                         <a style="color: #FFF;" href="{{ route('login') }}" type="button" class="btn btn-primary btn-radius connexion_btn @if( app()->getLocale() == "ar" ) arab @endif">{{ trans('messages.connexion') }}</a>
                         <a href="{{ route('create.account') }}" type="button" class="btn btn-warning btn-radius  @if( app()->getLocale() == "ar" ) arab @endif">{{ trans('messages.créer_un_compte') }}</a>
