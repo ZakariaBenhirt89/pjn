@@ -29,7 +29,7 @@
                     <article class="blog-details-box mb-30">
                         <div class="blog-post-image">
                             <img src="{{ asset('images/actualite/' . $actualite->photo) }}" alt="blog">
-                            <div class="blog-post-category">Plateforme des jeunes NouaceurTeaching &amp; Learning</div>
+                            <div class="blog-post-category">Plateforme des jeunes Nouaceur</div>
                         </div>
                         <div class="blog-post-details">
                             <ul class="course-entry-list">
@@ -48,8 +48,8 @@
 
 
                         <ul class="blog-details-counter">
-                            <li @if( app()->getLocale()  == 'ar' ) class="arab" @endif>{{ trans('messages.Vues') }} : <span>29</span></li>
-                            <li  @if( app()->getLocale()  == 'ar' ) class="arab" @endif>{{ trans('messages.commentaires') }} : <span>17</span></li>
+
+                            <li  @if( app()->getLocale()  == 'ar' ) class="arab" @endif>{{ trans('messages.commentaires') }} : <span>{{  \App\Models\Comment::where('type',app()->getLocale())->count() }}</span></li>
                         </ul>
                         <div class="blog-action">
                             <p class="blog-action-tag @if( app()->getLocale()  == 'ar' ) arab @endif"><i class="flaticon-tag"></i> Étudiant, Apprenants?</p>

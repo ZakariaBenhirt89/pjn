@@ -77,7 +77,7 @@
                         <div class="summery-info-details">
                             <div style="margin-bottom: 16px;" class="summery-info-details-inner">
                                 <div style="display: flex;justify-content: center;">
-                                    <img style="width: 42%;" src="{{ asset('images/recrutement/'.$carriere->photo) }}" />
+                                    <img style="width: 42%;" src="{{ asset('images/carriere/'.$carriere->photo) }}" />
                                 </div>
                             </div>
                             <div class="summery-info-details-inner">

@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('Concours', function (Blueprint $table) {
+        Schema::create('concours', function (Blueprint $table) {
             $table->increments("id");
             $table->string('title_fr');
             $table->string('title_ar');

@@ -44,8 +44,8 @@
                             </div>
                             <div class="col-sm-6 col-md-6 col-lg-4">
                                 <div class="footer-content-list footer-content-item">
-                                    <div style="margin-bottom: 118px;" class="footer-content-title">
-
+                                    <div  class="footer-content-title">
+                                        <img style="width: 37%;" src="{{ asset('images/Untitled-2-Recovered.png') }}" />
                                      </div>
                                     <div class="footer-content-title">
                                         <h3 style="font-size: 26px;" @if( app()->getLocale() == "ar" ) class="arab" @endif>Province de Nouaceur</h3>

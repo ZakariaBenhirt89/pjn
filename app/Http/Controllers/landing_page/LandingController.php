@@ -37,6 +37,7 @@ class LandingController extends Controller
         $Recrutements = Carriere::select('id','photo','title_'.$local,'content_'.$local,'date_creation','email','tele','attachement','short_description_'.$local,'lieu_'.$local,'created_at')->where('status','public')->latest()->get();
 
 
+
         return view('landing_page.carriere',compact('Recrutements'));
     }
     public function singleCarriere($id){
@@ -89,6 +90,7 @@ class LandingController extends Controller
         $local = app()->getLocale();
         $Entrepreneurs = Entrepreneurs::select('id','title_'.$local,'image_profile','niveau_scolaire_'.$local,'formation_professionnelle_'.$local,'age','project_name_'.$local,'logo','short_description_'.$local,'statut_juridique_'.$local,'category_'.$local,'secteur_activite_'.$local,'domiciliation_'.$local,'canaux_communication_'.$local,'capitale_initiale','apport_INDH','apport_entrepreneur','opportunite_financement','contenu_'.$local)->get();
         $recrutements = Carrieres::where('status','public')->get();
+
 
 
         return view('landing_page.axe_employabilite',compact(["Entrepreneurs","recrutements"]));
@@ -156,6 +158,7 @@ class LandingController extends Controller
 
     public function storeComment(Request $request){
 
+//        return $request;
 
 
         if ( app()->getLocale() == 'fr' ){
@@ -175,6 +178,9 @@ class LandingController extends Controller
                 'type'     => app()->getLocale(),
             ]);
         }
+
+        return redirect()->back();
+
 
 //
     }

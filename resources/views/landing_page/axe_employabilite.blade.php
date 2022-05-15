@@ -306,7 +306,7 @@
                         <div class="col-12 col-lg-6 pb-30">
                             <div style="background: #f0fffb;" class="course-card course-card-list course-card-thirdcolor">
                                 <div class="course-card-thumb ">
-                                    <a style="height: 100%;" href="#"><img src="{{ asset('images/Logo_HJ.png') }}" alt="course"></a>
+                                    <a style="height: 100%;" href="#"><img src="{{ asset('images/recrutement/'.$recrutement->photo) }}" alt="course"></a>
                                 </div>
                                 <div class="course-card-content">
                                     <h3><a href="#">{{ $recrutement->post }}</a></h3>

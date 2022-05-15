@@ -11,7 +11,7 @@
                             <div class="col-md-6 mb-5">
                                 <div class="nk-block-head nk-block-head-lg">
                                     <div class="nk-block-head-content">
-                                        <h2 style="color:#00782d;font-weight: bold !important;" class="nk-block-title fw-normal">Fiche d’Accueil - COIP</h2>
+                                        <h2 style="color:#00782d;font-weight: bold !important;" class="nk-block-title fw-normal">Fiche d’Accueil</h2>
                                         <div class="nk-block-des">
                                             <p class="lead">Using the <a href="#" target="_blank">jQuery Steps</a> plugin, you can simply make step based form. You can combine with <a href="https://jqueryvalidation.org/" target="_blank">jQuery Validation</a> plugin for form validation. For a full overview of the Steps plugin, check out the <a href="http://www.jquery-steps.com/" target="_blank">documentation</a>.</p>
                                             <p class="lead">Using the <a href="#" target="_blank">jQuery Steps</a> plugin, you can simply make step based form. You can combine with <a href="https://jqueryvalidation.org/" target="_blank">jQuery Validation</a> plugin for form validation.</p>
@@ -20,6 +20,13 @@
                                 </div>
                             </div>
                             <div class="col-md-6 videio">
+
+                                <div class="card">
+                                    <div class="card-play"></div>
+                                    <div class="card-video">
+                                        <iframe id="video" src="https://www.youtube.com/watch?v=cg3yueCWTyQ" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                                    </div>
+                                </div>
 
                                 <div class="card">
                                     <div class="card-play"></div>
@@ -1113,6 +1120,56 @@
 
             });
 
+
+
+        });
+    </script>
+    <script>
+        $(document).ready(function (){
+            // Variables
+            var player,
+                card  = document.querySelector( '.card' ),
+                play  = document.querySelector( '.card-play' ),
+                video = document.querySelector( '.card-video' );
+
+
+// Shine effect
+            card.onmousemove = function (e) {
+                const x = e.pageX - card.offsetLeft;
+                const y = e.pageY - card.offsetTop;
+
+                card.style.setProperty( '--x', x + 'px' );
+                card.style.setProperty( '--y', y + 'px' );
+            }
+
+
+// Youtube API
+            function onYouTubePlayerAPIReady() {
+                player = new YT.Player('video', {
+                    events: {
+                        'onReady': onPlayerReady
+                    }
+                });
+            }
+
+
+// Player Ready
+            function onPlayerReady(event) {
+                play.addEventListener( 'click', function() {
+                    card.classList.add( 'video-is-open' );
+                    setTimeout(function() {
+                        video.style.display = 'block';
+                        player.playVideo();
+                    }, 500);
+                });
+            }
+
+
+// Inject YouTube API script
+            var tag = document.createElement('script');
+            tag.src = "//www.youtube.com/player_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 
         });
