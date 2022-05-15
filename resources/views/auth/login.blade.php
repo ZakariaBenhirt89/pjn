@@ -65,10 +65,10 @@
                                 <div class="form-group">
                                     <div class="form-label-group">
                                         <label class="form-label" for="default-01">Email</label>
-                                        <a class="link link-primary link-sm" tabindex="-1" href="#">Need Help?</a>
+
                                     </div>
                                     <div class="form-control-wrap">
-                                        <input type="text" class="form-control form-control-lg" name="email" id="default-01" placeholder="Enter your email address">
+                                        <input type="text" class="form-control form-control-lg" name="email" id="default-01" placeholder="email">
                                     </div>
                                     @if ($errors->has('email'))
                                         <span class="text-danger">{{ $errors->first('email') }}</span>
@@ -81,7 +81,7 @@
                                             <em class="passcode-icon icon-show icon ni ni-eye"></em>
                                             <em class="passcode-icon icon-hide icon ni ni-eye-off"></em>
                                         </a>
-                                        <input type="password" class="form-control form-control-lg" name="password" id="password" placeholder="Enter your passcode">
+                                        <input type="password" class="form-control form-control-lg" name="password" id="password" placeholder="Mot de passe">
                                     </div>
                                     @if ($errors->has('password'))
                                         <span class="text-danger">{{ $errors->first('password') }}</span>
@@ -91,78 +91,25 @@
                                     <div class="form-control-wrap">
                                         <label for="remember_me" class="inline-flex items-center">
                                             <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" name="remember">
-                                            <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
+                                            <span class="ml-2 text-sm text-gray-600">Souviens-toi de moi</span>
                                         </label>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <button class="btn btn-lg btn-primary btn-block">Sign in</button>
+                                    <button class="btn btn-lg btn-primary btn-block">Se connecter</button>
                                 </div>
                             </form><!-- form -->
-                            <div class="form-note-s2 pt-4"> Nouveau sur notre plateforme ? <a href="{{ route('create.account') }}">Créer un compte</a>
-                            </div>
-                            <div class="text-center pt-4 pb-3">
-                                <h6 class="overline-title overline-title-sap"><span>OR</span></h6>
-                            </div>
-                            <ul class="nav justify-center gx-4">
-                                <li class="nav-item"><a class="nav-link" href="#">Facebook</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Google</a></li>
-                            </ul>
-                            <div class="text-center mt-5">
-                                <span class="fw-500">I don't have an account? <a href="#">Try 15 days free</a></span>
-                            </div>
+
+
                         </div><!-- .nk-block -->
                         <div class="nk-block nk-auth-footer">
-                            <div class="nk-block-between">
-                                <ul class="nav nav-sm">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Terms & Condition</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Privacy Policy</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Help</a>
-                                    </li>
-                                    <li class="nav-item dropup">
-                                        <a class="dropdown-toggle dropdown-indicator has-indicator nav-link" data-toggle="dropdown" data-offset="0,10"><small>English</small></a>
-                                        <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
-                                            <ul class="language-list">
-                                                <li>
-                                                    <a href="#" class="language-item">
-                                                        <img src="./images/flags/english.png" alt="" class="language-flag">
-                                                        <span class="language-name">English</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="language-item">
-                                                        <img src="./images/flags/spanish.png" alt="" class="language-flag">
-                                                        <span class="language-name">Español</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="language-item">
-                                                        <img src="./images/flags/french.png" alt="" class="language-flag">
-                                                        <span class="language-name">Français</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="language-item">
-                                                        <img src="./images/flags/turkey.png" alt="" class="language-flag">
-                                                        <span class="language-name">Türkçe</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul><!-- .nav -->
-                            </div>
+
                             <div class="mt-3">
-                                <p>&copy; 2019 DashLite. All Rights Reserved.</p>
+                                <p>&copy; AOBC 2022. Tous les droits sont réservés.</p>
                             </div>
                         </div><!-- .nk-block -->
                     </div><!-- .nk-split-content -->
-                    <div class="nk-split-content nk-split-stretch bg-abstract">
+                    <div style="background-image: url({{ asset('images/_Q7B0043.jpg') }}) !important;background-size: cover;" class="nk-split-content nk-split-stretch bg-abstract">
 
                     </div><!-- .nk-split-content -->
                 </div><!-- .nk-split -->

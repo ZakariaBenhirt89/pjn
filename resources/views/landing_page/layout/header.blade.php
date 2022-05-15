@@ -269,7 +269,7 @@
                                     <a href="{{ route('axe_employabilite') }}" class="nav-link @if( app()->getLocale() == "ar" ) arab @endif">Axe d'Appui à l'Employabilité</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('axe-entrepreneuriat') }}" class="nav-link @if( app()->getLocale() == "ar" ) arab @endif">Axe appui à l'entrepreneuriat des jeunes</a>
+                                    <a href="{{ route('axe-entrepreneuriat') }}" class="nav-link @if( app()->getLocale() == "ar" ) arab @endif">Axe d'Appui à l'Entrepreneuriat et à l'Économie Sociale et Solidaire</a>
                                 </li>
                             </ul>
                         </li>
@@ -280,7 +280,7 @@
                             <a href="{{ route('all_recrutement') }}" class="nav-link @if( app()->getLocale() == "ar" ) arab @endif">Recrutement</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('all_actualite') }}" class="nav-link @if( app()->getLocale() == "ar" ) arab @endif">{{ trans('messages.Actualite') }}</a>
+                            <a href="{{ route('all_actualite') }}" class="nav-link @if( app()->getLocale() == "ar" ) arab @endif">Actualités</a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ asset('contact_us') }}" class="nav-link @if( app()->getLocale() == "ar" ) arab @endif">{{ trans('messages.Contactez_Nous') }}</a>
@@ -304,7 +304,7 @@
                             <i style="color: #00782d !important;" class="flaticon-worldwide"></i>
                             <span class="arab">
                                 @if( app()->getLocale() == "fr" )
-                                    Francais
+                                    Français
                                 @else
                                     <span class="arab">العربيّة</span>
                                 @endif
@@ -319,7 +319,7 @@
                             @else
                                 <a class="dropdown-item" href="{{ request()->url() }}?language=fr">
                                     <img src="assets/images/uae.png" alt="flag">
-                                    Francais
+                                    Français
                                 </a>
                             @endif
 
@@ -331,7 +331,7 @@
 
                     <div class="navbar-option-item navbar-option-authentication" style="display: flex">
 
-                        <a style="color: #FFF;" href="{{ route('login') }}" type="button" class="btn btn-primary btn-radius connexion_btn @if( app()->getLocale() == "ar" ) arab @endif">{{ trans('messages.connexion') }}</a>
+                        <a style="color: #FFF;" href="{{ route('login') }}" type="button" class="btn btn-success btn-radius connexion_btn @if( app()->getLocale() == "ar" ) arab @endif">{{ trans('messages.connexion') }}</a>
                         <a href="{{ route('create.account') }}" type="button" class="btn btn-warning btn-radius  @if( app()->getLocale() == "ar" ) arab @endif">{{ trans('messages.créer_un_compte') }}</a>
 
                     </div>

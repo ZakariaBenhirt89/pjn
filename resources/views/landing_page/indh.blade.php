@@ -81,48 +81,44 @@
                         <p>La 3ème phase de l’Initiative Nationale pour le Développement Humain (INDH), (2019-2023), lancée le 19 septembre 2018 sous la présidence de Sa Majesté le Roi Mohammed VI, vient consolider les acquis enregistrés au cours des précédentes phases. Elle repose sur quatre programmes axés sur la réduction du déficit en termes d’infrastructures et de services de base dans les zones sous équipées, l’accompagnement des personnes en situation de précarité, l’amélioration du revenu et l’intégration économique des jeunes, ainsi que le soutien du développement humain en faveur des générations montantes à travers l’investissement dans le capital humain.</p>
                         <div class="section-title">
                             <h2 style="font-size: 35px;font-weight: bold;">Programme 3 de <span style="color: #06933e;"> l’INDH</span></h2>
-                            <p>« Amélioration du revenu et inclusion économique des jeunes »</p>
+                            <p class="avenir">« Amélioration du revenu et inclusion économique des jeunes »</p>
+                            <p style="margin: 0px;" class="avenir">Le chômage des jeunes et les inégalités de revenu constituent les principaux freins au développement humain.</p>
+                            <p style="margin: 0px;" class="avenir">Pour atteindre ses objectifs, l’INDH intervient sur les leviers suivants :</p>
 
                         </div>
                        </div>
                     <div class="row">
-                        <div class="col-12 col-sm-12 col-lg-12 pb-30">
-                            <div style="background: linear-gradient(90deg, rgba(84,221,33,0.2413340336134454) 0%, rgba(5,172,80,0.05926120448179273) 100%);padding: 34px;border-radius: 8px;" class="help-card help-card-center">
-                                <div class="help-card-thumb">
-                                    <i class="flaticon-satisfaction"></i>
-                                </div>
-                                <div class="help-card-content">
-                                    <h3>Le renforcement, la prévention de certaines pathologies néo-natales et infantiles. Réduction de la mortalité maternelle, néo-natale et infanto-juvénile en contribuant à améliorer le suivi et les changements de comportement des populations cibles,notamment les femmes.</h3>
-                                </div>
-                            </div>
-                        </div>
+
                         <div class="col-12 col-sm-4 col-lg-4 pb-30">
-                            <div style="background: linear-gradient(90deg, rgba(84,221,33,0.2413340336134454) 0%, rgba(5,172,80,0.05926120448179273) 100%);padding: 34px;border-radius: 8px;" class="help-card help-card-center">
+                            <div style="height: 100%;background: linear-gradient(90deg, rgba(84,221,33,0.2413340336134454) 0%, rgba(5,172,80,0.05926120448179273) 100%);padding: 34px;border-radius: 8px;" class="help-card help-card-center">
                                 <div class="help-card-thumb">
                                     <i class="flaticon-resume"></i>
                                 </div>
                                 <div class="help-card-content">
-                                    <h3>Le renforcement du suivi prénatal</h3>
+                                    <h3 class="avenir">LES HOMMES</h3>
+                                    <p class="avenir">Contribuer à développer l’employabilité des jeunes à travers une meilleure adéquation entre les qualifications et les besoins du marché du travail</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-sm-4 col-lg-4 pb-30">
-                            <div style="background: linear-gradient(90deg, rgba(84,221,33,0.2413340336134454) 0%, rgba(5,172,80,0.05926120448179273) 100%);padding: 34px;border-radius: 8px;" class="help-card help-card-center">
+                            <div style="height: 100%;background: linear-gradient(90deg, rgba(84,221,33,0.2413340336134454) 0%, rgba(5,172,80,0.05926120448179273) 100%);padding: 34px;border-radius: 8px;" class="help-card help-card-center">
                                 <div class="help-card-thumb">
                                     <i class="flaticon-satisfaction"></i>
                                 </div>
                                 <div class="help-card-content">
-                                    <h3>Le renforcement de la prise en charge précoce des nouveau-nés prématurés ou de faible poids de naissance.</h3>
+                                    <h3 class="avenir">LE SYSTÈME</h3>
+                                    <p class="avenir">Mettre en place un cadre favorisant la coordination entre les différents intervenants, notamment au niveau provincial</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-sm-4 col-lg-4 pb-30">
-                            <div style="background: linear-gradient(90deg, rgba(84,221,33,0.2413340336134454) 0%, rgba(5,172,80,0.05926120448179273) 100%);padding: 34px;border-radius: 8px;" class="help-card help-card-center">
+                            <div style="height: 100%;background: linear-gradient(90deg, rgba(84,221,33,0.2413340336134454) 0%, rgba(5,172,80,0.05926120448179273) 100%);padding: 34px;border-radius: 8px;" class="help-card help-card-center">
                                 <div class="help-card-thumb">
                                     <i class="flaticon-satisfaction"></i>
                                 </div>
                                 <div class="help-card-content">
-                                    <h3>Le renforcement de l’accouchement en milieu surveillé</h3>
+                                    <h3 class="avenir">LES PROJETS</h3>
+                                    <p class="avenir">Accompagner le développement de projets innovants et contribuer à leur financement</p>
                                 </div>
                             </div>
                         </div>

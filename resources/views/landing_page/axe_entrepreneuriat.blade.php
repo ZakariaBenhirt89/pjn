@@ -92,8 +92,8 @@
                     </div>
                     <div class="col-12 col-sm-12 col-lg-12">
                         <div style="max-width: 100% !important;" class="section-title mt-15">
-                            <h2><span>Axe de soutien aux projets générateurs de revenu </span>  </h2>
-                            <p>L’axe de soutien aux projets générateurs de revenu prévoit l’organisation d’un concours d’idées inspiré des Hackathons en substitution des appels à projets classiques. 14 (à enlever) Il s&#39;agit en l&#39;occurrence de mobiliser les jeunes dans un esprit de concours d’idées et de faire émerger des projets innovants qui répondent à des problématiques de développement local en relation avec les chaines de valeurs. Le concours d’idées concerne :</p>
+                            <h2 class="avenir"><span>Axe de soutien aux projets générateurs de revenu </span>  </h2>
+                            <p class="avenir">L’axe de soutien aux projets générateurs de revenu prévoit l’organisation d’un concours d’idées inspiré des Hackathons en substitution des appels à projets classiques. 14 (à enlever) Il s'agit en l'occurrence de mobiliser les jeunes dans un esprit de concours d’idées et de faire émerger des projets innovants qui répondent à des problématiques de développement local en relation avec les chaines de valeurs. Le concours d’idées concerne :</p>
                         </div>
 
                     </div>
@@ -124,7 +124,7 @@
                                     <i class="flaticon-satisfaction"></i>
                                 </div>
                                 <div class="help-card-content">
-                                    <h3>Les TPMEs (Société de Personnes et SARL)</h3>
+                                    <h3>Les TPMEs (Sociétés de personnes et SARL)</h3>
                                 </div>
                             </div>
                         </div>
@@ -134,7 +134,7 @@
                                     <i class="flaticon-satisfaction"></i>
                                 </div>
                                 <div class="help-card-content">
-                                    <h3> Les personnes disposant du statut<br/> « Auto-entrepreneurs » </h3>
+                                    <h3>Les personnes disposant du statut <br/> «Auto-entrepreneurs» </h3>
                                 </div>
                             </div>
                         </div>
@@ -153,8 +153,8 @@
 
 
                     <div style="max-width: 100% !important;" class="section-title mt-50">
-                        <h2><span>L’Heure Joyeuse est organisée en 4 pôles :</span>  </h2>
-                        <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo cosquat in magnam aliquam quaerat voluptatem</p>
+                        <h2><span class="avenir">L’Heure Joyeuse est organisée en 4 pôles :</span>  </h2>
+                        <p class="avenir">Pour mieux s’aligner à ses nouvelles orientations stratégiques.</p>
 
                     </div>
                     <div class="row">
@@ -197,13 +197,13 @@
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-3 pb-30">
-                            <div style="height: 100%;background-color: #ebd0ff;" class="about-item-card about-item-card-thirdcolor">
+                            <div style="height: 100%;background-color: #adffd1;" class="about-item-card about-item-card-thirdcolor">
 
                                 <div class="about-card-icon">
-                                    <img style="width: 50%;" src="{{ asset('images/icon_ Citoyen.svg') }}" />
+                                    <img style="width: 50%;" src="{{ asset('images/icon_ Citoyen_5.svg') }}" />
                                 </div>
                                 <div class="about-card-text">
-                                    <h6 style="background: #52008d;padding: 5px;border-radius: 8px;font-size: 22px;font-weight: bold;"><span style="color: #ffffff;" class="">Pôle Engagement Citoyen</span></h6>
+                                    <h6 style="background: #13c461;padding: 5px;border-radius: 8px;font-size: 22px;font-weight: bold;"><span style="color: #ffffff;" class="">Pôle Engagement Citoyen</span></h6>
                                     <p>Ce pôle a été créé avec objectif principal de réaffirmer l’engagement social et sociétal continu de l’Heure Joyeuse, les programmes que met en place ce pôle sont : la sensibilisation aux ODD, l’accompagnement des associations et le plaidoyer.</p>
                                 </div>
                             </div>
@@ -408,8 +408,8 @@
 <div style="padding-top: 7px !important;" class="terms-policy-section p-tb-100">
     <div class="container">
         <div class="section-title">
-            <h2><span>Concours D’idée De Projet</span></h2>
-            <p>We believe everyone has the capacity to be creative. Tuition is a place where people develop their own potential.</p>
+            <h2><span class="avenir">Concours d’idées de projets</span></h2>
+            <p class="avenir">Vous avez une idée de projet et avez besoin de conseils ou de soutien, nos équipes sont à votre écoute.</p>
         </div>
 
         <div class="row">
@@ -491,6 +491,45 @@
         </div>
 
 
+    </div>
+</section>
+<section class="offer-section pt-100 pb-70">
+    <div class="container">
+        <div style="margin-bottom: 24px;" class="row align-items-end">
+            <div class="col-12 col-lg-5">
+                <div class="about-section-title section-title section-title-left section-title-shapeless section-title-lineless section-title-thirdcolor">
+
+                    <h2>Voir toutes les <span>success stories</span></h2>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 offset-lg-1 pb-30">
+                <div class="about-feedback">
+                    <p class="about-feedback-paragraph">Découvrez les histoires de jeunes entrepreneurs qui, grâce à leur parcours au sein de la plateforme des jeunes Nouaceur, sont allés jusqu’au bout de leurs rêves.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            @isset($Entrepreneurs)
+                @foreach($Entrepreneurs as $Entrepreneur)
+                    <div class="col-12 col-sm-6 col-lg-3 pb-30">
+                        <div class="offer-card offer-card-thirdcolor">
+                            <div class="offer-card-inner">
+                                <div style="background-color: #0098e6;" class="offer-card-thumb">
+                                    <img src="{{ asset('images/entrepreneurs/'.$Entrepreneur->image_profile) }}" alt="course">
+                                </div>
+                                <div class="offer-card-content">
+                                    <h3>{{ $Entrepreneur->{'title_'.app()->getLocale() }  }}</h3>
+                                    <div class="entren">{!! $Entrepreneur->{'short_description_'.app()->getLocale()} !!}</div>
+                                </div>
+                                <a href="{{ route('axe-entrepreneuriat-single',$Entrepreneur->id) }}" class="offer-redirect-link"><i class="flaticon-right-arrow"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            @endisset
+
+
+        </div>
     </div>
 </section>
 @endsection

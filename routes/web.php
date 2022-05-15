@@ -19,6 +19,7 @@ Route::get('/', 'App\Http\Controllers\landing_page\LandingController@indexLandin
 Route::get('/actualite/{id}', 'App\Http\Controllers\landing_page\LandingController@getSingleActualite')->name('single.actualite');
 Route::get('/actualite/', 'App\Http\Controllers\landing_page\LandingController@Allactualite')->name('all_actualite');
 Route::get('/recrutement/', 'App\Http\Controllers\landing_page\LandingController@Allcarriere')->name('all_recrutement');
+Route::get('/single-recrutement/{id}', 'App\Http\Controllers\landing_page\LandingController@single_recrutement')->name('single_recrutement');
 Route::get('/recrutement/{id}', 'App\Http\Controllers\landing_page\LandingController@singleCarriere')->name('single.carriere');
 
 Route::get('/axe-entrepreneuriat/', 'App\Http\Controllers\landing_page\LandingController@axe_entrepreneuriat')->name('axe-entrepreneuriat');

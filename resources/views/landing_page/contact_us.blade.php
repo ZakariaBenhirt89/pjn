@@ -84,7 +84,7 @@
                     <div class="col-12 text-center">
                         <div class="input-checkbox mb-20">
                             <input type="checkbox" id="contact1">
-                            <label for="contact1">J'accepte <a href="#">Conditions d'utilisation</a> et <a href="#">Politique de confidentialité</a></label>
+                            <label for="contact1">J'accepte <a href="#">les conditions générales d’utilisation</a> et <a href="#">la politique de confidentialité</a></label>
                         </div>
                     </div>
                     <div class="col-12 col-md-12 col-lg-12 text-center">
@@ -109,22 +109,21 @@
                         <div class="contact-option-item">
                             <div class="contact-option-icon"><i class="flaticon-phone-call"></i></div>
                             <div class="contact-option-details">
-                                <p>Mobile: <a href="tel:0522-41-93-00">0522 41 93 00</a></p>
-                                <p>Fax: <a href="tel:0522-24-50-69">0522 24 50 69</a></p>
-                                <p>Email: <a href="mailto:accueil@heurejoyeuse.ma">accueil@heurejoyeuse.ma</a></p>
+                                <p>Fixe: <a href="tel:0522-69-72-19">0522 69 72 19</a></p>
+                                <p>Email: <a href="mailto:accueil@heurejoyeuse.ma">plateforme.jeunes.nouaceur@heurejoyeuse.ma</a></p>
                             </div>
                         </div>
                         <div class="contact-option-item">
                             <div class="contact-option-icon"><i class="flaticon-network"></i></div>
                             <div class="contact-option-details">
-                                <p>05, rue Abbas El Jiraoui, Belvédère, Casablanca.</p>
+                                <p>Dyar Ennour, tranche 1’26, OP Dar Bouazza, Casablanca</p>
                             </div>
                         </div>
                         <div class="contact-option-item">
                             <div class="contact-option-icon"><i class="flaticon-clock"></i></div>
                             <div class="contact-option-details">
-                                <p>Lundi - Vendredi: <span>09:00 am - 18:00 pm</span></p>
-                                <p>Dimanche &amp; Samedi: <span>09:30 am - 12:00 pm</span></p>
+                                <p>Lundi-vendredi: <span>8h30-17h30</span></p>
+                                <p>Samedi: <span>9h-12h</span></p>
                             </div>
                         </div>
                     </div>

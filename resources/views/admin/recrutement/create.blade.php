@@ -26,146 +26,97 @@
                                             <div class="row g-gs">
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label class="form-label" for="fw-last-name">Titre de Carriére (FR) :</label>
+                                                        <label class="form-label" for="fw-last-name">Poste :</label>
                                                         <div class="form-control-wrap">
 
-                                                            <input type="text" data-msg="Required" class="form-control required" id="title" name="title_fr" required="">
+                                                            <input type="text" data-msg="Required" class="form-control required" id="title" name="post" required="">
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <div style="text-align: right;" class="form-group">
-                                                        <label style="direction: rtl;" class="form-label arab" for="fw-last-name">العنوان بالعربية :</label>
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="fw-last-name">Société :</label>
                                                         <div class="form-control-wrap">
 
-                                                            <input type="text" data-msg="Required" class="form-control required" id="title" name="title_ar" required="">
+                                                            <input type="text" data-msg="Required" class="form-control required" id="title" name="societe" required="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="fw-last-name">Date de début :</label>
+                                                        <div class="form-control-wrap">
+
+                                                            <input type="text" data-msg="Required" class="form-control required" id="title" name="date_de_debut" required="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="fw-last-name">Type de contrat :</label>
+                                                        <div class="form-control-wrap">
+
+                                                            <input type="text" data-msg="Required" class="form-control required" id="title" name="type_de_contrat" required="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="fw-last-name">Lieu de travail :</label>
+                                                        <div class="form-control-wrap">
+
+                                                            <input type="text" data-msg="Required" class="form-control required" id="title" name="lieu_de_travail" required="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div  class="form-group">
+                                                        <label  class="form-label" for="fw-last-name">Caractéristiques du poste</label>
+                                                        <div class="form-control-wrap">
+
+                                                            <textarea type="text"  class="form-control" id="title" name="caractéristiques_du_poste"></textarea>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div  class="form-group">
-                                                        <label  class="form-label" for="fw-last-name">Brève Description</label>
+                                                        <label  class="form-label" for="fw-last-name">Formation</label>
                                                         <div class="form-control-wrap">
 
-                                                            <textarea type="text" data-msg="Required" class="form-control required" id="title" name="short_description_fr"></textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-12">
-                                                    <div style="text-align: right;" class="form-group">
-                                                        <label  class="form-label arab" for="fw-last-name">وصف قصير</label>
-                                                        <div class="form-control-wrap">
-
-                                                            <textarea style="direction: rtl;" type="text" data-msg="Required" class="form-control required" id="title" name="short_description_ar"></textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="customFileLabel">Description</label>
-                                                        <div class="form-control-wrap">
-                                                            <textarea class="summernote" name="contenu_fr"></textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                                <div class="col-md-12">
-                                                    <div style="text-align: right;" class="form-group">
-                                                        <label style="direction: rtl;" class="form-label arab" for="customFileLabel">المحتوى بالعربية:</label>
-                                                        <div class="form-control-wrap">
-                                                            <textarea class="summernote" name="contenu_ar" placeholder="المحتوى"></textarea>
+                                                            <textarea type="text" data-msg="Required" class="form-control required" id="title" name="Formation"></textarea>
                                                         </div>
                                                     </div>
                                                 </div>
 
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label class="form-label">Date de creation</label>
+                                                        <label class="form-label" for="fw-last-name">Expérience professionnelle :</label>
                                                         <div class="form-control-wrap">
 
-                                                            <input type="text" class="form-control date-picker" name="date_creation" autocomplete="off" data-date-format="yyyy-mm-dd">
-                                                        </div>
-                                                        <div class="form-note">Date format <code>yyyy-mm-dd</code></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="fw-last-name">Email :</label>
-                                                        <div class="form-control-wrap">
-
-                                                            <input type="email" data-msg="Required" class="form-control required" id="title" name="email" required="">
+                                                            <input type="text" data-msg="Required" class="form-control required" id="title" name="Expérience_professionnelle" required="">
                                                         </div>
                                                     </div>
                                                 </div>
+
+
+
+
+
+
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label class="form-label" for="fw-last-name">Photo de Coverture :</label>
                                                         <div class="form-control-wrap">
 
-                                                            <input type="file" data-msg="Required" class="required" id="title" name="photo" required="">
+                                                            <input type="file"  id="title" name="photo" />
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="fw-last-name">Telephone :</label>
-                                                        <div class="form-control-wrap">
 
-                                                            <input type="text" data-msg="Required" class="form-control required" id="title" name="tele" required="">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="fw-last-name">Attachement :</label>
-                                                        <div class="form-control-wrap">
 
-                                                            <input type="file" data-msg="Required" class="required" id="title" name="attachement" required="">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="fw-last-name">Lieu :</label>
-                                                        <div class="form-control-wrap">
-                                                            <input type="text" data-msg="Required" class="form-control required" id="title" name="lieu_fr" required="" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6"></div>
 
-                                                <div class="col-md-6">
-                                                    <div style="text-align: right;" class="form-group">
-                                                        <label style="direction: rtl;" class="form-label arab" for="fw-last-name">مكان :</label>
-                                                        <div class="form-control-wrap">
-                                                            <input style="direction: rtl;" type="text" data-msg="Required" class="form-control required" id="title" name="lieu_ar" required="" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="thumb">Status</label>
-                                                        <div class="form-control-wrap">
-                                                            <ul class="custom-control-group g-3 align-center flex-wrap">
-                                                                <li>
-                                                                    <div class="custom-control custom-radio checked">
-                                                                        <input type="radio" class="custom-control-input" checked="" value="public" name="status" id="reg-enable">
-                                                                        <label class="custom-control-label" for="reg-enable">Public</label>
-                                                                    </div>
-                                                                </li>
-                                                                <li>
-                                                                    <div class="custom-control custom-radio">
-                                                                        <input type="radio" class="custom-control-input" value="prive" name="status" id="reg-disable">
-                                                                        <label class="custom-control-label" for="reg-disable">Privé</label>
-                                                                    </div>
-                                                                </li>
 
-                                                            </ul>
-                                                        </div>
-                                                    </div><!-- .form-group -->
-                                                </div>
 
 
 

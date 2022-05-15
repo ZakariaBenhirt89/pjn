@@ -2,22 +2,25 @@
 <html lang="zxx" @if( app()->getLocale() == "fr" ) dir="ltr" @else dir="rtl" @endif>
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Jexi">
+    <meta name="description" content="AOBC">
     <meta name="keywords" content="HTML,CSS,JavaScript">
     <meta name="author" content="HiBootstrap">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+
+
     @if(app()->getLocale() == 'fr')
 
-        <title>Platforme L'heure Joieuse in frensh</title>
+        <title>Plateforme des jeunes Nouaceur - Initiative Nationale pour le Développement Humain - Accueil</title>
 
     @else
 
-        <title>Platforme L'heure Joieuse in arabic</title>
+        <title>المبادرة الوطنية للتنمية البشرية - الرئيسية -منصة شباب النواصر</title>
 
     @endif
 
-    <link rel="icon" href="assets/images/tab.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="{{ asset('images/preloader.png') }}" type="image/png" sizes="16x16">
 
     <!-- bootstrap css -->
     @if( app()->getLocale() == 'fr' )
@@ -681,6 +684,15 @@
             font-family: 'Avenir', sans-serif !important;
         }
 
+        .main-nav nav .navbar-nav .nav-item .dropdown-menu{
+            width: 300px !important;
+        }
+        .partner-carousel-two .partner-item img{
+            height: 161px;
+        }
+        .course-card.course-card-thirdcolor:hover .course-card-content h3 a {
+            color: #05ac50;
+        }
 
     </style>
 

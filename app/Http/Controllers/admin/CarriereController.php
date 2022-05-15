@@ -11,6 +11,7 @@ class CarriereController extends Controller
     public function index(){
         $carrieres = Carriere::all();
 
+
         return view('admin.carriere.index',compact('carrieres'));
     }
     public function create(){
@@ -22,8 +23,6 @@ class CarriereController extends Controller
         return view('admin.carriere.edit',compact("carriere"));
     }
     public function store(Request $request){
-
-
 
 
 

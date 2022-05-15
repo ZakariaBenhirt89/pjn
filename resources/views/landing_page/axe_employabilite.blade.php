@@ -60,7 +60,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-6 pb-30">
-                            <div style="    background: #9a1ca8;" class="about-item-card about-item-card-thirdcolor">
+                            <div style="    background: #fcc400;" class="about-item-card about-item-card-thirdcolor">
                                 <img src="assets/images/shapes/about-grid-icon.png" class="about-card-image" alt="icon">
 
                                 <div class="about-card-text">
@@ -153,129 +153,174 @@
             </div>
         </div>
     </div>
+
     <section class="help-section pt-100">
         <div class="container">
-            <div class="pb-70">
+            <div class="pb-70 border-bottom">
                 <div class="section-title">
-                    <h2>Mieux appréhender le marché de <span>l'emploi</span></h2>
-                    <p class="avenir">Donner aux jeunes les outils nécessaires pour booster leur employabilité.</p>
+                    <h2>Gallery <span>Axe Employabilité</span></h2>
+{{--                    <p>We believe everyone has the capacity to be creative. Tuition is a place where people develop their own potential.</p>--}}
                 </div>
-                <div class="row">
 
 
 
-                    <!--Carousel Gallery-->
-                    <div class="gallery-tab-details popup-gallery">
-                        <div class="row">
-                            <div class="col-12 col-md-6 col-lg-3 element-item photos campus pb-30" style="position: absolute; left: 0px; top: 0px;">
-                                <div class="gallery-card">
-                                    <div class="gallery-card-thumb">
-                                        <img src="{{ asset('images/axe_employabilite/IMG_0164.jpg') }}" alt="gallery">
-                                    </div>
-                                    <div class="gallery-zoom">
-                                        <a href="{{ asset('images/axe_employabilite/IMG_0164.jpg') }}" title="Photos"><i class="flaticon-plus"></i></a>
-                                    </div>
+                <!--Carousel Gallery-->
+                <div class="gallery-tab-details popup-gallery">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3 element-item photos campus pb-30" style="position: absolute; left: 0px; top: 0px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_employabilite/IMG_0164.jpg') }}" alt="gallery">
+                                </div>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_employabilite/IMG_0164.jpg') }}" title="Photos"><i class="flaticon-plus"></i></a>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-3 element-item campus pb-30" style="position: absolute; left: 400px; top: 0px;">
-                                <div class="gallery-card">
-                                    <div class="gallery-card-thumb">
-                                        <img src="{{ asset('images/axe_employabilite/IMG_0226.jpg') }}" alt="gallery">
-                                    </div>
-                                    <div class="gallery-zoom">
-                                        <a href="{{ asset('images/axe_employabilite/IMG_0226.jpg') }}" title="Campus"><i class="flaticon-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-3 element-item students photos pb-30" style="position: absolute; left: 800px; top: 0px;">
-                                <div class="gallery-card">
-                                    <div class="gallery-card-thumb">
-                                        <img src="{{ asset('images/axe_employabilite/IMG_0235.jpg') }}" alt="gallery">
-                                    </div>
-                                    <div class="gallery-zoom">
-                                        <a href="{{ asset('images/axe_employabilite/IMG_0235.jpg') }}" title="Students"><i class="flaticon-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-3 element-item campus pb-30" style="position: absolute; left: 0px; top: 400px;">
-                                <div class="gallery-card">
-                                    <div class="gallery-card-thumb">
-                                        <img src="{{ asset('images/axe_employabilite/IMG_0264.jpg') }}" alt="gallery">
-                                    </div>
-                                    <div class="gallery-zoom">
-                                        <a href="{{ asset('images/axe_employabilite/IMG_0264.jpg') }}" title="Campus"><i class="flaticon-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-3 element-item students pb-30" style="position: absolute; left: 400px; top: 400px;">
-                                <div class="gallery-card">
-                                    <div class="gallery-card-thumb">
-                                        <img src="{{ asset('images/axe_employabilite/IMG_0304.jpg') }}" alt="gallery">
-                                    </div>
-                                    <div class="gallery-zoom">
-                                        <a href="{{ asset('images/axe_employabilite/IMG_0304.jpg') }}" title="Students"><i class="flaticon-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
+                        <div class="col-12 col-md-6 col-lg-3 element-item campus pb-30" style="position: absolute; left: 400px; top: 0px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_employabilite/IMG_0235.jpg') }}" alt="gallery">
+                                </div>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_employabilite/IMG_0235.jpg') }}" title="Campus"><i class="flaticon-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 element-item students photos pb-30" style="position: absolute; left: 800px; top: 0px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_employabilite/IMG_0264.jpg') }}" alt="gallery">
+                                </div>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_employabilite/IMG_0264.jpg') }}" title="Students"><i class="flaticon-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 element-item campus pb-30" style="position: absolute; left: 0px; top: 400px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_employabilite/IMG_0304.jpg') }}" alt="gallery">
+                                </div>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_employabilite/IMG_0304.jpg') }}" title="Campus"><i class="flaticon-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 element-item students pb-30" style="position: absolute; left: 400px; top: 400px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_employabilite/IMG_0226.jpg') }}" alt="gallery">
+                                </div>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_employabilite/IMG_0226.jpg') }}" title="Students"><i class="flaticon-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 element-item students pb-30" style="position: absolute; left: 400px; top: 400px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_employabilite/8b82e2e4-8376-43bc-a426-97b91d171ee7.jpg') }}" alt="gallery">
+                                </div>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_employabilite/8b82e2e4-8376-43bc-a426-97b91d171ee7.jpg') }}" title="Students"><i class="flaticon-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 element-item students pb-30" style="position: absolute; left: 400px; top: 400px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_employabilite/42a5e18f-2b91-41c4-b610-992ef85918ca.jpg') }}" alt="gallery">
+                                </div>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_employabilite/42a5e18f-2b91-41c4-b610-992ef85918ca.jpg') }}" title="Students"><i class="flaticon-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 element-item students pb-30" style="position: absolute; left: 400px; top: 400px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_employabilite/544d9b73-5c1b-448e-8a41-b577009f9aa0.jpg') }}" alt="gallery">
+                                </div>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_employabilite/544d9b73-5c1b-448e-8a41-b577009f9aa0.jpg') }}" title="Students"><i class="flaticon-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3 element-item students pb-30" style="position: absolute; left: 400px; top: 400px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_employabilite/be9f8e96-a381-4a68-949a-1f88d8d34141.jpg') }}" alt="gallery">
+                                </div>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_employabilite/be9f8e96-a381-4a68-949a-1f88d8d34141.jpg') }}" title="Students"><i class="flaticon-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 element-item students pb-30" style="position: absolute; left: 400px; top: 400px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_employabilite/d118f164-0ffc-46fc-b9f0-9540d30d7731.jpg') }}" alt="gallery">
+                                </div>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_employabilite/d118f164-0ffc-46fc-b9f0-9540d30d7731.jpg') }}" title="Students"><i class="flaticon-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 element-item students pb-30" style="position: absolute; left: 400px; top: 400px;">
+                            <div class="gallery-card">
+                                <div class="gallery-card-thumb">
+                                    <img src="{{ asset('images/axe_employabilite/f7ec619e-01e5-4b7a-9822-e6575313bcc8.jpg') }}" alt="gallery">
+                                </div>
+                                <div class="gallery-zoom">
+                                    <a href="{{ asset('images/axe_employabilite/f7ec619e-01e5-4b7a-9822-e6575313bcc8.jpg') }}" title="Students"><i class="flaticon-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <!--#Carousel Gallery-->
-
-
-
-                    <!-- /.gallery-slider -->
-
-
                 </div>
+                <!--#Carousel Gallery-->
+
+
+
+                <!-- /.gallery-slider -->
+
+
             </div>
         </div>
     </section>
     <section  style="background: #f5feff;" class="course-section p-tb-100 position-relative">
         <div class="container">
-            <div class="section-title section-title-shapeless section-title-lineless section-title-thirdcolor">
+            <div style="max-width: none;" class="section-title section-title-shapeless section-title-lineless section-title-thirdcolor">
 
-                <h2><span>Les offres d'emploi</span></h2>
-                <p>Trouvez l'offre qui correspond à votre profil</p>
+                <h2><span>Opportunités d'Emploi</span></h2>
+                <p>Notre équipe mobilise les acteurs du secteur économique, vos futurs employeurs, et vous présente les opportunités d'emploi qui correspondent à votre projet socio-professionnel L'équipe de l'axe "Appui à l'Employabilité" vous contactera pour plus d'informations</p>
             </div>
             <div class="row">
 
+                @isset($recrutements)
+                    @foreach($recrutements as $recrutement)
 
+                        <div class="col-12 col-lg-6 pb-30">
+                            <div style="background: #f0fffb;" class="course-card course-card-list course-card-thirdcolor">
+                                <div class="course-card-thumb ">
+                                    <a style="height: 100%;" href="#"><img src="{{ asset('images/Logo_HJ.png') }}" alt="course"></a>
+                                </div>
+                                <div class="course-card-content">
+                                    <h3><a href="#">{{ $recrutement->post }}</a></h3>
+                                    <ul class="course-info-list">
+                                        <li><b>Societe : </b> <span>{{ $recrutement->societe }}</span></li>
+                                        <li><b>Date de debut : </b> <span>{{ $recrutement->date_de_debut }}</span></li>
+                                        <li><b>Lieu de travail : </b> <span> {{ $recrutement->lieu_de_travail }}</span></li>
+                                        <li><b>Type de contrat : </b> <span>{{ $recrutement->type_de_contrat }}</span></li>
+                                        <li style="display: block;"><b>Formation : </b> <span>{!! $recrutement->Formation !!}</span></li>
+                                    </ul>
+                                    <ul class="course-filter-list">
 
-
-
-
-
-                <div class="col-12 col-lg-6 pb-30">
-                    <div style="background: #f0fffb;" class="course-card course-card-list course-card-thirdcolor">
-                        <div class="course-card-thumb ">
-                            <a href="#"><img src="{{ asset('images/_Q7B0025.jpg') }}" alt="course"></a>
-                        </div>
-                        <div class="course-card-content">
-                            <h3><a href="single-course.html">Annonce d'un appel à propositions de projets</a></h3>
-                            <ul class="course-info-list">
-                                <li><i class="flaticon-reading"></i> email@gmail.com</li>
-                                <li><i class="flaticon-online-learning-1"></i> Lieu de travail</li>
-                            </ul>
-                            <ul class="course-filter-list">
-                                <li>
-
-                                    <a style="   display: inline-block;
-                                    font-weight: 700;
-                                    color: #526484;
-                                    text-align: center;
-                                    vertical-align: middle;
-                                    user-select: none;
-                                    background-color: transparent;
-                                    border: 1px solid transparent;
-                                    padding: 0.4375rem 1.125rem;
-                                    font-size: 0.8125rem;
-                                    line-height: 1.25rem;
-                                    border-radius: 4px;
-                                    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;color: #fff;background-color: #7bdf02;border-color: #91d93a; width: 120px;" href="#" class="btn btn-success">Voir Plus</a>
-                                </li>
-                                <li>
-                                    <a style="   display: inline-block;
+                                        <li>
+                                            <a style="   display: inline-block;
                                     font-weight: 700;
                                     color: #526484;
                                     text-align: center;
@@ -292,319 +337,30 @@
     border-color: #89019b; width: 120px;" href="#" class="btn btn-success">Postuler</a>
 
 
-                                </li>
-                            </ul>
+                                        </li>
+                                    </ul>
 
 
-                        </div>
-                    </div>
-                </div> <div class="col-12 col-lg-6 pb-30">
-                    <div style="background: ;" class="course-card course-card-list course-card-thirdcolor">
-                        <div class="course-card-thumb ">
-                            <a href="#"><img src="{{ asset('images/_Q7B0025.jpg') }}" alt="course"></a>
-                        </div>
-                        <div class="course-card-content">
-                            <h3><a href="single-course.html">Annonce d'un appel à propositions de projets</a></h3>
-                            <ul class="course-info-list">
-                                <li><i class="flaticon-reading"></i> email@gmail.com</li>
-                                <li><i class="flaticon-online-learning-1"></i> Lieu de travail</li>
-                            </ul>
-                            <ul class="course-filter-list">
-                                <li>
-
-                                    <a style="   display: inline-block;
-                                    font-weight: 700;
-                                    color: #526484;
-                                    text-align: center;
-                                    vertical-align: middle;
-                                    user-select: none;
-                                    background-color: transparent;
-                                    border: 1px solid transparent;
-                                    padding: 0.4375rem 1.125rem;
-                                    font-size: 0.8125rem;
-                                    line-height: 1.25rem;
-                                    border-radius: 4px;
-                                    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;color: #fff;background-color: #7bdf02;border-color: #91d93a; width: 120px;" href="#" class="btn btn-success">Voir Plus</a>
-                                </li>
-                                <li>
-                                    <a style="   display: inline-block;
-                                    font-weight: 700;
-                                    color: #526484;
-                                    text-align: center;
-                                    vertical-align: middle;
-                                    user-select: none;
-                                    background-color: transparent;
-                                    border: 1px solid transparent;
-                                    padding: 0.4375rem 1.125rem;
-                                    font-size: 0.8125rem;
-                                    line-height: 1.25rem;
-                                    border-radius: 4px;
-                                    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;color: #fff;
-    background-color: #89019b;
-    border-color: #89019b; width: 120px;" href="#" class="btn btn-success">Postuler</a>
-
-
-                                </li>
-                            </ul>
-
-
-                        </div>
-                    </div>
-                </div> <div class="col-12 col-lg-6 pb-30">
-                    <div style="background: #f0fffb;" class="course-card course-card-list course-card-thirdcolor">
-                        <div class="course-card-thumb ">
-                            <a href="#"><img src="{{ asset('images/_Q7B0025.jpg') }}" alt="course"></a>
-                        </div>
-                        <div class="course-card-content">
-                            <h3><a href="single-course.html">Annonce d'un appel à propositions de projets</a></h3>
-                            <ul class="course-info-list">
-                                <li><i class="flaticon-reading"></i> email@gmail.com</li>
-                                <li><i class="flaticon-online-learning-1"></i> Lieu de travail</li>
-                            </ul>
-                            <ul class="course-filter-list">
-                                <li>
-
-                                    <a style="   display: inline-block;
-                                    font-weight: 700;
-                                    color: #526484;
-                                    text-align: center;
-                                    vertical-align: middle;
-                                    user-select: none;
-                                    background-color: transparent;
-                                    border: 1px solid transparent;
-                                    padding: 0.4375rem 1.125rem;
-                                    font-size: 0.8125rem;
-                                    line-height: 1.25rem;
-                                    border-radius: 4px;
-                                    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;color: #fff;background-color: #7bdf02;border-color: #91d93a; width: 120px;" href="#" class="btn btn-success">Voir Plus</a>
-                                </li>
-                                <li>
-                                    <a style="   display: inline-block;
-                                    font-weight: 700;
-                                    color: #526484;
-                                    text-align: center;
-                                    vertical-align: middle;
-                                    user-select: none;
-                                    background-color: transparent;
-                                    border: 1px solid transparent;
-                                    padding: 0.4375rem 1.125rem;
-                                    font-size: 0.8125rem;
-                                    line-height: 1.25rem;
-                                    border-radius: 4px;
-                                    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;color: #fff;
-    background-color: #89019b;
-    border-color: #89019b; width: 120px;" href="#" class="btn btn-success">Postuler</a>
-
-
-                                </li>
-                            </ul>
-
-
-                        </div>
-                    </div>
-                </div> <div class="col-12 col-lg-6 pb-30">
-                    <div style="background: #f0fffb;" class="course-card course-card-list course-card-thirdcolor">
-                        <div class="course-card-thumb ">
-                            <a href="#"><img src="{{ asset('images/_Q7B0025.jpg') }}" alt="course"></a>
-                        </div>
-                        <div class="course-card-content">
-                            <h3><a href="single-course.html">Annonce d'un appel à propositions de projets</a></h3>
-                            <ul class="course-info-list">
-                                <li><i class="flaticon-reading"></i> email@gmail.com</li>
-                                <li><i class="flaticon-online-learning-1"></i> Lieu de travail</li>
-                            </ul>
-                            <ul class="course-filter-list">
-                                <li>
-
-                                    <a style="   display: inline-block;
-                                    font-weight: 700;
-                                    color: #526484;
-                                    text-align: center;
-                                    vertical-align: middle;
-                                    user-select: none;
-                                    background-color: transparent;
-                                    border: 1px solid transparent;
-                                    padding: 0.4375rem 1.125rem;
-                                    font-size: 0.8125rem;
-                                    line-height: 1.25rem;
-                                    border-radius: 4px;
-                                    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;color: #fff;background-color: #7bdf02;border-color: #91d93a; width: 120px;" href="#" class="btn btn-success">Voir Plus</a>
-                                </li>
-                                <li>
-                                    <a style="   display: inline-block;
-                                    font-weight: 700;
-                                    color: #526484;
-                                    text-align: center;
-                                    vertical-align: middle;
-                                    user-select: none;
-                                    background-color: transparent;
-                                    border: 1px solid transparent;
-                                    padding: 0.4375rem 1.125rem;
-                                    font-size: 0.8125rem;
-                                    line-height: 1.25rem;
-                                    border-radius: 4px;
-                                    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;color: #fff;
-    background-color: #89019b;
-    border-color: #89019b; width: 120px;" href="#" class="btn btn-success">Postuler</a>
-
-
-                                </li>
-                            </ul>
-
-
-                        </div>
-                    </div>
-                </div> <div class="col-12 col-lg-6 pb-30">
-                    <div style="background: #f0fffb;" class="course-card course-card-list course-card-thirdcolor">
-                        <div class="course-card-thumb ">
-                            <a href="#"><img src="{{ asset('images/_Q7B0025.jpg') }}" alt="course"></a>
-                        </div>
-                        <div class="course-card-content">
-                            <h3><a href="single-course.html">Annonce d'un appel à propositions de projets</a></h3>
-                            <ul class="course-info-list">
-                                <li><i class="flaticon-reading"></i> email@gmail.com</li>
-                                <li><i class="flaticon-online-learning-1"></i> Lieu de travail</li>
-                            </ul>
-                            <ul class="course-filter-list">
-                                <li>
-
-                                    <a style="   display: inline-block;
-                                    font-weight: 700;
-                                    color: #526484;
-                                    text-align: center;
-                                    vertical-align: middle;
-                                    user-select: none;
-                                    background-color: transparent;
-                                    border: 1px solid transparent;
-                                    padding: 0.4375rem 1.125rem;
-                                    font-size: 0.8125rem;
-                                    line-height: 1.25rem;
-                                    border-radius: 4px;
-                                    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;color: #fff;background-color: #7bdf02;border-color: #91d93a; width: 120px;" href="#" class="btn btn-success">Voir Plus</a>
-                                </li>
-                                <li>
-                                    <a style="   display: inline-block;
-                                    font-weight: 700;
-                                    color: #526484;
-                                    text-align: center;
-                                    vertical-align: middle;
-                                    user-select: none;
-                                    background-color: transparent;
-                                    border: 1px solid transparent;
-                                    padding: 0.4375rem 1.125rem;
-                                    font-size: 0.8125rem;
-                                    line-height: 1.25rem;
-                                    border-radius: 4px;
-                                    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;color: #fff;
-    background-color: #89019b;
-    border-color: #89019b; width: 120px;" href="#" class="btn btn-success">Postuler</a>
-
-
-                                </li>
-                            </ul>
-
-
-                        </div>
-                    </div>
-                </div> <div class="col-12 col-lg-6 pb-30">
-                    <div style="background: #f0fffb;" class="course-card course-card-list course-card-thirdcolor">
-                        <div class="course-card-thumb ">
-                            <a href="#"><img src="{{ asset('images/_Q7B0025.jpg') }}" alt="course"></a>
-                        </div>
-                        <div class="course-card-content">
-                            <h3><a href="single-course.html">Annonce d'un appel à propositions de projets</a></h3>
-                            <ul class="course-info-list">
-                                <li><i class="flaticon-reading"></i> email@gmail.com</li>
-                                <li><i class="flaticon-online-learning-1"></i> Lieu de travail</li>
-                            </ul>
-                            <ul class="course-filter-list">
-                                <li>
-
-                                    <a style="   display: inline-block;
-                                    font-weight: 700;
-                                    color: #526484;
-                                    text-align: center;
-                                    vertical-align: middle;
-                                    user-select: none;
-                                    background-color: transparent;
-                                    border: 1px solid transparent;
-                                    padding: 0.4375rem 1.125rem;
-                                    font-size: 0.8125rem;
-                                    line-height: 1.25rem;
-                                    border-radius: 4px;
-                                    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;color: #fff;background-color: #7bdf02;border-color: #91d93a; width: 120px;" href="#" class="btn btn-success">Voir Plus</a>
-                                </li>
-                                <li>
-                                    <a style="   display: inline-block;
-                                    font-weight: 700;
-                                    color: #526484;
-                                    text-align: center;
-                                    vertical-align: middle;
-                                    user-select: none;
-                                    background-color: transparent;
-                                    border: 1px solid transparent;
-                                    padding: 0.4375rem 1.125rem;
-                                    font-size: 0.8125rem;
-                                    line-height: 1.25rem;
-                                    border-radius: 4px;
-                                    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;color: #fff;
-    background-color: #89019b;
-    border-color: #89019b; width: 120px;" href="#" class="btn btn-success">Postuler</a>
-
-
-                                </li>
-                            </ul>
-
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="text-center">
-                <a href="#" class="btn main-btn btn-thirdcolor">Voir toutes les offres d’emploi <i class="flaticon-edit"></i></a>
-            </div>
-        </div>
-    </section>
-    <section class="offer-section pt-100 pb-70">
-        <div class="container">
-            <div style="margin-bottom: 24px;" class="row align-items-end">
-                <div class="col-12 col-lg-5">
-                    <div class="about-section-title section-title section-title-left section-title-shapeless section-title-lineless section-title-thirdcolor">
-
-                        <h2>Voir Tous Les  <span>Succès Story</span></h2>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 offset-lg-1 pb-30">
-                    <div class="about-feedback">
-                        <p class="about-feedback-paragraph">Minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in magnam aliquam quaerat voluptatem</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                @isset($Entrepreneurs)
-                    @foreach($Entrepreneurs as $Entrepreneur)
-                             <div class="col-12 col-sm-6 col-lg-3 pb-30">
-                                <div class="offer-card offer-card-thirdcolor">
-                                    <div class="offer-card-inner">
-                                        <div style="background-color: #0098e6;" class="offer-card-thumb">
-                                            <img src="{{ asset('images/entrepreneurs/'.$Entrepreneur->image_profile) }}" alt="course">
-                                        </div>
-                                        <div class="offer-card-content">
-                                            <h3>{{ $Entrepreneur->{'title_'.app()->getLocale() }  }}</h3>
-                                            <div class="entren">{!! $Entrepreneur->{'short_description_'.app()->getLocale()} !!}</div>
-                                        </div>
-                                        <a href="{{ route('axe-entrepreneuriat-single',$Entrepreneur->id) }}" class="offer-redirect-link"><i class="flaticon-right-arrow"></i></a>
-                                    </div>
                                 </div>
                             </div>
+                        </div>
+
                     @endforeach
                 @endisset
 
 
+
+
+
+
             </div>
+
         </div>
     </section>
+
+
+
+
 @endsection
 
 @section('scripts')

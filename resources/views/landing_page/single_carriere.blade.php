@@ -75,13 +75,13 @@
                 <div class="col-12 col-lg-8 pb-30 order-lg-1">
                     <div class="summery-details-item desk-pad-right-30">
                         <div class="summery-info-details">
-                            <div class="summery-info-details-inner">
+                            <div style="margin-bottom: 16px;" class="summery-info-details-inner">
                                 <div style="display: flex;justify-content: center;">
-                                    <img style="width: 42%;" src="{{ asset('images/carriere/'.$carriere->photo) }}" />
+                                    <img style="width: 42%;" src="{{ asset('images/recrutement/'.$carriere->photo) }}" />
                                 </div>
                             </div>
                             <div class="summery-info-details-inner">
-                                <h2  @if( app()->getLocale() == "ar" ) class="arab" @endif>{{ $carriere->{'title_'.app()->getLocale() }  }}</h2>
+                                <h3  @if( app()->getLocale() == "ar" ) class="arab" @endif>{{ $carriere->{'title_'.app()->getLocale() }  }}</h3>
                                 <p @if( app()->getLocale() == "ar" ) class="arab" @endif>
                                     {{ $carriere->{'short_description_'.app()->getLocale() }  }}
                                 </p>

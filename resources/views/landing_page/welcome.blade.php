@@ -9,7 +9,7 @@
                     <div style="margin-left: 39px;text-align: center;" class="header-content  desk-pad-right-30">
                         <div class="header-content-text">
                             <h1 style="color: #fcc400;font-size: 58px; font-family: 'Avenir', sans-serif !important;">Plateforme des jeunes Nouaceur</h1>
-                            <p style="margin-bottom: 15px;">Jeunes sans emploi ou ayant un emploi précaire, diplômés sans emploi, ou acteurs économiques locaux et jeunes porteurs de projets, vous êtes tous les bienvenus au sein de la plateforme des jeunes Nouaceur!</p>
+                            <p style="margin-bottom: 15px;">Jeunes sans emploi ou ayant un emploi précaire, diplômés sans emploi, ou acteurs locaux et jeunes porteurs de projets, âgés de 18 à 45 ans et issus de la province de Nouaceur, vous êtes tous les bienvenus au sein de la plateforme des jeunes Nouaceur!</p>
                         </div>
 
                     </div>
@@ -98,8 +98,8 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-3 col-lg-3 pb-30">
-                    <div style="background: #fad6ff;padding: 15px;height: 100%;border-radius: 8px;" class="help-card help-card-center">
-                        <div style="background-color: #de00ff !important;" class="help-card-thumb">
+                    <div style="background: #c3ffda;padding: 15px;height: 100%;border-radius: 8px;" class="help-card help-card-center">
+                        <div style="background-color: #00782d !important;" class="help-card-thumb">
                             <img width="40" src="{{ asset('images/rencontre.png') }}" />
                         </div>
                         <div class="help-card-content">
@@ -177,24 +177,59 @@
     <section class="about-section pt-100 pb-70">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-lg-5 pb-30">
-                    <div class="section-title section-title-left text-start">
+                <div class="col-12 col-lg-12 pb-30">
+                    <div class="section-title section-title-left text-center">
                         <h2> <span style="color: #06933e;"> Nos partenaires</span> </h2>
-                        <p>Vous pouvez répertorier ici les marques de vos partenaires ou de vos instructeurs pour montrer la réputation de votre site et les étudiants peuvent vous faire davantage confiance.</p>
+                        <p style="margin: 0;" class="avenir">La création de la plateforme des jeunes Nouaceur est le fruit d'un partenariat initié en 2014, entre la province de Nouaceur et l’association l’Heure Joyeuse.</p>
+                          <p class="avenir">D’autres partenaires, privés et publics, sont aussi impliqués dans les activités de la plateforme.</p>
                     </div>
-                    <div class="faq-accordion">
+                    <div class="partner-section position-relative">
+
+                        <div class="container">
+                            <div class="partner-carousel-two swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="partner-item swiper-slide">
+                                        <a href="#"><img src="{{ asset('images/partenaires/1.png') }}" alt="partner"></a>
+                                    </div>
+                                    <div class="partner-item swiper-slide">
+                                        <a href="#"><img  src="{{ asset('images/partenaires/2.png') }}" alt="partner"></a>
+                                    </div>
+                                    <div class="partner-item swiper-slide">
+                                        <a href="#"><img src="{{ asset('images/partenaires/3.png') }}" alt="partner"></a>
+                                    </div>
+                                    <div class="partner-item swiper-slide">
+                                        <a href="#"><img src="{{ asset('images/partenaires/4.png') }}" alt="partner"></a>
+                                    </div>
+                                    <div class="partner-item swiper-slide">
+                                        <a href="#"><img src="{{ asset('images/partenaires/5.png') }}" alt="partner"></a>
+                                    </div>
+                                    <div class="partner-item swiper-slide">
+                                        <a href="#"><img src="{{ asset('images/partenaires/6.png') }}" alt="partner"></a>
+                                    </div>
+                                    <div class="partner-item swiper-slide">
+                                        <a href="#"><img src="{{ asset('images/partenaires/7.png') }}" alt="partner"></a>
+                                    </div>
+                                    <div class="partner-item swiper-slide">
+                                        <a href="#"><img src="{{ asset('images/partenaires/8.png') }}" alt="partner"></a>
+                                    </div>
+                                    <div class="partner-item swiper-slide">
+                                        <a href="#"><img src="{{ asset('images/partenaires/9.png') }}" alt="partner"></a>
+                                    </div>
+                                    <div class="partner-item swiper-slide">
+                                        <a href="#"><img src="{{ asset('images/partenaires/10.png') }}" alt="partner"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-accordion text-center mt-4">
                         <div class="header-button-item">
-                            <a href="#" class="btn btn-success btn-radius">Voir tous les partenaires <i class="flaticon-edit"></i></a>
+                            <a href="#" class="btn btn-success btn-radius">Voir toutes les partenaires </a>
 
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 offset-lg-1 pb-30">
-                    <div class="text-center">
-                        <img style="width: 100% !important;position: relative;top: 13px;" src="{{ asset('images/_Q7B0264.jpg') }}" alt="cook">
-                    </div>
 
-                </div>
             </div>
         </div>
     </section>
@@ -207,7 +242,7 @@
                 <div class="section-title section-title-shapeless">
                     <h2>Nos dernières <span>actualités</span></h2>
                 </div>
-                <a href="{{ route('all_actualite') }}" class="btn btn-success btn-radius">VOIR TOUS LES Actualités <i class="flaticon-edit"></i></a>
+                <a href="{{ route('all_actualite') }}" class="btn btn-success btn-radius">Voir toutes les actualités </a>
 
             </div>
             <div class="row">
@@ -222,7 +257,7 @@
                                 <li><i class="flaticon-placeholder"></i> Plateforme des Jeunes Nouaceur </li>
                             </ul>
                             <h3 @if( app()->getLocale() == 'ar' ) class="arab" @endif>{{ $actualite->{'title_'.app()->getLocale()} }}</h3>
-                            <p><a href="{{ route('single.actualite',$actualite->id) }}" class="redirect-link @if( app()->getLocale() == 'ar' ) arab  @endif">{{ trans('messages.actulite.title') }}<i class="flaticon-right-arrow"></i></a></p>
+                            <p><a href="{{ route('single.actualite',$actualite->id) }}" class="redirect-link @if( app()->getLocale() == 'ar' ) arab  @endif">Plus de détails<i class="flaticon-right-arrow"></i></a></p>
                         </div>
                         <ul class="course-filter-list">
                             <li class="course-filter-danger">{{ $actualite->created_at }}</li>
@@ -251,7 +286,7 @@
                 <div class="col-12 col-lg-12 pb-30">
                     <div class="about-feedback">
                         <p class="about-feedback-paragraph">Une plateforme provinciale physique dédiée aux jeunes : </p>
-                        <p style="text-align: justify;" class="about-feedback-paragraph">« Plateformes des jeunes / Carrefour des jeunes » créée au niveau de Dar Bouazza avec 4 antennes d’accueil, d’écoute et d’orientation au niveau de Mkanssa, Bouskoura, Ouled Saleh et la(supprimer) Nouaceur ; pour accueillir les jeunes en quête d’opportunités. Répartie en trois axes :</p>
+                        <p style="text-align: justify;" class="about-feedback-paragraph">« Plateformes des jeunes / Carrefour des jeunes » créée au niveau de Dar Bouazza avec 4 antennes d’accueil, d’écoute et d’orientation au niveau de Mkanssa, Bouskoura et Ouled Saleh; pour accueillir les jeunes en quête d’opportunités. Répartie en trois axes :</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-12 pb-30">
@@ -280,19 +315,19 @@
                                             <img style="width: 53% !important;" src="{{ asset('images/Entrepreneuriat.svg') }}" />
                                         </div>
                                         <div class="about-card-text">
-                                            <a style="width: 100%;font-size: 18px;font-weight: bold;background-color: #f5c53d !important;" href="{{ route('axe-entrepreneuriat') }}" class="btn btn-warning  btn-radius">Axe L'entrepreneuriat </a>
+                                            <a style="width: 100%;font-size: 18px;font-weight: bold;background-color: #f5c53d !important;" href="{{ route('axe-entrepreneuriat') }}" class="btn btn-warning  btn-radius">Axe appui à l’Entrepreneuriat</a>
 
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-12 col-lg-4 pb-30">
-                                    <div style="height: 100%; background: #e1f6ff !important" class="about-item-card about-item-card-thirdcolor">
+                                    <div style="height: 100%; background: #b8f9d5 !important" class="about-item-card about-item-card-thirdcolor">
 
                                         <div class="about-card-icon">
-                                           <img style="width: 53% !important;" src="{{ asset('images/emploibilite.svg') }}" />
+                                           <img style="width: 53% !important;" src="{{ asset('images/icon_l.svg') }}" />
                                         </div>
                                         <div class="about-card-text">
-                                            <a style="width: 100%;font-size: 18px;font-weight: bold;background-color: #f5c53d !important;" href="{{ route('axe_employabilite') }}" class="btn btn-primary  btn-radius">Axe Employabilité  </a>
+                                            <a style="width: 100%;font-size: 18px;font-weight: bold;background-color: #b8f9d5 !important" href="{{ route('axe_employabilite') }}" class="btn btn-success  btn-radius">Axe appui à l’Employabilité  </a>
 
 
                                         </div>
@@ -341,12 +376,12 @@
 
 {{--                                        </div>--}}
                                         <div class="section-title mt-15">
-                                            <h2><span style="    color: #00afe2 !important;">Population cible</span>  </h2>
+                                            <h2><span style="    color: #00afe2 !important;">Population cible Résidant dans la province de Nouaceur</span>  </h2>
                                         </div>
                                         <div class="row">
                                             <div class="col-12 col-sm-4 col-lg-4 pb-30">
                                                 <div class="help-card help-card-center">
-                                                    <div style="background-color: #00afe2 !important;" class="help-card-thumb">
+                                                    <div style="background-color: #e52a2e !important;" class="help-card-thumb">
                                                         <i class="flaticon-resume"></i>
                                                     </div>
                                                     <div class="help-card-content">
@@ -366,7 +401,7 @@
                                             </div>
                                             <div class="col-12 col-sm-4 col-lg-4 pb-30">
                                                 <div class="help-card help-card-center">
-                                                    <div style="background-color: #00afe2 !important;" class="help-card-thumb">
+                                                    <div style="background-color: #fcc400 !important" class="help-card-thumb">
                                                         <i class="flaticon-satisfaction"></i>
                                                     </div>
                                                     <div class="help-card-content">
@@ -388,30 +423,7 @@
             </div>
         </div>
     </section>
-    <div class="partner-section pt-80 pb-100  mt-40 position-relative">
 
-        <div class="container">
-            <div class="partner-carousel-two swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="partner-item swiper-slide">
-                        <a href="#"><img src="{{ asset('images/hrj.png') }}" alt="partner"></a>
-                    </div>
-                    <div class="partner-item swiper-slide">
-                        <a href="#"><img style="margin-top: 59%;" src="{{ asset('images/hj.png') }}" alt="partner"></a>
-                    </div>
-                    <div class="partner-item swiper-slide">
-                        <a href="#"><img src="{{ asset('images/jeser.jpeg') }}" alt="partner"></a>
-                    </div>
-                    <div class="partner-item swiper-slide">
-                        <a href="#"><img src="{{ asset('images/royal.png') }}" alt="partner"></a>
-                    </div>
-                    <div class="partner-item swiper-slide">
-                        <a href="#"><img src="{{ asset('images/logo_landing.png') }}" alt="partner"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 @endsection
 
 @section('script')

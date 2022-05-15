@@ -13,7 +13,7 @@
                         <div class="nk-block-head nk-block-head-lg wide-sm">
                             <div class="nk-block-head-content">
                                 <div class="nk-block-head-sub"><a class="back-to" href="#"><em class="icon ni ni-arrow-left"></em><span>Tous Les Carrieres</span></a></div>
-                                <h2 class="nk-block-title fw-normal"><em class="bi bi-bounding-box"></em> Tous Les Carriéres</h2>
+                                <h2 class="nk-block-title fw-normal"><em class="bi bi-bounding-box"></em> Tous Les Carriéres !!!</h2>
                                 <div class="nk-block-des">
                                     <p class="lead">Form is most esential part of your project. We styled out nicely so you can build your form so quickly.</p>
                                 </div>
@@ -32,10 +32,10 @@
                                 <table class="datatable-init nk-tb-list nk-tb-ulist" data-auto-responsive="false">
                                     <thead>
                                     <tr class="nk-tb-item nk-tb-head">
-
-                                        <th class="nk-tb-col"><span class="sub-text">Title</span></th>
-
-                                        <th class="nk-tb-col tb-col-md"><span class="sub-text">Lieu</span></th>
+                                        <th class="nk-tb-col"><span class="sub-text">Post</span></th>
+                                        <th class="nk-tb-col tb-col-md"><span class="sub-text">Société</span></th>
+                                        <th class="nk-tb-col tb-col-md"><span class="sub-text">Type de contrat</span></th>
+                                        <th class="nk-tb-col tb-col-md"><span class="sub-text">Lieu de travail</span></th>
                                         <th class="nk-tb-col tb-col-lg"><span class="sub-text">Date de creation</span></th>
 
                                         <th class="nk-tb-col nk-tb-col-tools text-right">
@@ -47,29 +47,24 @@
                                         @foreach($recretements as $recretement)
                                             <tr class="nk-tb-item">
 
-                                                <td class="nk-tb-col">
-                                                    <div class="user-card">
-                                                        <div style="width: 98px;margin-right: 5px;"
-                                                             class="d-none d-sm-flex">
-                                                            <img style="border-radius: 10px;" src="{{ asset('images/recrutement/'. $recretement->photo  ) }}" />
-                                                        </div>
-                                                        <div style="text-align: center" class="user-info">
-                                                            <span class="tb-lead">{{ $recretement->title_fr }}<span class="dot dot-success d-md-none ml-1"></span></span>
-                                                            <span style="direction: rtl;text-align: center;" class="tb-lead arab">{{ $recretement->title_ar }}<span class="dot dot-success d-md-none ml-1"></span></span>
+                                                <td class="nk-tb-col tb-col-lg">
+                                                   {{ $recretement->post }}
 
-                                                        </div>
-                                                    </div>
                                                 </td>
-                                                <td class="nk-tb-col tb-col-mb" data-order="35040.34">
-                                                    <div style="text-align: center;" class="user-info">
-                                                        <span class="tb-lead">{{ $recretement->lieu_fr }}<span class="dot dot-success d-md-none ml-1"></span></span>
-                                                        <span style="direction: rtl;text-align: center;" class="tb-lead arab">{{ $recretement->lieu_ar }}<span class="dot dot-success d-md-none ml-1"></span></span>
+                                                <td class="nk-tb-col tb-col-lg" data-order="35040.34">
 
-                                                    </div>
+                                                     {{ $recretement->societe }}
+
                                                 </td>
 
                                                 <td class="nk-tb-col tb-col-lg" data-order="Email Verified - Kyc Unverified">
-                                                    {{ $recretement->date_creation }}
+                                                    {{ $recretement->type_de_contrat }}
+                                                </td>
+                                                <td class="nk-tb-col tb-col-lg" data-order="Email Verified - Kyc Unverified">
+                                                    {{ $recretement->lieu_de_travail }}
+                                                </td>
+                                                <td class="nk-tb-col tb-col-lg" data-order="Email Verified - Kyc Unverified">
+                                                    {{ $recretement->created_at }}
                                                 </td>
 
 
@@ -81,11 +76,11 @@
                                                                 <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
                                                                     <ul class="link-list-opt no-bdr">
-                                                                        <li><a href="{{ route('recrutement.edit',$recretement->id) }}"><em class="icon ni ni-focus"></em><span>Édit Actualité</span></a></li>
+                                                                        <li><a href="{{ route('recrutement.edit',$recretement->id) }}"><em class="icon ni ni-focus"></em><span>Éditer Carriére</span></a></li>
 
                                                                         <li class="divider"></li>
 
-                                                                        <li><a href="#"><em class="icon ni ni-na"></em><span>Supprimer Actualité</span></a></li>
+                                                                        <li><a href="#"><em class="icon ni ni-na"></em><span>Supprimer Carriére</span></a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>

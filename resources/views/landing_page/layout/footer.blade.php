@@ -8,6 +8,9 @@
                         <div class="row">
                             <div class="col-sm-6 col-md-6 col-lg-4">
                                 <div class="footer-content-list footer-content-item">
+                                    <div style="margin-bottom: 10px;" class="footer-content-title">
+                                        <img style="width: 33%;" src="{{ asset('images/logo_footer.png') }}" />
+                                    </div>
                                     <div class="footer-content-title">
                                         <h3 style="font-size: 26px;" @if( app()->getLocale() == "ar" ) class="arab" @endif>Association l’Heure Joyeuse</h3>
                                     </div>
@@ -23,6 +26,9 @@
                             </div>
                             <div class="col-sm-6 col-md-6 col-lg-4">
                                 <div class="footer-content-list footer-content-item">
+                                    <div style="margin-bottom: 10px;" class="footer-content-title">
+                                        <img style="width: 33%;" src="{{ asset('images/logo_jiser_footer.png') }}" />
+                                    </div>
                                     <div class="footer-content-title">
                                         <h3 style="font-size: 26px;" @if( app()->getLocale() == "ar" ) class="arab" @endif>Association Al Jisr</h3>
                                     </div>
@@ -38,6 +44,9 @@
                             </div>
                             <div class="col-sm-6 col-md-6 col-lg-4">
                                 <div class="footer-content-list footer-content-item">
+                                    <div style="margin-bottom: 118px;" class="footer-content-title">
+
+                                     </div>
                                     <div class="footer-content-title">
                                         <h3 style="font-size: 26px;" @if( app()->getLocale() == "ar" ) class="arab" @endif>Province de Nouaceur</h3>
                                     </div>

@@ -5,11 +5,13 @@ namespace App\Http\Controllers\landing_page;
 use App\Http\Controllers\Controller;
 use App\Models\Actualite;
 use App\Models\Carriere;
+use App\Models\Carrieres;
 use App\Models\Comment;
 use App\Models\Concours;
 use App\Models\Cours;
 use App\Models\Entrepreneurs;
 use App\Models\Post;
+use App\Models\Recrutement;
 use Illuminate\Http\Request;
 
 class LandingController extends Controller
@@ -32,9 +34,10 @@ class LandingController extends Controller
     }
     public function Allcarriere() {
         $local = app()->getLocale();
-        $carrieres = Carriere::select('id','photo','title_'.$local,'content_'.$local,'date_creation','email','tele','attachement','short_description_'.$local,'lieu_'.$local,'created_at')->latest()->get();
+        $Recrutements = Carriere::select('id','photo','title_'.$local,'content_'.$local,'date_creation','email','tele','attachement','short_description_'.$local,'lieu_'.$local,'created_at')->where('status','public')->latest()->get();
 
-        return view('landing_page.carriere',compact('carrieres'));
+
+        return view('landing_page.carriere',compact('Recrutements'));
     }
     public function singleCarriere($id){
         $local = app()->getLocale();
@@ -42,7 +45,15 @@ class LandingController extends Controller
         $carriere_autre = Carriere::select('id','photo','title_'.$local,'content_'.$local,'date_creation','email','tele','attachement','short_description_'.$local,'lieu_'.$local,'created_at')->where('id','!=',$id)->get();
 
 
+
         return view('landing_page.single_carriere',compact(['carriere','carriere_autre']));
+    }
+    public function single_recrutement($id){
+        $Carrieres = Carrieres::find($id);
+        $carriere_autres = Carrieres::where('id','!=',$id)->where('status','public')->get();
+
+
+        return view('landing_page.single_recrutement',compact(["Carrieres",'carriere_autres']));
     }
 
     public function Allactualite(){
@@ -77,8 +88,10 @@ class LandingController extends Controller
     public function getemployabilite(){
         $local = app()->getLocale();
         $Entrepreneurs = Entrepreneurs::select('id','title_'.$local,'image_profile','niveau_scolaire_'.$local,'formation_professionnelle_'.$local,'age','project_name_'.$local,'logo','short_description_'.$local,'statut_juridique_'.$local,'category_'.$local,'secteur_activite_'.$local,'domiciliation_'.$local,'canaux_communication_'.$local,'capitale_initiale','apport_INDH','apport_entrepreneur','opportunite_financement','contenu_'.$local)->get();
+        $recrutements = Carrieres::where('status','public')->get();
 
-        return view('landing_page.axe_employabilite',compact("Entrepreneurs"));
+
+        return view('landing_page.axe_employabilite',compact(["Entrepreneurs","recrutements"]));
     }
     public function poster_concours_store(Request $request){
 

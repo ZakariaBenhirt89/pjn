@@ -23,21 +23,22 @@
             <h2><span @if( app()->getLocale() == "ar" ) class="arab" @endif style="color: #06933e;">{{ trans('messages.Obtenez_votre_emploi') }}</span></h2>
         </div>
         <div class="row">
-            @isset($carrieres)
-                @foreach($carrieres as $carriere)
+            @isset($Recrutements)
+                @foreach($Recrutements as $Recrutement)
                   <div class="col-12 col-md-6 col-lg-4 pb-30">
                 <div class="career-card">
                     <div class="career-card-title">
-                        <h3 @if( app()->getLocale() == "ar" ) class="arab" @endif>{{ $carriere->{'title_'.app()->getLocale() }  }}</h3>
-                        <h5 @if( app()->getLocale() == "ar" ) class="arab" @endif>{{ $carriere->{'lieu_'.app()->getLocale() }  }}</h5>
+                        <h5 @if( app()->getLocale() == "ar" ) class="arab" @endif>{{ $Recrutement->{'title_'.app()->getLocale() }  }}</h5>
+                        <h6 @if( app()->getLocale() == "ar" ) class="arab" @endif>{{ $Recrutement->{'lieu_'.app()->getLocale() }  }}</h6>
 
                     </div>
                     <div class="career-card-brief">
                         <div  class="pb-30 @if( app()->getLocale() == "ar" ) arab @endif" >
-                            {{ $carriere->{'short_description_'.app()->getLocale() }  }}
+                           {{  \Illuminate\Support\Str::limit($Recrutement->{'short_description_'.app()->getLocale() }, 120) }}
+
                         </div>
                     </div>
-                    <a href="{{ route('single.carriere',$carriere->id) }}" class="btn main-btn @if( app()->getLocale() == "ar" ) arab @endif">{{ trans('messages.postulez_maintenant') }}</a>
+                    <a href="{{ route('single.carriere',$Recrutement->id) }}" class="btn main-btn @if( app()->getLocale() == "ar" ) arab @endif">{{ trans('messages.postulez_maintenant') }}</a>
                 </div>
             </div>
                 @endforeach

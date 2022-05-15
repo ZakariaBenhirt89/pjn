@@ -35,171 +35,115 @@
                                             <div class="row g-gs">
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label class="form-label" for="fw-last-name">Titre de l'offre d'emploi (FR) :</label>
+                                                        <label class="form-label" for="fw-last-name">Poste :</label>
                                                         <div class="form-control-wrap">
 
-                                                            <input type="text" data-msg="Required" class="form-control required" id="title" value="{{ $recrutments->title_fr }}" name="title_fr" required="">
+                                                            <input type="text" data-msg="Required" class="form-control required" id="title" value="{{ $recrutments->post }}" name="post" required="">
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <div style="text-align: right;" class="form-group">
-                                                        <label style="direction: rtl;" class="form-label arab" for="fw-last-name">العنوان بالعربية :</label>
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="fw-last-name">Société :</label>
                                                         <div class="form-control-wrap">
 
-                                                            <input type="text" data-msg="Required" class="form-control required" id="title" value="{{ $recrutments->title_fr }}" name="title_ar" required="">
+                                                            <input type="text" data-msg="Required" class="form-control required" id="title" value="{{ $recrutments->societe }}" name="societe" required="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="fw-last-name">Date de début :</label>
+                                                        <div class="form-control-wrap">
+
+                                                            <input type="text" data-msg="Required" class="form-control required" value="{{ $recrutments->date_de_debut }}" id="title" name="date_de_debut" required="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="fw-last-name">Type de contrat :</label>
+                                                        <div class="form-control-wrap">
+
+                                                            <input type="text" data-msg="Required" class="form-control required" value="{{ $recrutments->type_de_contrat }}" id="title" name="type_de_contrat" required="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="fw-last-name">Lieu de travail :</label>
+                                                        <div class="form-control-wrap">
+
+                                                            <input type="text" data-msg="Required" class="form-control required" id="title" value="{{ $recrutments->lieu_de_travail }}" name="lieu_de_travail" required="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div  class="form-group">
+                                                        <label  class="form-label" for="fw-last-name">Caractéristiques du poste</label>
+                                                        <div class="form-control-wrap">
+
+                                                            <textarea type="text"  class="form-control" id="title" name="caractéristiques_du_poste">{{ $recrutments->caractéristiques_du_poste }}</textarea>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div  class="form-group">
-                                                        <label  class="form-label" for="fw-last-name">Brève Description</label>
+                                                        <label  class="form-label" for="fw-last-name">Formation</label>
                                                         <div class="form-control-wrap">
 
-                                                            <textarea type="text" data-msg="Required" class="form-control required" id="title" name="short_description_fr">{{ $recrutments->short_description_fr }}</textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-12">
-                                                    <div style="text-align: right;" class="form-group">
-                                                        <label  class="form-label arab" for="fw-last-name">وصف قصير</label>
-                                                        <div class="form-control-wrap">
-
-                                                            <textarea style="direction: rtl;" type="text" data-msg="Required" class="form-control required" id="title" name="short_description_ar">{{ $recrutments->short_description_ar }}</textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="customFileLabel">Description En Francais</label>
-                                                        <div class="form-control-wrap">
-                                                            <textarea class="summernote" name="contenu_fr">{{ $recrutments->content_fr }}</textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                                <div class="col-md-12">
-                                                    <div style="text-align: right;" class="form-group">
-                                                        <label style="direction: rtl;" class="form-label arab" for="customFileLabel">المحتوى بالعربية:</label>
-                                                        <div class="form-control-wrap">
-                                                            <textarea class="summernote" name="contenu_ar" placeholder="المحتوى">{{ $recrutments->content_ar }}</textarea>
+                                                            <textarea type="text" data-msg="Required" class="form-control required" id="title" name="Formation">{!! $recrutments->Formation !!}</textarea>
                                                         </div>
                                                     </div>
                                                 </div>
 
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label class="form-label">Date de creation</label>
+                                                        <label class="form-label" for="fw-last-name">Expérience professionnelle :</label>
                                                         <div class="form-control-wrap">
 
-                                                            <input type="text" class="form-control date-picker" name="date_creation" autocomplete="off" value="{{ $recrutments->date_creation }}" data-date-format="yyyy-mm-dd">
-                                                        </div>
-                                                        <div class="form-note">Date format <code>yyyy-mm-dd</code></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="fw-last-name">Email :</label>
-                                                        <div class="form-control-wrap">
-
-                                                            <input type="email" data-msg="Required" class="form-control required" id="title" name="email" value="{{ $recrutments->email }}" required="">
+                                                            <input type="text" data-msg="Required" class="form-control required" id="title" value="{{ $recrutments->Expérience_professionnelle }}" name="Expérience_professionnelle" required="">
                                                         </div>
                                                     </div>
                                                 </div>
+
+
+
+
+
+
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label class="form-label" for="fw-last-name">Photo de Coverture :</label>
                                                         <div class="form-control-wrap">
 
-                                                            <input type="file" data-msg="Required"  id="title" name="photo" />
+                                                            <input type="file"  id="title" name="photo" />
                                                         </div>
                                                     </div>
-                                                    @if ($errors->has('photo'))
-                                                        <span class="text-danger">{{ $errors->first('password') }}</span>
-                                                    @endif
-                                                    <div class="form-group">
-                                                        <img src="{{ asset('images/recrutement/'. $recrutments->photo ) }}" />
-                                                    </div>
                                                 </div>
+                                                <div class="col-md-6"></div>
                                                 <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="fw-last-name">Telephone :</label>
-                                                        <div class="form-control-wrap">
+                                                    <div>
+                                                        @if($recrutments->photo=="")
+                                                            <b style="color: red;">pas d'image</b>
+                                                        @else
+                                                            <img src="{{ asset('images/recrutement/'.$recrutments->photo) }}" />
+                                                        @endif
 
-                                                            <input type="text" data-msg="Required" class="form-control required" id="title" value="{{ $recrutments->tele }}" name="tele" required="">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="fw-last-name">Attachement :</label>
-                                                        <div class="form-control-wrap">
-
-                                                            <input type="file" data-msg="Required" id="title" name="attachement" />
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="fw-last-name">Lieu :</label>
-                                                        <div class="form-control-wrap">
-                                                            <input type="text" data-msg="Required" class="form-control required" id="title" value="{{ $recrutments->lieu_fr }}" name="lieu_fr" required="" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div style="width: 100px;" class="form-group">
-                                                        <a target="_blank" href="{{ asset('images/recrutement/attachment/'.$recrutments->attachement ) }}">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
-                                                                <path d="M49,61H23a5.0147,5.0147,0,0,1-5-5V16a5.0147,5.0147,0,0,1,5-5H40.9091L54,22.1111V56A5.0147,5.0147,0,0,1,49,61Z" style="fill:#e3edfc"></path>
-                                                                <path d="M54,22.1111H44.1818a3.3034,3.3034,0,0,1-3.2727-3.3333V11s1.8409.2083,6.9545,4.5833C52.8409,20.0972,54,22.1111,54,22.1111Z" style="fill:#b7d0ea"></path>
-                                                                <path d="M19.03,59A4.9835,4.9835,0,0,0,23,61H49a4.9835,4.9835,0,0,0,3.97-2Z" style="fill:#c4dbf2"></path>
-                                                                <path d="M42,31H30a3.0033,3.0033,0,0,0-3,3V45a3.0033,3.0033,0,0,0,3,3H42a3.0033,3.0033,0,0,0,3-3V34A3.0033,3.0033,0,0,0,42,31ZM29,38h6v3H29Zm8,0h6v3H37Zm6-4v2H37V33h5A1.001,1.001,0,0,1,43,34ZM30,33h5v3H29V34A1.001,1.001,0,0,1,30,33ZM29,45V43h6v3H30A1.001,1.001,0,0,1,29,45Zm13,1H37V43h6v2A1.001,1.001,0,0,1,42,46Z" style="fill:#36c684"></path>
-                                                            </svg>
-                                                        </a>
                                                     </div>
                                                 </div>
 
-                                                <div class="col-md-6">
-                                                    <div style="text-align: right;" class="form-group">
-                                                        <label style="direction: rtl;" class="form-label arab" for="fw-last-name">مكان :</label>
-                                                        <div class="form-control-wrap">
-                                                            <input style="direction: rtl;" type="text" data-msg="Required" class="form-control required" id="title" value="{{ $recrutments->lieu_ar }}" name="lieu_ar" required="" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-group">
-                                                        <label class="form-label" for="thumb">Status</label>
-                                                        <div class="form-control-wrap">
-                                                            <ul class="custom-control-group g-3 align-center flex-wrap">
-                                                                <li>
-                                                                    <div class="custom-control custom-radio checked">
-                                                                        <input type="radio" class="custom-control-input"  value="public"  @if( $recrutments->status == "public" ) checked  @endif name="status" id="reg-enable">
-                                                                        <label class="custom-control-label" for="reg-enable">Public</label>
-                                                                    </div>
-                                                                </li>
-                                                                <li>
-                                                                    <div class="custom-control custom-radio">
-                                                                        <input type="radio" class="custom-control-input" value="prive" @if( $recrutments->status == "prive" ) checked  @endif name="status" id="reg-disable">
-                                                                        <label class="custom-control-label" for="reg-disable">Privé</label>
-                                                                    </div>
-                                                                </li>
 
-                                                            </ul>
-                                                        </div>
-                                                    </div><!-- .form-group -->
-                                                </div>
+
+
 
 
 
 
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <button type="submit" class="btn btn-lg btn-primary">Mise à jour D'Offre d'emploi</button>
+                                                        <button type="submit" class="btn btn-lg btn-primary">Ajouter Un Carriére</button>
                                                     </div>
                                                 </div>
                                             </div>

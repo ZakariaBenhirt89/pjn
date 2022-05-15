@@ -21,42 +21,7 @@
 
     <section class="event-details-section pt-100 pb-70">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-6 pb-30">
-                    <div class="profile-content-item max-585 desk-pad-right-20 desk-ml-auto">
-                        <div class="profile-desc">
-                            <h3 @if( app()->getLocale() == "ar" ) class="arab" @endif >{{ $Entrepreneurs->{'title_'.app()->getLocale() }  }}</h3>
-                            <h4 @if( app()->getLocale() == "ar" ) class="arab" @endif>{{ $Entrepreneurs->{'statut_juridique_'.app()->getLocale() }  }}</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad e vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia </p>
-                            <p>Sit aspernatur aut odit aut fugit, sed quia consequuntur magni dlores eos qui ratione voluptatem sequi nesciunt. </p>
-                        </div>
-                        <div class="profile-contact-list">
-                            <h4>Contact:</h4>
-                            <ul>
-                                <li>Mobile: <a href="tel:001-800-388-80-90">800 388 80 90</a></li>
-                                <li>Hotline: <a href="tel:001-1800-1102">1800 1102</a></li>
-                                <li>Email: <a href="mailto:hello@jexi.com">hello@jexi.com</a></li>
-                                <li>Address: <span> PO Box 567 Hostin st. 433, Allentown, US</span></li>
-                            </ul>
-                        </div>
-                        <ul class="social-list">
-                            <li><a href="#"><img src="assets/images/facebook.png" alt="social"></a></li>
-                            <li><a href="#"><img src="assets/images/twitter.png" alt="social"></a></li>
-                            <li><a href="#"><img src="assets/images/linkedin.png" alt="social"></a></li>
-                            <li><a href="#"><img src="assets/images/instagram.png" alt="social"></a></li>
-                            <li><a href="#"><img src="assets/images/youtube.png" alt="social"></a></li>
-                            <li><a href="#"><img src="assets/images/skype.png" alt="social"></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 pb-30">
-                    <div class="profile-content-item text-center">
-                        <div class="profile-content-image">
-                            <img src="{{ asset('images/entrepreneurs/'.$Entrepreneurs->image_profile) }}" alt="profile">
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <div class="row">
 
                 <div class="col-12 col-lg-4 pb-30 order-lg-2">
