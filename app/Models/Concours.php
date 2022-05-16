@@ -9,7 +9,7 @@ class Concours extends Model
 {
     use HasFactory;
 
-    protected $table = "Concours";
+    protected $table = "concours";
 
     protected $fillable = ['title_fr','title_ar','short_description_fr','short_description_ar','contenu_fr','contenu_ar','date_creation','limite_date','email','photo','tele','attachement','lieu_fr','lieu_ar'];
 
