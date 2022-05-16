@@ -109,44 +109,44 @@
                 <div class="record-grid-item">
                     <div class="record-grid-item-inner record-grid-item-inner-secondcolor">
                         <div class="record-item-number">
-                            <div class="counter">200</div>
+                            <div class="counter">783</div>
                             <span>+</span>
                         </div>
                         <div class="record-item-text">
-                            <p>Projects Finished</p>
+                            <p>Nombre d'appels effectués</p>
                         </div>
                     </div>
                 </div>
                 <div class="record-grid-item">
                     <div class="record-grid-item-inner record-grid-item-inner-secondcolor">
                         <div class="record-item-number">
-                            <div style="color: #e52a2e !important;" class="counter">199</div>
+                            <div style="color: #e52a2e !important;" class="counter">65</div>
                             <span style="color: #e52a2e !important;">+</span>
                         </div>
                         <div class="record-item-text">
-                            <p style="color: #e52a2e !important;">Satisfied Clients</p>
+                            <p style="color: #e52a2e !important;">Nombre de jeunes accueillis</p>
                         </div>
                     </div>
                 </div>
                 <div class="record-grid-item">
                     <div class="record-grid-item-inner record-grid-item-inner-secondcolor">
                         <div class="record-item-number">
-                            <div style="color: #00afe2 !important" class="counter">150</div>
+                            <div style="color: #00afe2 !important" class="counter">28</div>
                             <span style="color: #00afe2 !important">+</span>
                         </div>
                         <div class="record-item-text">
-                            <p style="color: #00afe2 !important">Online Students</p>
+                            <p style="color: #00afe2 !important">Nombre des diplomés formés</p>
                         </div>
                     </div>
                 </div>
                 <div class="record-grid-item">
                     <div class="record-grid-item-inner record-grid-item-inner-secondcolor">
                         <div class="record-item-number">
-                            <div style="color: #fcc400 !important;" class="counter">20</div>
+                            <div style="color: #fcc400 !important;" class="counter">15</div>
                             <span style="color: #fcc400 !important;">+</span>
                         </div>
                         <div class="record-item-text">
-                            <p style="color: #fcc400 !important;">Years of Experience</p>
+                            <p style="color: #fcc400 !important;">nombre des non diplomés formés</p>
                         </div>
                     </div>
                 </div>
@@ -158,7 +158,7 @@
         <div class="container">
             <div class="pb-70 border-bottom">
                 <div class="section-title">
-                    <h2>Gallery <span>Axe Employabilité</span></h2>
+                    <h2>Gallery<span> Photos </span>Axe Employabilité :</h2>
 {{--                    <p>We believe everyone has the capacity to be creative. Tuition is a place where people develop their own potential.</p>--}}
                 </div>
 

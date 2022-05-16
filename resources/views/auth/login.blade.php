@@ -34,8 +34,8 @@
                         <div class="nk-block nk-block-middle nk-auth-body">
                             <div class="brand-logo pb-5">
                                 <a href="#" class="logo-link">
-                                    <img style="max-height: 92px !important;" class="logo-light logo-img logo-img-lg" src="{{ asset('images/logo.png') }}" srcset="./images/logo2x.png 2x" alt="logo">
-                                    <img style="max-height: 92px !important;" class="logo-dark logo-img logo-img-lg" src="{{ asset('images/logo.png') }}" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">
+                                    <img style="max-height: 92px !important;" class="logo-light logo-img logo-img-lg" src="{{ asset('images/logo.png') }}" srcset="{{ asset('images/logo.png') }}" alt="logo">
+                                    <img style="max-height: 92px !important;" class="logo-dark logo-img logo-img-lg" src="{{ asset('images/logo.png') }}" srcset="{{ asset('images/logo.png') }}" alt="logo-dark">
                                 </a>
                             </div>
                             <div class="nk-block-head">

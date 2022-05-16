@@ -292,8 +292,7 @@
     <div class="container">
         <div class="">
             <div class="section-title">
-                <h2>Explore <span>How Can</span> I Help You</h2>
-                <p>We believe everyone has the capacity to be creative. Tuition is a place where people develop their own potential.</p>
+                <h2>Gallery<span> Photos </span>Axe L'entrepreneuriat :</h2>
             </div>
 
 

@@ -119,7 +119,7 @@
                             <h3 class="font-family-3">Les Indicateurs</h3>
                         </div>
                         <h2><span style="color: #06933e;">Les Indicateurs</span></h2>
-                        <p>We believe everyone has the capacity to be creative. Tuition is a place where people develop their own potential.</p>
+                        <p>Les Indicateurs - Axe Gestion</p>
                     </div>
 
                 </div>

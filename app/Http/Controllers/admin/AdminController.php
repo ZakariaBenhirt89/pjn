@@ -71,9 +71,9 @@ class AdminController extends Controller
             if ($request->has('image_profile')){
                 //old image
                 $imagePath = public_path('images/acceuil/'.$acceuil->image_profile);
-                if(File::exists($imagePath)){
-                    unlink($imagePath);
-                }
+//                if(File::exists($imagePath)){
+//                    unlink($imagePath);
+//                }
                 //new image
 
                 $imageName = time().'.'.$request->image_profile->extension();
@@ -143,7 +143,7 @@ class AdminController extends Controller
 
         }
 
-        return $request;
+        return redirect()->route('student.index');
     }
 
     public function test(){
