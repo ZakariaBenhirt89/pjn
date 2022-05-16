@@ -35,12 +35,12 @@
 
                         </div>
 
-                        <div style="margin-top: 1%;" class="nk-block nk-block-lg">
+                        <div style="margin-top: 3%;" class="nk-block nk-block-lg">
 
 
                                     <div style="text-align: center" class="nk-block-head">
                                         <div class="nk-block-head-content">
-                                            <h4 style="font-weight: bold !important;" class="title nk-block-title">Wizard Form - Basic</h4>
+                                            <h4 style="font-weight: bold !important;" class="title nk-block-title">Inscrivez-vous sur la Plateforme des jeunes Nouaceur</h4>
                                             <div class="nk-block-des">
                                                 <p>A basic demostration of wizard form.</p>
                                             </div>
