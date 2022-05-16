@@ -13,8 +13,7 @@
                                     <div class="nk-block-head-content">
                                         <h2 style="color:#00782d;font-weight: bold !important;" class="nk-block-title fw-normal">Fiche d’Accueil</h2>
                                         <div class="nk-block-des">
-                                            <p class="lead">Using the <a href="#" target="_blank">jQuery Steps</a> plugin, you can simply make step based form. You can combine with <a href="https://jqueryvalidation.org/" target="_blank">jQuery Validation</a> plugin for form validation. For a full overview of the Steps plugin, check out the <a href="http://www.jquery-steps.com/" target="_blank">documentation</a>.</p>
-                                            <p class="lead">Using the <a href="#" target="_blank">jQuery Steps</a> plugin, you can simply make step based form. You can combine with <a href="https://jqueryvalidation.org/" target="_blank">jQuery Validation</a> plugin for form validation.</p>
+                                            <p class="lead">Jeunes sans emploi ou ayant un emploi précaire, diplômés sans emploi, ou acteurs locaux et jeunes porteurs de projets, âgés de 18 à 45 ans et issus de la province de Nouaceur, vous êtes tous les bienvenus au sein de la plateforme des jeunes Nouaceur!</p>
                                         </div>
                                     </div>
                                 </div>
@@ -24,17 +23,15 @@
                                 <div class="card">
                                     <div class="card-play"></div>
                                     <div class="card-video">
-                                        <iframe id="video" src="https://www.youtube.com/watch?v=cg3yueCWTyQ" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-                                    </div>
+                                        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/cg3yueCWTyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+=                                    </div>
                                 </div>
 
-                                <div class="card">
-                                    <div class="card-play"></div>
-                                    <div class="card-video">
-                                        <iframe id="video" src="https://www.youtube.com/embed/JE9z-gy4De4?enablejsapi=1&amp;html5=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-                                    </div>
-                                </div>
+
+
                             </div>
+
+
 
                         </div>
 
@@ -883,6 +880,10 @@
 
                                             </div><!-- .row -->
                                         </div>
+                                        <!-- Modal Trigger Code -->
+
+                                        <!-- Modal Content Code -->
+
 {{--                                        <div class="nk-wizard-head">--}}
 {{--                                            <h5><img width="41" src="{{ asset('images/online-registration.png') }}" /> Crédits</h5>--}}
 {{--                                        </div>--}}
@@ -932,6 +933,21 @@
 
                     </div><!-- .components-preview -->
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" id="modalDefault">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                    <em class="icon ni ni-cross"></em>
+                </a>
+
+                <div style="padding:0px  !important;" class="modal-body">
+                    <iframe style="width: 100%;height: 300px;" src="https://www.youtube.com/embed/cg3yueCWTyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                </div>
+
             </div>
         </div>
     </div>
@@ -1120,58 +1136,32 @@
 
             });
 
+            $('#play-video').on('click', function(e){
+                e.preventDefault();
+                $('#video-overlay').addClass('open');
+                $("#video-overlay").append('<iframe width="560" height="315" src="https://www.youtube.com/embed/ngElkyQ6Rhs" frameborder="0" allowfullscreen></iframe>');
+            });
+
+            $('.video-overlay, .video-overlay-close').on('click', function(e){
+                e.preventDefault();
+                close_video();
+            });
+
+            $(document).keyup(function(e){
+                if(e.keyCode === 27) { close_video(); }
+            });
+
+            function close_video() {
+                $('.video-overlay.open').removeClass('open').find('iframe').remove();
+            };
+            $(".card-play").on("click" , function(e){
+                $("#modalDefault").modal("show")
+            })
+
+
 
 
         });
     </script>
-    <script>
-        $(document).ready(function (){
-            // Variables
-            var player,
-                card  = document.querySelector( '.card' ),
-                play  = document.querySelector( '.card-play' ),
-                video = document.querySelector( '.card-video' );
 
-
-// Shine effect
-            card.onmousemove = function (e) {
-                const x = e.pageX - card.offsetLeft;
-                const y = e.pageY - card.offsetTop;
-
-                card.style.setProperty( '--x', x + 'px' );
-                card.style.setProperty( '--y', y + 'px' );
-            }
-
-
-// Youtube API
-            function onYouTubePlayerAPIReady() {
-                player = new YT.Player('video', {
-                    events: {
-                        'onReady': onPlayerReady
-                    }
-                });
-            }
-
-
-// Player Ready
-            function onPlayerReady(event) {
-                play.addEventListener( 'click', function() {
-                    card.classList.add( 'video-is-open' );
-                    setTimeout(function() {
-                        video.style.display = 'block';
-                        player.playVideo();
-                    }, 500);
-                });
-            }
-
-
-// Inject YouTube API script
-            var tag = document.createElement('script');
-            tag.src = "//www.youtube.com/player_api";
-            var firstScriptTag = document.getElementsByTagName('script')[0];
-            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-
-        });
-    </script>
 @endsection
